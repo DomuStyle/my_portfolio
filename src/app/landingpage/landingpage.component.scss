@@ -3,3 +3,24 @@ section {
     height: 100vh;
     margin: 0;
 }
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.nav_left {
+    padding-left: 32px;
+    padding-top: 32px;
+    >img {
+        padding-left: 8px;
+    }
+    >a {
+        padding-left: 8px;
+    }
+}
+
+.nav_right {
+
+}
