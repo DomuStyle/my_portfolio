@@ -1,5 +1,5 @@
 section {
-    background-image: linear-gradient(#08463B, #1c1c1c );
+    background-image: linear-gradient(45deg, #1c1c1c 50%, #08463B);
     height: 100vh;
     margin: 0;
 }
@@ -8,10 +8,15 @@ nav {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    background-image: linear-gradient(180deg, black, transparent);
+}
+
+img {
+    padding-left: 16px;
 }
 
 .nav_left {
-    padding-left: 32px;
+    padding-left: 64px;
     padding-top: 32px;
     >img {
         padding-left: 8px;
@@ -22,5 +27,20 @@ nav {
 }
 
 .nav_right {
+    padding-right: 64px;
+    padding-top: 32px;
+}
 
+.infinite_scroller {
+    position: absolute;
+    top: 750px;
+    left: -64px;
+    height: 64px;
+    width: 120%;
+    background-color: rgba($color: #ffffff, $alpha: 0.25);
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    z-index: 1;
+    backdrop-filter: blur(1px);
 }
