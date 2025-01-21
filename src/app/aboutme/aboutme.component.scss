@@ -1,0 +1,25 @@
+section {
+    padding-top: 196px;
+    padding-bottom: 196px;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 196px;
+    
+    >div {
+        >img {
+            padding-left: 256px;
+            }
+        }
+}
+
+.about_me_frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 568px;
+    width: 568px;
+    background-color: rgba($color: #08463B, $alpha: 0.5);
+    border-radius: 24px;
+}
