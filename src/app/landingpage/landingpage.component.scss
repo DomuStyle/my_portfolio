@@ -5,35 +5,22 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .infinite_scroller {
     position: absolute;
     // top: 750px;
     bottom: 40px;
-    left: -64px;
+    left: 0px;
     height: 64px;
-    width: 120%;
+    width: 100%;
     background-color: rgba($color: #ffffff, $alpha: 0.25);
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
     z-index: 1;
     backdrop-filter: blur(1px);
-}
-
-h1 {
-    font-family: 'Fira_Code';
-    font-size: 88px;
-    color: white;
-    font-weight: 800;
-}
-
-h2 {
-    font-family: 'Fira_Code';
-    font-size: 40px;
-    color: white;
-    font-weight: lighter; 
 }
 
 .landingpage_content {
@@ -82,4 +69,15 @@ h2 {
     width: 2px;
     height: 200px;
     background-color: rgb(252, 252, 252);
+}
+
+.landingpage_email_link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Fira_Code';
+    transform: rotate(270deg);
+    margin-bottom: 120px;
+    &hover {
+        color: #08463B;
+    }
 }

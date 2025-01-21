@@ -3,6 +3,21 @@
     margin: 0;
 }
 
+
+h1 {
+    font-family: 'Fira_Code';
+    font-size: 88px;
+    color: white;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Fira_Code';
+    font-size: 40px;
+    color: white;
+    font-weight: lighter; 
+}
+
 /* Fira_Code */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -10,4 +25,36 @@
     font-style: normal;
     font-weight: 200;
     src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira_Code';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira_Code';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira_Code';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira_Code';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

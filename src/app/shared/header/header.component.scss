@@ -12,6 +12,13 @@ img {
     padding-left: 16px;
 }
 
+.about_me:hover {
+    // height: 80px;
+    &hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/about_me_selected.svg');
+    }
+}
+
 .nav_left {
     padding-left: 64px;
     padding-top: 32px;
@@ -26,4 +33,9 @@ img {
 .nav_right {
     padding-right: 64px;
     padding-top: 32px;
+    >img {
+        &hover { 
+        background-image: url('./../../../assets/svg/nav/name_logo/name_logo_hover.png');
+        }
+    }
 }
