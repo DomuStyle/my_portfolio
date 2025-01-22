@@ -1,7 +1,37 @@
-// section {
-//     background-image: url('./../../assets/img/skillset/skillset_bg.svg');
-// }
+section {
+    background-image: radial-gradient(farthest-corner at -10% 55%, #08463B, #1c1c1c 40%);
+    height: 100vh;
+    overflow-x: hidden;
+    // background-image: url('./../../assets/img/skillset/skillset_bg.svg');
+    >div {
+        >h4 {
+            margin-left: 120px;
+            margin-top: 120px;
+        }
+    }
+}
 
 // .skillset_section {
 //     background-image: url('./../../assets/img/skillset/skillset_bg.svg');
 // }
+
+.technologies_frame {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 120px;
+    // margin-top: 160px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    height: 568px;
+    width: 568px;
+    background-color: rgba($color: #08463B, $alpha: 0.5);
+    border-radius: 24px;
+    border: 2px solid #3DCFB6;
+    >p {
+        color: white;
+        font-family: 'Fira_Code';
+    }
+}
