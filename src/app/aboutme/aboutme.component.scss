@@ -10,16 +10,26 @@ section {
     >div {
         >img {
             padding-left: 56px;
+            z-index: 1;
             }
         }
         >.about_me_left {
             display: flex;
             align-items: flex-start;
+            position: relative;
+            
         }
 
         >.about_me_right {
             padding-top: 160px;
         }
+}
+
+.about_me_stripes {
+    position: absolute;
+    // z-index: 0;
+    top: 32px;
+    right: 32px;
 }
 
 .about_me_frame {
