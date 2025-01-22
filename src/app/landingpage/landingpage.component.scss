@@ -5,7 +5,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .infinite_scroller {
@@ -31,6 +31,30 @@ section {
     width: 100%;
 }
 
+.landingpage_btns {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    >a {
+        >img {
+            height: 64px;
+            width: 160px;
+            color: white;
+        }
+    }
+    >.btn_text_projects {
+        position: absolute;
+        top: 16px;
+        left: -20px;
+    }
+    >.btn_text_contact {
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+}
 .content_left {
     display: flex;
     align-items: center;
@@ -44,6 +68,25 @@ section {
     left: 0;
 }
 
+.arrow_down {
+    position: absolute;
+    top: 322px;
+    animation: bounce 1.5s linear 0s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 328px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    50% {
+        top: 338px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
 .left_stripe {
     width: 2px;
     height: 256px;
