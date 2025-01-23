@@ -148,6 +148,7 @@ section {
     font-family: 'Fira_Code';
     transform: rotate(270deg);
     margin-bottom: 120px;
+    transition: color 1.75s;
     &:hover {
         cursor: pointer;
         color: #3DCFB6;
@@ -157,12 +158,16 @@ section {
 .projects_link {
     height: 64px;
     width: 180px;
-
     color: #ffffff;
     text-decoration: none;
     font-family: 'Fira_Code';
     text-align: center;
     align-content: center;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 32px;
+    border-color: #ffffff;
+    transition: border-color 1.75s;
+    &:hover {
+        border-color: #3DCFB6;
+    }
 }
