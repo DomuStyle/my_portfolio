@@ -57,12 +57,7 @@ section {
     align-items: center;
     justify-content: space-around;
     gap: 64px;
-    // >a {
-    //     >img {
-    //         height: 64px;
-    //         width: 196px;
-    //     }
-    // }
+
     >.btn_text_projects {
         font-family: 'Fira_Code';
         color: white;
@@ -129,10 +124,27 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-    >img {
-        &:hover {
-            cursor: pointer;
-        }
+}
+
+.github_btn {
+    height: 32px;
+    width: 64px;
+    margin-left: 32px;
+    background-image: url('./../../assets/svg/social_connections/github.svg');
+    background-repeat: no-repeat;
+    &:hover {
+        background-image: url('./../../assets/svg/social_connections/github_hover.svg');
+    }
+}
+
+.linkedIn_btn {
+    height: 32px;
+    width: 64px;
+    margin-left: 32px;
+    background-image: url('./../../assets/svg/social_connections/linkedIn.svg');
+    background-repeat: no-repeat;
+    &:hover {
+        background-image: url('./../../assets/svg/social_connections/linkedIn_hover.svg');
     }
 }
 
@@ -156,6 +168,23 @@ section {
 }
 
 .projects_link {
+    height: 64px;
+    width: 180px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Fira_Code';
+    text-align: center;
+    align-content: center;
+    border: 2px solid #ffffff;
+    border-radius: 32px;
+    border-color: #ffffff;
+    transition: border-color 1.75s;
+    &:hover {
+        border-color: #3DCFB6;
+    }
+}
+
+.contact_link {
     height: 64px;
     width: 180px;
     color: #ffffff;

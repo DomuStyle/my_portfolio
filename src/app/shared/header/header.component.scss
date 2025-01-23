@@ -59,6 +59,7 @@ img {
         background-color: transparent; 
         &:hover {
             background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
+            cursor: pointer;
         }
     }
     >a {
@@ -69,9 +70,14 @@ img {
 .nav_right {
     padding-right: 64px;
     padding-top: 32px;
-    >img {
+    >span {
+        height: 50px;
+        width: 132px;
+        background-image: url('./../../../assets/svg/nav/name_logo/name_logo.svg');
+        background-repeat: no-repeat;
+        background-color: transparent;
         &:hover { 
-        background-image: url('./../../../assets/svg/nav/name_logo/name_logo_hover.png');
+            background-image: url('./../../../assets/svg/nav/name_logo/name_logo_hover.png');
         }
     }
 }
