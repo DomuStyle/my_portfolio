@@ -29,7 +29,7 @@ img {
     background-repeat: no-repeat;
     height: 34px;
     width: 82px;
-    margin-left: 24px;
+    margin-left: 40px;
     &:hover {
         background-image: url('./../../../assets/svg/nav/section_btn/skills_hover.svg');
     }
@@ -51,8 +51,15 @@ img {
     padding-top: 32px;
     display: flex;
     justify-content: center;
-    >img {
+    >span {
+        width: 96px;
         padding-left: 8px;
+        background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on1.svg');
+        background-repeat: no-repeat;
+        background-color: transparent; 
+        &:hover {
+            background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
+        }
     }
     >a {
         padding-left: 8px;
