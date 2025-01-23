@@ -56,13 +56,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 32px;
-    >a {
-        >img {
-            height: 64px;
-            width: 196px;
-        }
-    }
+    gap: 64px;
+    // >a {
+    //     >img {
+    //         height: 64px;
+    //         width: 196px;
+    //     }
+    // }
     >.btn_text_projects {
         font-family: 'Fira_Code';
         color: white;
@@ -129,6 +129,11 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
+    >img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 .right_stripe {
@@ -143,7 +148,21 @@ section {
     font-family: 'Fira_Code';
     transform: rotate(270deg);
     margin-bottom: 120px;
-    &hover {
-        color: #08463B;
+    &:hover {
+        cursor: pointer;
+        color: #3DCFB6;
     }
+}
+
+.projects_link {
+    height: 64px;
+    width: 180px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Fira_Code';
+    text-align: center;
+    align-content: center;
+    border: 2px solid white;
+    border-radius: 32px;
 }

@@ -12,16 +12,45 @@ img {
     padding-left: 16px;
 }
 
-.about_me:hover {
+.nav_about_me {
     // height: 80px;
-    &hover {
-        background-image: url('./../../../assets/svg/nav/section_btn/about_me_selected.svg');
+    background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 82px;
+    margin-left: 24px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/about_me_hover.svg');
+    }
+}
+
+.nav_skills {
+    background-image: url('./../../../assets/svg/nav/section_btn/skills.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 82px;
+    margin-left: 24px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/skills_hover.svg');
+    }
+}
+
+.nav_projects {
+    background-image: url('./../../../assets/svg/nav/section_btn/projects.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 82px;
+    margin-left: 24px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/projects_hover.svg');
     }
 }
 
 .nav_left {
     padding-left: 64px;
     padding-top: 32px;
+    display: flex;
+    justify-content: center;
     >img {
         padding-left: 8px;
     }
@@ -34,7 +63,7 @@ img {
     padding-right: 64px;
     padding-top: 32px;
     >img {
-        &hover { 
+        &:hover { 
         background-image: url('./../../../assets/svg/nav/name_logo/name_logo_hover.png');
         }
     }
