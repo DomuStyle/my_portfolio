@@ -28,20 +28,34 @@ h2 {
 
 h3 {
     font-family: 'Fira_Code';
-    font-size: 48px;
+    font-size: 64px;
     color: #3DCFB6;
     font-weight: 600;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
 }
 
 
 h4 {
-    font-family: 'Fira_Code';
+    font-family: 'Karla';
     font-size: 24px;
     color: #3DCFB6;
     font-weight: 400;
     padding-bottom: 16px;
 }
+
+h5 {
+    font-family: 'Fira_Code';
+    font-size: 29px;
+}
+
+.green_seperator {
+    height: 18px;
+    width: 2px;
+    background-color: #3DCFB6;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 /* Fira_Code */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -80,5 +94,21 @@ h4 {
     font-family: 'Fira_Code';
     font-style: normal;
     font-weight: lighter;
+    src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 200;
     src: url('./assets/fonts/fira_code/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
