@@ -10,14 +10,11 @@ section {
 
 .infinite_scroller {
     position: absolute;
-    // top: 750px;
     bottom: 40px;
-    left: 0px;
-    height: 64px;
+    left: 0;
     width: 100%;
-    background-color: rgba($color: #ffffff, $alpha: 0.25);
-    -webkit-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.25);
     transform: rotate(-3deg);
     z-index: 1;
     backdrop-filter: blur(1px);
@@ -27,44 +24,20 @@ section {
     text-align: center;
 }
 
-// .infinite_scroller p {
-//     display: inline-flex;
-//     text-align: center;
-//     align-items: center;
-//     padding-left: 100%;
-//     animation: marquee 10s linear infinite;
-//     font-family: 'Karla';
-//     font-size: 32px;
-//     color: white;
-// }
-
-// .infinite_scroller {
-//     display: flex;
-//     overflow: hidden; /* Hide content outside the viewport */
-//     white-space: nowrap; /* Prevent line breaks */
-//     align-items: center;
-//     position: relative;
-//     width: 100%; /* Adjust width as needed */
-//     height: 50px; /* Adjust height based on your design */
-//     >p {
-//         font-family: 'Karla', sans-serif;
-//         font-size: 32px;
-//         color: white;
-//     }
-// }
-
 .infinite_scroller_inner {
-    display: inline-flex; /* Place items inline */
-    animation: marquee 10s linear infinite;
+    display: inline-flex;
+    animation: marquee 30s linear infinite;
     align-items: center;
     margin-top: 8px;
+    // white-space: nowrap;
     >p {
         font-family: 'Karla', sans-serif;
         font-size: 32px;
-        color: white;
-        padding-left: 32px;
-        padding-left: 32px;
-        }
+        color: #3DCFB6;
+        padding-left: 48px;
+        padding-right: 48px;
+        display: inline-block;
+    }
 }
 
 @keyframes marquee {
@@ -120,18 +93,20 @@ section {
 
 .arrow_down {
     position: absolute;
-    top: 322px;
+    bottom: 0;
     animation: bounce 1.5s linear 0s infinite;
 }
 
 @keyframes bounce {
     0%, 100% {
-        top: 328px;
+        // top: 322px;
+        bottom: 310px;
         left: 50%;
         transform: translateX(-50%);
     }
     50% {
-        top: 338px;
+        // top: 338px;
+        bottom: 296px;
         left: 50%;
         transform: translateX(-50%);
     }

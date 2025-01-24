@@ -11,14 +11,13 @@ section {
         color: white;
         font-size: 18px;
         font-family: 'Karla';
+        padding-bottom: 32px;
     }
 
     >.portfolio_seperator {
         height: 2px;
         width: 840px;
         background-color: #3DCFB6;
-        margin-top: 40px;
-        margin-bottom: 40px;
     }
 }
 
@@ -39,4 +38,9 @@ section {
     align-items: center;
     justify-content: space-between;
     width: 840px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &:hover {
+        background-color: rgba($color: #08463B, $alpha: 0.5);
+    }
 }
