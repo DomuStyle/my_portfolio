@@ -5,6 +5,7 @@ section {
     background-image: radial-gradient(farthest-corner at -10% 55%, #08463B, #1c1c1c 35%);
     height: 100vh;
     overflow-x: hidden;
+    gap: 128px;
     // background-image: url('./../../assets/img/skillset/skillset_bg.svg');
     >div {
         >h4 {
@@ -62,11 +63,17 @@ section {
     flex-wrap: wrap;
     margin-right: 120px;
     margin-top: 140px;
-    >a {
-        >img {
-            height: 140px;
+    >.skillset_icon {
+        >a {
+            >img {
+                height: 140px;
+                &:hover {
+                    transform: scale(0.95);
+                }
+            }
         }
     }
+    
 }
 
 .contact_link {
@@ -84,4 +91,18 @@ section {
     &:hover {
         border-color: #3DCFB6;
     }
+}
+w
+.growth_mindset {
+    &:hover {
+        transform: scale(0.95);
+    }
+}
+
+.growth_mindset_popup {
+    display: block;
+}
+
+.growth_mindset:hover ~ .growth_mindset_popup {
+    display: block;
 }

@@ -36,7 +36,7 @@ section {
         color: #3DCFB6;
         padding-left: 48px;
         padding-right: 48px;
-        display: inline-block;
+        display: inline-block; 
     }
 }
 
@@ -56,27 +56,43 @@ section {
     width: 100%;
 }
 
-.landingpage_btns {
-    position: relative;
+.landingpage_content_center {
+    position: absolute;
+    top: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-direction: column;
     gap: 64px;
-
-    >.btn_text_projects {
-        font-family: 'Fira_Code';
-        color: white;
-        position: absolute;
-        top: 22px;
-        left: 36px;
+    >.landingpage_center_btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 64px;
+        >.projects_link {
+            // position: absolute;
+            // top: 22px;
+            // left: 36px;
+            >a {
+                font-family: 'Fira_Code';
+                color: white;
+                text-decoration: none;
+            }
+        }
+    
+        >.contact_link {
+            // position: absolute;
+            // top: 22px;
+            // left: 278px;
+            >a {
+                font-family: 'Fira_Code';
+                color: white;
+                text-decoration: none;
+    
+            }
+        }
     }
-    >.btn_text_contact {
-        font-family: 'Fira_Code';
-        color: white;
-        position: absolute;
-        top: 22px;
-        left: 278px;
-    }
+    
 }
 .content_left {
     display: flex;
