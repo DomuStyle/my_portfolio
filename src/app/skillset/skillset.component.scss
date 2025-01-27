@@ -65,6 +65,7 @@ section {
     flex-wrap: wrap;
     margin-right: 120px;
     margin-top: 140px;
+    position: relative;
     >.skill_icon {
         >img {
             height: 60px;
@@ -76,8 +77,12 @@ section {
             color: white;
             font-family: 'Fira_Code';
             font-size: 18px;
-        }
-        
+        }   
+    }
+    >.skill_growth_popup {
+        position: absolute;
+        top: 260px;
+        left: 256px;
     }
     
 }
