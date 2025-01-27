@@ -70,6 +70,11 @@ section {
         justify-content: space-evenly;
         gap: 64px;
         >.center_btn {
+            display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+            height: 64px;
+                width: 180px;
             >.projects_link {
                 height: 64px;
                 width: 180px;
@@ -84,13 +89,25 @@ section {
                 transition: border-color 1.75s;
                 &:hover {
                     border-color: #3DCFB6;
+                    transition: transform;
                 }
             }
 
             >.contact_link {
-                font-family: 'Fira_Code';
-                color: white;
+                height: 64px;
+                width: 180px;
+                color: #ffffff;
                 text-decoration: none;
+                font-family: 'Fira_Code';
+                text-align: center;
+                align-content: center;
+                border: 2px solid #ffffff;
+                border-radius: 32px;
+                border-color: #ffffff;
+                transition: border-color 1.75s;
+                &:hover {
+                    border-color: #3DCFB6;
+                }
             }
         }  
     }
@@ -195,19 +212,3 @@ section {
 
 
 
-.contact_link {
-    height: 64px;
-    width: 180px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'Fira_Code';
-    text-align: center;
-    align-content: center;
-    border: 2px solid #ffffff;
-    border-radius: 32px;
-    border-color: #ffffff;
-    transition: border-color 1.75s;
-    &:hover {
-        border-color: #3DCFB6;
-    }
-}

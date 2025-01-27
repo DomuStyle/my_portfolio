@@ -1,4 +1,31 @@
 section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     height: 100vh;
     background-color: #1c1c1c;
+    >.contact_left {
+        margin-left: 120px;
+        padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    >p {
+        font-family: 'Karla';
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    >h5 {
+        padding-bottom: 32px;
+    }
+
+    >.positioning_box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        font-family: 'Karla';
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    }
 }
