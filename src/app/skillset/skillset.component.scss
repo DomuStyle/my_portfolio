@@ -25,7 +25,6 @@ section {
     justify-content: flex-start;
     flex-direction: column;
     margin-left: 120px;
-    // margin-top: 160px;
     padding-left: 24px;
     padding-top: 24px;
     padding-right: 24px;
@@ -37,6 +36,7 @@ section {
     >p {
         color: white;
         font-family: 'Fira_Code';
+        font-size: 18px;
     }
 }
 
@@ -65,8 +65,10 @@ section {
     flex-wrap: wrap;
     margin-right: 120px;
     margin-top: 140px;
-    position: relative;
+    color: white;
+    font-family: 'Fira_Code';
     >.skill_icon {
+        width: 20%;
         >img {
             height: 60px;
             &:hover {
@@ -74,16 +76,22 @@ section {
             }
         }
         >p {
-            color: white;
-            font-family: 'Fira_Code';
             font-size: 18px;
         }   
     }
-    >.skill_growth_popup {
-        position: absolute;
-        top: 260px;
-        left: 256px;
+    >.skill_growth_icon {
+        position: relative;
+        >p {
+            font-size: 18px;
+        }
+        >.skill_growth_popup {
+            position: absolute;
+            bottom: 90px;
+            left: -20px;
+            z-index: 0;
+        }
     }
+    
     
 }
 
