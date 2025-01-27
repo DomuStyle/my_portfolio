@@ -60,18 +60,24 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-align: center;
+    gap: 80px;
     flex-wrap: wrap;
     margin-right: 120px;
     margin-top: 140px;
-    >.skillset_icon {
-        >a {
-            >img {
-                height: 140px;
-                &:hover {
-                    transform: scale(0.95);
-                }
+    >.skill_icon {
+        >img {
+            height: 60px;
+            &:hover {
+                transform: scale(1.05);
             }
         }
+        >p {
+            color: white;
+            font-family: 'Fira_Code';
+            font-size: 18px;
+        }
+        
     }
     
 }
