@@ -27,5 +27,33 @@ section {
         font-size: 18px;
         padding-bottom: 32px;
     }
+
+    
+    }
+}
+
+.contact_right {
+    >h4 {
+        padding-top: 40px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+    }
+
+    >input {
+        margin-bottom: 40px;
+        border: none;
+        background-color: none;
+        margin-left: 32px; 
+    }
+
+    >.policy_checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 32px;
+        padding-left: 32px;
+        >input {
+            border: 2px solid #08463B;
+        }
     }
 }
