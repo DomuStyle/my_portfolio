@@ -6,7 +6,6 @@ section {
     height: 100vh;
     overflow-x: hidden;
     gap: 128px;
-    // background-image: url('./../../assets/img/skillset/skillset_bg.svg');
     >div {
         >h4 {
             margin-left: 120px;
@@ -14,10 +13,6 @@ section {
         }
     }
 }
-
-// .skillset_section {
-//     background-image: url('./../../assets/img/skillset/skillset_bg.svg');
-// }
 
 .technologies_frame {
     display: flex;
@@ -90,6 +85,12 @@ section {
             left: -20px;
             z-index: 0;
         }
+        >img {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        
     }
     
     
@@ -111,17 +112,17 @@ section {
         border-color: #3DCFB6;
     }
 }
-w
+
 .growth_mindset {
     &:hover {
         transform: scale(0.95);
     }
 }
 
-.growth_mindset_popup {
-    display: block;
+.skill_growth_popup {
+    display: none;
 }
 
-.growth_mindset:hover ~ .growth_mindset_popup {
+.skill_growth_icon:hover  .skill_growth_popup {
     display: block;
 }
