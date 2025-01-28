@@ -1,0 +1,33 @@
+footer {
+    // height: 360px;
+    // width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    >.footer_left {
+        height: 96px;
+        width: 256px;
+        >.logo_link {
+            background-image: url('./../../../assets/svg/nav/name_logo/name_logo_dm.png');
+            
+            >img {
+                height: 96px;
+                width: 256px;
+            }
+        }
+    }
+
+    >.footer_center {
+        >p {
+            font-size: 16px;
+        }
+    }
+
+    >.footer_right {
+        height: 96px;
+        width: 256px;
+    }
+    
+}
