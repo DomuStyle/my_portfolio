@@ -94,7 +94,9 @@ section {
                 font-family: 'Fira_Code';
                 text-align: center;
                 align-content: center;
-                transition: transform 0.5s ease-in;
+                
+                transition: transform 0s;
+                transform: translateY(0%)
             }
         }  
     }
@@ -102,9 +104,19 @@ section {
 
 .center_btn {
     &:hover a{
-        transform: translateY(-55px);
+        animation: rollUp 0.5s forwards;
+        transition: color 1.75s;
+        color: #3DCFB6;
+    }  
+}
+
+@keyframes rollUp {
+    from {
+        transform: translateY(100%);
     }
-    
+    to {
+        transform: translateY(0);
+    }
 }
 
 .content_left {

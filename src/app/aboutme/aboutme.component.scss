@@ -3,22 +3,25 @@ section {
     padding-bottom: 196px;
     background-color: #1c1c1c;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
     gap: 100px;
     
     >div {
         >img {
-            padding-left: 56px;
             z-index: 1;
             }
         }
         >.about_me_left {
             display: flex;
             align-items: flex-start;
-            position: relative;
+            justify-content: flex-start;
             >.about_me_img {
                 filter: grayscale(100%);
+                &:hover {
+                    filter: grayscale(0%);
+                    cursor: pointer;
+                }
             }
         }
 
@@ -27,11 +30,15 @@ section {
         }
 }
 
+.about_me_img {
+    &:hover ~ .about_me_stripes {
+        transform: translate(594px, 30px);
+    } 
+}
 .about_me_stripes {
-    position: absolute;
-    // z-index: 0;
-    top: 32px;
-    right: 32px;
+    position: relative;
+    transform: translate(624px, 0px);
+    transition: transform 0.5s linear;
 }
 
 .about_me_frame {
