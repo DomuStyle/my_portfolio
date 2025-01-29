@@ -6,6 +6,17 @@ nav {
     position: absolute;
     width: 100%;
     top: 0;
+    // padding: 0 calc(max(200px,(100vw - 1440px) / 2));
+    // max-width: 1440px;
+}
+
+.header_content {
+    padding: 0 calc(max(200px,(100% - 1440px) / 2));
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
 }
 
 img {
@@ -56,7 +67,7 @@ img {
 }
 
 .nav_left {
-    padding-left: 64px;
+    // padding-left: 64px;
     padding-top: 32px;
     display: flex;
     justify-content: center;
