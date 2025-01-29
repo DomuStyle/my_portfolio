@@ -7,6 +7,7 @@ section {
     justify-content: center;
     // max-width: 1440px;
     overflow: hidden;
+    
 }
 
 .infinite_scroller {
@@ -53,7 +54,10 @@ section {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: hidden;
+    max-width: 1440px;
     width: 100%;
+    padding: 0 calc(max(200px,(100% - 1440px) / 2));
 }
 
 .landingpage_content_center {

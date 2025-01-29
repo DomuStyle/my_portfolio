@@ -1,54 +1,59 @@
 footer {
     background-color: #1c1c1c;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     font-family: 'Karla';
-    
-    >.footer_left {
+
+    >.footer_content {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        padding-bottom: 64px;
-        padding-left: 100px;
-        // height: 200px;
-        width: 256px;
-        color: white;
-        >.logo_link {
-            >img {
-                height: 80px;
-                width: 180px;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 calc(max(0px,(100% - 1440px) / 2));
+        max-width: 1440px;
+
+        >.footer_left {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-bottom: 64px;
+            padding-left: 100px;
+            // height: 200px;
+            width: 256px;
+            color: white;
+            >.logo_link {
+                >img {
+                    height: 80px;
+                    width: 180px;
+                    padding-bottom: 8px;
+                }
+            }
+    
+            >p {
+                padding-left: 8px;
+            }
+        }
+    
+        >.footer_center {
+            padding-bottom: 64px;
+            >p {
+                font-size: 16px;
+            }
+        }
+    
+        >.footer_right {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 64px;
+            height: 96px;
+            width: 256px;
+            >a {
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
                 padding-bottom: 8px;
             }
         }
-
-        >p {
-            padding-left: 8px;
-        }
     }
-
-    >.footer_center {
-        padding-bottom: 64px;
-        >p {
-            font-size: 16px;
-        }
-    }
-
-    >.footer_right {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        padding-bottom: 64px;
-        height: 96px;
-        width: 256px;
-        >a {
-            font-size: 16px;
-            color: white;
-            text-decoration: none;
-            padding-bottom: 8px;
-        }
-    }
-    
+      
 }
