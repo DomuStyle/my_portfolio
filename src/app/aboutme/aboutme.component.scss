@@ -9,7 +9,7 @@ section {
     >.about_me_content {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 160px;
         height: 100%;
         padding: 0 calc(max(80px,(100% - 1440px) / 2));
@@ -31,7 +31,6 @@ section {
             padding-top: 160px;
         }
     }
-        
 }
 
 .about_me_img {
@@ -95,7 +94,6 @@ section {
             font-family: 'Fira_Code';
         }
     }
-
 }
 
 @media (max-width: 600px) {

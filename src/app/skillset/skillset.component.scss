@@ -1,4 +1,4 @@
-section {
+.skillset_content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,6 +6,7 @@ section {
     height: 100vh;
     overflow-x: hidden;
     gap: 128px;
+    padding: 0 calc(max(0px,(100% - 1440px) / 2));
     >div {
         >h4 {
             margin-left: 120px;
