@@ -13,24 +13,27 @@
         </div>
     </div>
     <div class="contact_right">
-        <form (ngSubmit)="onSubmit()">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm ="ngForm" >
             <div class="contact_container">
                 <div class="large_seperator"></div>
                 <h4 class="color_turqoise">What's your name?</h4>
                 <!-- <label for="name">Name</label> -->
-                <input [(ngModel)]="contactData.name" id="name" name="name" placeholder="Your name goes here">
+                <input minlength="3" [(ngModel)]="contactData.name" id="name" name="name" placeholder="Your name goes here" required>
             </div>
             <div class="contact_container">
                 <div class="large_darkgreen_seperator"></div>
                 <h4 class="color_turqoise">What's your email?</h4>
                 <!-- <label for="email">Email</label> -->
-                <input [(ngModel)]="contactData.email" id="email" name="email" placeholder="youremail@email.com">
+                <input [(ngModel)]="contactData.email" id="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
             <div class="contact_container">
                 <div class="large_darkgreen_seperator"></div>
                 <h4 class="color_turqoise">How can i help you??</h4>
                 <!-- <label for="message">Subject</label> -->
-                <textarea [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Dominik, i am interested in ..."></textarea>
+                <textarea #message = "ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Dominik, i am interested in ..." required></textarea>
+                @if (!message.valid && message.touched && !message.disabled) {
+                    <span>Please enter a message!</span>
+                }
             </div>
             <div class="large_darkgreen_seperator"></div>
             <div class="policy_checkbox">
