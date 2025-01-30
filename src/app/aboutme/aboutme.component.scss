@@ -1,21 +1,23 @@
 section {
-    padding-top: 196px;
-    padding-bottom: 196px;
+    // padding-top: 196px;
+    // padding-bottom: 196px;
     background-color: #1c1c1c;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 100px;
     
-    >div {
-        >img {
-            z-index: 1;
-            }
-        }
+    
+    height: 100vh;
+    
+    >.about_me_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 160px;
+        height: 100%;
+        padding: 0 calc(max(80px,(100% - 1440px) / 2));
         >.about_me_left {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
+            padding-bottom: 160px;
             >.about_me_img {
                 filter: grayscale(100%);
                 &:hover {
@@ -28,6 +30,8 @@ section {
         >.about_me_right {
             padding-top: 160px;
         }
+    }
+        
 }
 
 .about_me_img {
@@ -35,11 +39,11 @@ section {
         transform: translate(594px, 30px);
     } 
 }
-.about_me_stripes {
-    position: relative;
-    transform: translate(624px, 0px);
-    transition: transform 0.5s linear;
-}
+// .about_me_stripes {
+//     position: relative;
+//     transform: translate(624px, 0px);
+//     transition: transform 0.5s linear;
+// }
 
 .about_me_frame {
     display: flex;
