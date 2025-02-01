@@ -1,11 +1,13 @@
 section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color: #1c1c1c;
-    height: 100vh;
-    padding-left: 100px;
+
+    >.projects_content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: #1c1c1c;
+        height: 100vh;
+        padding-left: 100px;
 
     >p {
         color: white;
@@ -19,6 +21,8 @@ section {
         width: 840px;
         background-color: #3DCFB6;
     }
+    }
+    
 }
 
 .project_tools {
@@ -26,10 +30,30 @@ section {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    
 
     >p {
         font-family: 'Karla';
         font-size: 18px;
+    }
+}
+
+.project_popup {
+    position: absolute;
+    top: -24px;
+    right: -400px;
+    // display: none;
+    >.project_img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    >.project_background {
+        position: absolute;
+        top: 24px;
+        right: -24px;
     }
 }
 
@@ -40,6 +64,7 @@ section {
     width: 840px;
     padding-top: 32px;
     padding-bottom: 32px;
+    position: relative;
     &:hover {
         background-color: rgba($color: #08463B, $alpha: 0.5);
     }

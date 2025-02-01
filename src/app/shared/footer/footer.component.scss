@@ -6,7 +6,7 @@ footer {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        padding: 0 calc(max(0px,(100% - 1440px) / 2));
+        padding: 0 calc(max(80px,(100% - 1440px) / 2));
         max-width: 1440px;
 
         >.footer_left {
@@ -15,8 +15,6 @@ footer {
             justify-content: flex-start;
             flex-direction: column;
             padding-bottom: 64px;
-            padding-left: 100px;
-            // height: 200px;
             width: 256px;
             color: white;
             >.logo_link {
@@ -46,7 +44,6 @@ footer {
             flex-direction: column;
             padding-bottom: 64px;
             height: 96px;
-            width: 256px;
             >a {
                 font-size: 16px;
                 color: white;
