@@ -1,6 +1,20 @@
-{
+{   
+    
     "landingpage": {
-      "hello": "Hallo {{value}}",
-      "title": "Translation Demo Deutsch"
-    }
+      "projects-link-btn": "Meine Projekte",
+      "contact-me-btn": "Schreib mir"
+    },
+
+
+
+    
+    "about-me": {
+        "title": "Wer ich bin",
+        "frame-title": "Über mich",
+        "about-me-text1": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Kiel. Motiviert durch die grenzenlosen Möglichkeiten in der IT, freue ich mich darauf, visuell ansprechende, immersive und intuitive Websites und Anwendungen zu gestalten.",
+        "location-text": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Kiel als auch remote effektiv arbeiten.",
+        "mindset-text": "Ich bin aufgeschlossen und suche stets nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+        "profession-text": "In meinem Beruf geht es bei der Programmierung nicht nur darum, Code zu schreiben; es ist eine kreative Form des Problemlösens. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+        } 
+    
   }

@@ -1,6 +1,25 @@
-{
+{   
+    
     "landingpage": {
       "projects-link-btn": "Check my work",
-      "title": "Translation Demo"
-    }
+      "contact-me-btn": "Contact me"
+    },
+
+
+
+    
+    "about-me": {
+        "title": "Who I am",
+        "frame-title": "About me",
+        "about-me-text1": "hi, im a german speaking Frontend Developer based in Kiel. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating, immersive and intuitive websites and aplications.",
+        "location-text": "Flexible in therms of working enviorements, I can work effectivley both on-site in Kiel as well as remotely.",
+        "mindset-text": "I am open.minded and alwys looking for personal challenges to constantly improve my knowledge and skills.",
+        "profession-text": "In my profession, programming isn't just about writibg code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user friendly solutions. This way , I help you achieve your goals and bring your visions to life."
+        }, 
+    
+    "skillset": {
+        "title": "Technologies",
+        "frame-title": "Skill Set",
+        "journey-text": ""
+        }
   }
