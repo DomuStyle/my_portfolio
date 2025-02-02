@@ -1,0 +1,6 @@
+{
+    "landingpage": {
+      "hello": "Hallo {{value}}",
+      "title": "Translation Demo Deutsch"
+    }
+  }
