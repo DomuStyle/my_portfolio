@@ -10,7 +10,6 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 160px;
         height: 100%;
         padding: 0 calc(max(80px,(100% - 1440px) / 2));
         >.about_me_left {
@@ -49,8 +48,7 @@ section {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: 24px;
-    padding-top: 24px;
+    padding: 24px;
     height: 568px;
     width: 568px;
     background-color: rgba($color: #08463B, $alpha: 0.5);

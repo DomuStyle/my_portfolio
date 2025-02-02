@@ -5,7 +5,6 @@
     background-image: radial-gradient(farthest-corner at -10% 55%, #08463B, #1c1c1c 35%);
     height: 100vh;
     overflow-x: hidden;
-    gap: 128px;
     padding: 0 calc(max(80px,(100% - 1440px) / 2));
     >div {
         >h4 {
@@ -20,9 +19,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: 24px;
-    padding-top: 24px;
-    padding-right: 24px;
+    padding: 24px;
     height: 568px;
     width: 568px;
     background-color: rgba($color: #08463B, $alpha: 0.5);
