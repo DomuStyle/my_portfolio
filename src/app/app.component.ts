@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ProjectdetailsComponent } from './projectdetails/projectdetails.component';
 import {
   TranslateService,
   TranslatePipe,
@@ -12,7 +11,7 @@ import {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, ProjectdetailsComponent, TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, TranslatePipe, TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

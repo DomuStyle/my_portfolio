@@ -54,12 +54,6 @@ section {
         
             >input[type=text], [type=email], select, textarea {
                 width: 390px;
-                ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-                    color:    #909;
-                }
-                ::placeholder { /* Most modern browsers support this now. */
-                    color:    #909;
-                 }
                 font-size: 24px;
                 margin-bottom: 40px;
                 border: none;
@@ -103,11 +97,12 @@ section {
             transition: border-color 1.75s;
             overflow-y: hidden;
         }
-    }
-    
-    
+    }  
 }
 
+#email {
+    background-color: #1c1c1c;
+}
 .contact_container {
     &:hover .large_green_seperator {
         background-color: #3DCFB6;
