@@ -5,7 +5,7 @@
     
         <p>Explore a selection of my work here - interact with <br> projects to see my skills in action.</p>
         <div class="large_seperator"></div>   
-        <a class="project" href="project-details" >
+        <a class="project" (click)="openModal()">
             <h5 class="color_white">Join</h5>
             <div class="project_tools">
                 <p class="color_white">Angular</p><span class="green_seperator"></span>
@@ -47,5 +47,8 @@
             </div>
         </a>  
         <div class="portfolio_seperator"></div> 
-    </div>  
+    </div>
+    <ng-template cdkPortal>
+        <app-projectdetails></app-projectdetails>
+    </ng-template>  
 </section>
