@@ -112,17 +112,22 @@
         color: #ffffff;
         text-decoration: none;
         font-family: 'Fira_Code';
-        text-align: center;
-        align-content: center;        
+        text-align: center;       
         transition: transform 0s;
         transform: translateY(0%);
 
         
     }
+
+    // &:hover a{
+    //     animation: rollUp 0.75s forwards;
+    //     // transition: color 1.75s;
+    // }
 }
 
 .skillset_contact_btn {
-    &:hover a{
+
+    &:hover .contact_link{
         animation: rollUp 0.75s forwards;
         // transition: color 1.75s;
     }
