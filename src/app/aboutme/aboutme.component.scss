@@ -17,12 +17,25 @@ section {
             align-items: flex-start;
             justify-content: flex-start;
             padding-bottom: 160px;
+            position: relative;
             >.about_me_img {
                 filter: grayscale(100%);
                 &:hover {
                     filter: grayscale(0%);
                     cursor: pointer;
                 }
+            }
+
+            >.about_me_stripes {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(0px, 0px);
+                transition: transform 0.25s linear;
+            }
+
+            &:hover .about_me_stripes {
+                transform: translate(-30px, 30px);
             }
         }
 
@@ -32,16 +45,13 @@ section {
     }
 }
 
-.about_me_img {
-    &:hover ~ .about_me_stripes {
-        transform: translate(594px, 30px);
-    } 
-}
-// .about_me_stripes {
-//     position: relative;
-//     transform: translate(624px, 0px);
-//     transition: transform 0.5s linear;
+// .about_me_left {
+//     &:hover .about_me_stripes {
+//         transform: translate(594px, 30px);
+//     } 
 // }
+
+
 
 .about_me_frame {
     display: flex;
@@ -56,7 +66,7 @@ section {
     border: 2px solid #3DCFB6;
     >p {
         color: white;
-        font-family: 'Fira_Code';
+        font-family: 'Karla';
         padding-bottom: 32px;
     }
     >.aboutme_location {
@@ -66,8 +76,11 @@ section {
         gap: 8px;
         padding-top: 16px;
         p {
-            color: white;
-            font-family: 'Fira_Code';
+            color: rgba($color: #FFFFFF, $alpha: 0.8);
+            font-family: 'Karla';
+            &:hover {
+                color: white;
+            }
         }
     }
     >.aboutme_smart {
@@ -77,8 +90,11 @@ section {
         gap: 13px;
         padding-top: 16px;
         p {
-            color: white;
-            font-family: 'Fira_Code';
+            color: rgba($color: #FFFFFF, $alpha: 0.8);
+            font-family: 'Karla';
+            &:hover {
+                color: white;
+            }
         }
     }
     >.aboutme_checkmark {
@@ -88,8 +104,11 @@ section {
         gap: 13px;
         padding-top: 16px;
         p {
-            color: white;
-            font-family: 'Fira_Code';
+            color: rgba($color: #FFFFFF, $alpha: 0.8);
+            font-family: 'Karla';
+            &:hover {
+                color: white;
+            }
         }
     }
 }

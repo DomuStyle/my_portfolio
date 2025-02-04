@@ -42,11 +42,6 @@
     padding-bottom: 24px;
 }
 
-.skillset_contact_btn {
-    padding-top: 32px;
-    position: relative;
-}
-
 .skillset_right {
     width: 50%;
     display: flex;
@@ -59,6 +54,7 @@
     color: white;
     font-family: 'Fira_Code';
     padding-top: 32px;
+    padding-left: 64px;
     >.skill_icon {
         width: 20%;
         >img {
@@ -93,7 +89,7 @@
     
 }
 
-.contact_link {
+.skillset_contact_btn {
     height: 64px;
     width: 180px;
     color: #ffffff;
@@ -101,12 +97,43 @@
     font-family: 'Fira_Code';
     text-align: center;
     align-content: center;
+    margin-top: 32px;
     border: 2px solid #ffffff;
     border-radius: 32px;
     border-color: #ffffff;
     transition: border-color 1.75s;
     &:hover {
         border-color: #3DCFB6;
+    }
+
+    >a {
+        height: 64px;
+        width: 180px;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: 'Fira_Code';
+        text-align: center;
+        align-content: center;        
+        transition: transform 0s;
+        transform: translateY(0%);
+
+        
+    }
+}
+
+.skillset_contact_btn {
+    &:hover a{
+        animation: rollUp 0.75s forwards;
+        // transition: color 1.75s;
+    }
+}
+
+@keyframes rollUp {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
