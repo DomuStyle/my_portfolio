@@ -43,7 +43,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
     max-width: 45%;
     >form {
         >.contact_container {
@@ -94,13 +93,6 @@ section {
             justify-content: center;
             
             >.submit_btn {
-                margin-top: 40px;
-                >input[type=submit] {
-                    border: none; /* Remove border */
-                    outline: none; /* Remove focus outline */
-                    color: white;
-                    cursor: pointer;
-                }
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
@@ -111,6 +103,20 @@ section {
                 border-color: #ffffff;
                 transition: border-color 1.75s;
                 overflow-y: hidden;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+
+                margin-top: 40px;
+                >input[type=submit] {
+                    border: none; /* Remove border */
+                    outline: none; /* Remove focus outline */
+                    color: white;
+                    cursor: pointer;
+                }
+
+                
             }
         }
         
@@ -118,7 +124,13 @@ section {
 }
 
 input {
+    border: none; /* Remove border */
+    outline: none; /* Remove focus outline */
     background-color: #1c1c1c;
+    width: 390px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 32px;
 }
 
 #email {
@@ -131,7 +143,7 @@ input {
 
 .contact_container {
     width: 100%;
-    &:hover .large_green_seperator {
+    &:hover .contact_seperator {
         background-color: #3DCFB6;
     }
 
