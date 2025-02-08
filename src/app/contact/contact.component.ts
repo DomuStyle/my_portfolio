@@ -19,7 +19,7 @@ export class ContactComponent {
       message: ""
     }
 
-    mailTest = false;
+    mailTest = true;
 
   post = {
     endPoint: 'https://dominik-marnet.de/sendMail.php',

@@ -1,10 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/cdk/overlay-prebuilt.css';
 
+/* variables */
+
+/* colors */
+$lightGreen: #3DCFB6;
+$darkGreen: #08463B;
+$colorWhite: #ffffff;
+
+/* fonts */
+
+$font-firaCode: 'Fira_Code';
+$font-karla: 'Karla';
+
+/* global styles */
+
 * {
     margin: 0;
     scroll-behavior: smooth;
-    // overflow-x: hidden;
 }
 
 .color_white {
@@ -16,59 +29,59 @@
 }
 
 h1 {
-    font-family: 'Karla';
+    font-family: $font-karla;
     font-size: 116px;
-    color: white;
+    color: $colorWhite;
     font-weight: 600;
     padding-right: 64px;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Fira_Code';
+    font-family: $font-firaCode;
     font-size: 40px;
-    color: white;
+    color: $colorWhite;
     font-weight: lighter; 
 }
 
 h3 {
-    font-family: 'Fira_Code';
+    font-family: $font-firaCode;
     font-size: 64px;
-    color: #3DCFB6;
+    color: $lightGreen;
     font-weight: 600;
     padding-bottom: 24px;
 }
 
 
 h4 {
-    font-family: 'Karla';
+    font-family: $font-karla;
     font-size: 24px;
-    color: #3DCFB6;
+    color: $lightGreen;
     font-weight: 400;
     padding-bottom: 16px;
 }
 
 h5 {
-    font-family: 'Fira_Code';
+    font-family: $font-firaCode;
     font-size: 29px;
 }
 
 .large_seperator {
     height: 2px;
     width: 60%;
-    background-color: #3DCFB6;
+    background-color: $lightGreen;
 }
 
 .large_darkgreen_seperator {
     height: 2px;
     width: 60%;
-    background-color: #08463B;
+    background-color: $darkGreen;
 }
 
 .green_seperator {
     height: 18px;
     width: 2px;
-    background-color: #3DCFB6;
+    background-color: $lightGreen;
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -77,7 +90,7 @@ h5 {
     height: 8px;
     width: 8px;
     border-radius: 50%;
-    background-color: #3DCFB6;
+    background-color: $lightGreen;
 }
 
 /* Fira_Code */

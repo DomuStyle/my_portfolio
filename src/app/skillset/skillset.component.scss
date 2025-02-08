@@ -104,9 +104,12 @@
     transition: border-color 1.75s;
     &:hover {
         border-color: #3DCFB6;
+        cursor: pointer;
     }
+}
 
-    >a {
+.skillset_contact_btn {
+    >.contact_link {
         height: 64px;
         width: 180px;
         color: #ffffff;
@@ -116,30 +119,20 @@
         align-content: center;
         transition: transform 0s;
         transform: translateY(0%);
-
-        
     }
-
-    // &:hover a{
-    //     animation: rollUp 0.75s forwards;
-    //     // transition: color 1.75s;
-    // }
-}
-
-.skillset_contact_btn {
-
     &:hover .contact_link{
-        animation: rollUp 0.75s forwards;
+        color: #3DCFB6;
+        animation: rollUp 0.75s infinite;
         // transition: color 1.75s;
     }
 }
 
 @keyframes rollUp {
     from {
-        transform: translateX(100%);
+        transform: translateY(100%);
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
