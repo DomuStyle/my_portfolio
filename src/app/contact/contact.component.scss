@@ -1,39 +1,37 @@
-section {
-    .contact_content {
+.contact_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    padding: 0 calc(max(80px,(100% - 1440px) / 2));
+
+    >.contact_left {
+        padding-left: 24px;
+        padding-top: 24px;
+        padding-right: 24px;
+        max-width: 40%;
+    >p {
+        font-family: 'Karla';
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    >h5 {
+        padding-bottom: 32px;
+    }
+
+    >.positioning_box {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 60px;
-        height: 100vh;
-        background-color: #1c1c1c;
-        padding: 0 calc(max(80px,(100% - 1440px) / 2));
+        justify-content: flex-start;
+        gap: 8px;
+        font-family: 'Karla';
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
 
-        >.contact_left {
-            padding-left: 24px;
-            padding-top: 24px;
-            padding-right: 24px;
-            max-width: 40%;
-        >p {
-            font-family: 'Karla';
-            font-size: 18px;
-            padding-bottom: 32px;
-        }
-        >h5 {
-            padding-bottom: 32px;
-        }
     
-        >.positioning_box {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 8px;
-            font-family: 'Karla';
-            font-size: 18px;
-            padding-bottom: 32px;
-        }
-    
-        
-        }
     }
 }
 
@@ -44,93 +42,96 @@ section {
     align-items: center;
     justify-content: center;
     max-width: 45%;
-    >form {
-        >.contact_container {
-            &:hover {
-                cursor: pointer;
-            }
-            >h4 {
-                padding-top: 40px;
-                padding-bottom: 16px;
-                padding-left: 32px;
-            }
-        
-            >input[type=text], [type=email], select, textarea {
-                width: 390px;
-                font-size: 24px;
-                margin-bottom: 40px;
-                border: none; /* Remove border */
-                outline: none; /* Remove focus outline */
-                background-color: #1c1c1c;
-                margin-left: 32px;
-                // &:hover {
-                     
-                // } 
-            }
-            
+
+form {
+    >.contact_container {
+        &:hover {
+            cursor: pointer;
         }
-    
-        >.policy_checkbox {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding-top: 32px;
+        >h4 {
+            padding-top: 40px;
+            padding-bottom: 16px;
             padding-left: 32px;
-            >input {
-                height: 20px;
-                width: 20px;
-                margin-right: 16px;
-                border: 2px solid #08463B;
-                background: #1c1c1c;
-                color: #1c1c1c;
-            }
-            >input::placeholder {
-                color: #ffffff;
-            }
-        }
-
-        >.contact_right_bottom {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            >.submit_btn {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                height: 64px;
-                width: 180px;
-                border: 2px solid #ffffff;
-                border-radius: 32px;
-                border-color: #ffffff;
-                transition: border-color 1.75s;
-                overflow-y: hidden;
-                
-                &:hover {
-                    cursor: pointer;
-                }
-
-                margin-top: 40px;
-                >input[type=submit] {
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: center;
-                    box-sizing: border-box;
-                    border: none; /* Remove border */
-                    outline: none; /* Remove focus outline */
-                    color: white;
-                    cursor: pointer;
-                }
-                >input::placeholder {
-                    color: #ffffff;
-                }
-
-                
-            }
         }
         
-    }  
+        >input[type=text], [type=email], select, textarea {
+            width: 390px;
+            font-size: 24px;
+            margin-bottom: 40px;
+            border: none; /* Remove border */
+            outline: none; /* Remove focus outline */
+            background-color: #1c1c1c;
+            margin-left: 32px;
+            // &:hover {
+                     
+            // } 
+        }
+            
+    }
+
+}
+    
+.policy_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 32px;
+    // padding-left: 32px;
+    >input {
+        height: 20px;
+        width: 20px;
+        margin-right: 16px;
+        border: 2px solid #08463B;
+        background: #1c1c1c;
+        color: #1c1c1c;
+    }
+    >input::placeholder {
+        color: #ffffff;
+    }
+}
+
+.contact_right_bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    >.submit_btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 64px;
+        width: 180px;
+        border: 2px solid #ffffff;
+        border-radius: 32px;
+        border-color: #ffffff;
+        transition: border-color 1.75s;
+        overflow-y: hidden;
+        
+        &:hover {
+            cursor: pointer;
+        }
+
+        margin-top: 40px;
+        >input[type=submit] {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            box-sizing: border-box;
+            border: none; /* Remove border */
+            outline: none; /* Remove focus outline */
+            color: white;
+            cursor: pointer;
+        }
+        >input::placeholder {
+            color: #ffffff;
+        }
+
+        
+    }
+}
+        
+      
 }
 
 input {
@@ -139,7 +140,7 @@ input {
     background-color: #1c1c1c;
     width: 390px;
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     margin-left: 32px;
 }
 

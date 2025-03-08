@@ -99,7 +99,10 @@ img {
             width: 256px;
         }
         &:hover { 
-            // background-image: url('./../../../assets/svg/nav/name_logo/name_logo_hover.png');
+                // filter: drop-shadow(1px 1px 0 $lightGreen)
+                // drop-shadow(-1px -1px 0 $lightGreen);
+                // filter: drop-shadow(1px 1px 0 $lightGreen) 
+                // drop-shadow(-1px -1px 0 $lightGreen);
         }
     }
 }

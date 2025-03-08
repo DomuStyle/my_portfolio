@@ -9,62 +9,64 @@ import { Component } from '@angular/core';
 })
 export class ProjectdetailsComponent {
 
-//   isOverlayOpen = false;
+  isOverlayOpen = false;
 
-//   items = [
-//     {
-//     id: 1,
-//     name: 'Join',
-//     img: 'join_project_l.png',
-//     text: `
-//           Task manager inspired by the Kanban System. 
-//           Create and organize tasks using drag and drop functions, 
-//           assign users and categories.`,
-//     gitUrl: '',
-//     openProjectUrl: ''
+  project = [
+    {
+    id: 1,
+    title: 'Join',
+    description: `
+          Task manager inspired by the Kanban System. 
+          Create and organize tasks using drag and drop functions, 
+          assign users and categories.`,
+    img: 'join_project_l.png',
+    technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
+    gitUrl: 'https://github.com/',
+    openProjectUrl: 'https://dominik-marnet.de/join'
+    },
+    {
+    id: 2,
+    title: 'El Pollo loco',
+    description: `
+          Jump, run and throw game based on object-oriented approach. 
+          Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
+    img: 'join_project_l.png',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    gitUrl: 'https://github.com/',
+    openProjectUrl: 'https://dominik-marnet.de/el-pollo-loco'
+    },
+    {
+    id: 3,
+    title: 'Pokedex / DaBubble',
+    description: `
+          This App is a Slack Clone App. 
+          It revolutionizes team communication and collaboration with its intuitive interface, 
+          real-time messaging, and robust channel organization.`,
+    img: 'pokedex_project.png',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    gitUrl: 'https://github.com/',
+    openProjectUrl: 'https://dominik-marnet.de/pokedex'
+    }
+];
 
-//     },
-//     {
-//       id: 2,
-//       name: 'El Pollo Loco',
-//       img: 'el_pollo_loco_project_l.png',
-//       text: `
-//           Jump, run and throw game based on object-oriented approach. 
-//           Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
-//       gitUrl: '',
-//       openProjectUrl: ''
-//     },
-//     {
-//      id: 3,
-//      name: 'DaBubble',
-//       img: 'da_bubble_project.png',
-//       text: `
-//           This App is a Slack Clone App. 
-//           It revolutionizes team communication and collaboration with its intuitive interface, 
-//           real-time messaging, and robust channel organization.`,
-//       gitUrl: '',
-//       openProjectUrl: ''
-//     }
-// ];
+  currentItem = 'id';
 
-//   currentItem = 'id';
+  toggleOverlay() {
+    // Toggle overlay visibility
+    this.isOverlayOpen = !this.isOverlayOpen;
+  }
 
-  // toggleOverlay() {
-  //   // Toggle overlay visibility
-  //   this.isOverlayOpen = !this.isOverlayOpen;
-  // }
+  closeOverlay(event?: MouseEvent) {
+    // Close overlay if clicked outside content or on close button
+    if (!event || event.target === event.currentTarget) {
+      this.isOverlayOpen = false;
+    }
+  }
 
-  // closeOverlay(event?: MouseEvent) {
-  //   // Close overlay if clicked outside content or on close button
-  //   if (!event || event.target === event.currentTarget) {
-  //     this.isOverlayOpen = false;
-  //   }
-  // }
-
-  // nextItem() {
-  //   // Cycle through items using keys
-  //   const keys = Object.keys(this.items);
-  //   const index = keys.indexOf(this.currentItem);
-  //   this.currentItem = keys[(index + 1) % keys.length];
-  // }
+  nextItem() {
+    // Cycle through items using keys
+    const keys = Object.keys(this.project);
+    const index = keys.indexOf(this.currentItem);
+    this.currentItem = keys[(index + 1) % keys.length];
+  }
 }

@@ -1,11 +1,11 @@
 <section id="projects" class="portfolio_section">
-    <div class="projects_content">
+    <!-- <div class="projects_content">
         <h4>Portfolio</h4>
         <h3>Featured Projects</h3>
     
         <p>Explore a selection of my work here - interact with <br> projects to see my skills in action.</p>
         <div class="large_seperator"></div>   
-        <a class="project" (click)="openModal()">
+        <a class="project">
             <h5 class="color_white">Join</h5>
             <div class="project_tools">
                 <p class="color_white">Angular</p><span class="green_seperator"></span>
@@ -48,7 +48,54 @@
         </a>  
         <div class="portfolio_seperator"></div> 
     </div>
-    <ng-template cdkPortal>
+    @if (this.isOverlayOpen) {
+        
         <app-projectdetails></app-projectdetails>
-    </ng-template>  
+    } -->
+    
+
+    <!-- Container for the project preview cards -->
+<div class="projects-container">
+    <!-- Loop through each project in the projects array -->
+    @for (project of project; track project.id) {
+      <!-- Clickable project card that triggers the overlay -->
+      <div class="project-card" (click)="openOverlay(project)">
+        <!-- Small preview image -->
+        <img [src]="project.img" alt="{{project.title}}">
+        <!-- Project title -->
+        <h3>{{project.title}}</h3>
+        <!-- Shortened description (first 100 characters) -->
+        <p>{{project.description | slice:0:100}}...</p>
+      </div>
+    }
+  </div>
+  
+  <!-- Overlay that appears when a project is selected -->
+  @if (selectedProject) {
+    <div class="overlay">
+      <!-- Content box inside the overlay -->
+      <div class="overlay-content">
+        <!-- Button to close the overlay -->
+        <button (click)="closeOverlay()">Close</button>
+        <!-- Full project title -->
+        <h2>{{this.selectedProject.title}}</h2>
+        <!-- Larger image for the overlay -->
+        <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
+        <!-- Full project description -->
+        <p>{{selectedProject.description}}</p>
+        <!-- Container for technologies -->
+        <div class="technologies">
+          <!-- Loop through technologies of the selected project -->
+          @for (tech of selectedProject.technologies; track tech) {
+            <!-- Display each technology -->
+            <span>{{tech}}</span>
+          }
+        </div>
+        <!-- Link to GitHub -->
+        <a [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
+        <!-- Link to live project -->
+        <a [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+      </div>
+    </div>
+  }
 </section>
