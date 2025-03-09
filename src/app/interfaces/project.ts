@@ -3,7 +3,7 @@ export interface Project {
     title: string,
     description: string,
     img: string, 
-    technologies: [],
-    githubLink: string,
-    liveLink: string
+    technologies: string[],
+    gitUrl: string,
+    openProjectUrl: string
 }

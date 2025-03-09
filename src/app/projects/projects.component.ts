@@ -3,6 +3,8 @@ import {Overlay, OverlayModule} from '@angular/cdk/overlay';
 // import { CdkPortal, PortalModule } from '@angular/cdk/portal';
 import { ProjectdetailsComponent } from '../projectdetails/projectdetails.component';
 import { CommonModule } from '@angular/common';
+import { Project } from './../interfaces/project';
+
 
 
 @Component({
@@ -20,7 +22,7 @@ export class ProjectsComponent {
 
   }
 
-  project = [
+  projects: Project[] = [
     {
     id: 1,
     title: 'Join',
@@ -76,5 +78,9 @@ openOverlay(project: any) {
  */
 closeOverlay() {
   this.selectedProject = null;
+}
+
+getdata(){
+  console.log(this.selectedProject.technologies[0]); 
 }
 }
