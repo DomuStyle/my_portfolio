@@ -2,43 +2,28 @@
     <div class="projects_content">
         <h4>Portfolio</h4>
         <h3>Featured Projects</h3>
-        <button (click)="getdata()">Get Data</button>
         <p>Explore a selection of my work here - interact with <br> projects to see my skills in action.</p>
         <div class="large_seperator"></div>   
         <a class="project">
-            @for (project of projects; track project.id) {
-                <!-- Clickable project card that triggers the overlay -->
-                <div class="project-card" (click)="openOverlay(project)">
-                  <!-- Small preview image -->
-                  <img [src]="project.img" alt="{{project.title}}">
-                  <!-- Project title -->
-                  <h3>{{project.title}}</h3>
-                  <!-- Shortened description (first 100 characters) -->
-                  <!-- <p>{{project.description | slice:0:100}}...</p> -->
-                </div>
-
-                <h5 class="color_white">{{project.title}}</h5>
+            <h5 class="color_white">{{projects[0].title}}</h5>
             <div class="project_tools">
-                <p class="color_white">{{project.technologies[$index]}}</p><span class="green_seperator"></span>
-                <!-- <p class="color_white">{{project.technologies[$index]}}</p><span class="green_seperator"></span>
-                <p class="color_white">{{project.technologies[$index]}}</p><span class="green_seperator"></span>
-                <p class="color_white">CSS</p><span class="green_seperator"></span>
-                <p class="color_white">Firebase</p> -->
+                <p class="color_white">{{projects[0].technologies[0]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[0].technologies[1]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[0].technologies[2]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[0].technologies[3]}}</p>
             </div>
             <div class="project_popup">
-                <img class="project_img" [src]="project.img" alt="{{project.title}}">
+                <img class="project_img" src="/assets/img/projects/join_project_l.png" alt="">
                 <img class="project_background" src="/assets/svg/projects/project_stripes_background.svg" alt="">
-            </div>
-              }
-            
+            </div>   
         </a>
-        <!-- <div class="large_seperator"></div>   
+        <div class="large_seperator"></div>   
         <a class="project" href="project-details">
-            <h5 class="color_white">El Pollo Loco</h5>
+            <h5 class="color_white">{{projects[1].title}}</h5>
             <div class="project_tools">
-                <p class="color_white">HTML</p><span class="green_seperator"></span>
-                <p class="color_white">CSS</p><span class="green_seperator"></span>
-                <p class="color_white">JavaScript</p>
+                <p class="color_white">{{projects[1].technologies[0]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[1].technologies[1]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[1].technologies[2]}}</p>
             </div>
             <div class="project_popup">
                 <img class="project_img" src="/assets/svg/projects/el_pollo_loco_snapshot.svg" alt="">
@@ -47,39 +32,39 @@
         </a>
         <div class="large_seperator"></div>   
         <a class="project" href="project-details">
-            <h5 class="color_white">Pokedex</h5>
+            <h5 class="color_white">{{projects[2].title}}</h5>
             <div class="project_tools">
-                <p class="color_white">HTML</p><span class="green_seperator"></span>
-                <p class="color_white">CSS</p><span class="green_seperator"></span>
-                <p class="color_white">JavaScript</p><span class="green_seperator"></span>
-                <p class="color_white">Poke-API</p>
+                <p class="color_white">{{projects[2].technologies[0]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[2].technologies[1]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[2].technologies[2]}}</p><span class="green_seperator"></span>
+                <p class="color_white">{{projects[2].technologies[3]}}</p>
             </div>
             <div class="project_popup">
                 <img class="project_img" src="/assets/svg/projects/join_snapshot.svg" alt="">
                 <img class="project_background" src="/assets/svg/projects/project_stripes_background.svg" alt="">
             </div>
         </a>  
-        <div class="portfolio_seperator"></div>  -->
+        <div class="portfolio_seperator"></div> 
     </div>
     
     
     
 
     <!-- Container for the project preview cards -->
-<div class="projects-container">
+<!-- <div class="projects-container"> -->
     <!-- Loop through each project in the projects array -->
-    @for (project of projects; track project.id) {
+    <!-- @for (project of projects; track project.id) { -->
       <!-- Clickable project card that triggers the overlay -->
-      <div class="project-card" (click)="openOverlay(project)">
+      <!-- <div class="project-card" (click)="openOverlay(project)"> -->
         <!-- Small preview image -->
-        <img [src]="project.img" alt="{{project.title}}">
+        <!-- <img [src]="project.img" alt="{{project.title}}"> -->
         <!-- Project title -->
-        <h3>{{project.title}}</h3>
+        <!-- <h3>{{project.title}}</h3> -->
         <!-- Shortened description (first 100 characters) -->
-        <p>{{project.description | slice:0:100}}...</p>
-      </div>
-    }
-  </div>
+        <!-- <p>{{project.description | slice:0:100}}...</p> -->
+      <!-- </div> -->
+    <!-- } -->
+  <!-- </div> -->
   
   <!-- Overlay that appears when a project is selected -->
   @if (selectedProject) {
