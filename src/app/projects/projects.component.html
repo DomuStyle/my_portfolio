@@ -4,7 +4,7 @@
         <h3>Featured Projects</h3>
         <p>Explore a selection of my work here - interact with <br> projects to see my skills in action.</p>
         <div class="large_seperator"></div>   
-        <a class="project">
+        <a class="project" (click)="openOverlay(projects[0])">
             <h5 class="color_white">{{projects[0].title}}</h5>
             <div class="project_tools">
                 <p class="color_white">{{projects[0].technologies[0]}}</p><span class="green_seperator"></span>
@@ -13,12 +13,12 @@
                 <p class="color_white">{{projects[0].technologies[3]}}</p>
             </div>
             <div class="project_popup">
-                <img class="project_img" src="/assets/img/projects/join_project_l.png" alt="">
+                <img class="project_img" src="./../../assets/svg/projects/join_snapshot.svg" alt="">
                 <img class="project_background" src="/assets/svg/projects/project_stripes_background.svg" alt="">
             </div>   
         </a>
         <div class="large_seperator"></div>   
-        <a class="project" href="project-details">
+        <a class="project" (click)="openOverlay(projects[1])">
             <h5 class="color_white">{{projects[1].title}}</h5>
             <div class="project_tools">
                 <p class="color_white">{{projects[1].technologies[0]}}</p><span class="green_seperator"></span>
@@ -31,7 +31,7 @@
             </div>
         </a>
         <div class="large_seperator"></div>   
-        <a class="project" href="project-details">
+        <a class="project" (click)="openOverlay(projects[2])">
             <h5 class="color_white">{{projects[2].title}}</h5>
             <div class="project_tools">
                 <p class="color_white">{{projects[2].technologies[0]}}</p><span class="green_seperator"></span>
@@ -46,26 +46,7 @@
         </a>  
         <div class="portfolio_seperator"></div> 
     </div>
-    
-    
-    
-
-    <!-- Container for the project preview cards -->
-<!-- <div class="projects-container"> -->
-    <!-- Loop through each project in the projects array -->
-    <!-- @for (project of projects; track project.id) { -->
-      <!-- Clickable project card that triggers the overlay -->
-      <!-- <div class="project-card" (click)="openOverlay(project)"> -->
-        <!-- Small preview image -->
-        <!-- <img [src]="project.img" alt="{{project.title}}"> -->
-        <!-- Project title -->
-        <!-- <h3>{{project.title}}</h3> -->
-        <!-- Shortened description (first 100 characters) -->
-        <!-- <p>{{project.description | slice:0:100}}...</p> -->
-      <!-- </div> -->
-    <!-- } -->
-  <!-- </div> -->
-  
+      
   <!-- Overlay that appears when a project is selected -->
   @if (selectedProject) {
     <div class="overlay">
