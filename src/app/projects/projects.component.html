@@ -53,25 +53,25 @@
       <!-- Content box inside the overlay -->
       <div class="overlay-content">
         <!-- Button to close the overlay -->
-        <button (click)="closeOverlay()">Close</button>
-        <!-- Full project title -->
-        <h2>{{this.selectedProject.title}}</h2>
-        <!-- Larger image for the overlay -->
-        <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
-        <!-- Full project description -->
-        <p>{{selectedProject.description}}</p>
-        <!-- Container for technologies -->
-        <div class="technologies">
-          <!-- Loop through technologies of the selected project -->
-          @for (tech of selectedProject.technologies; track tech) {
-            <!-- Display each technology -->
-            <span>{{tech}}</span>
-          }
+        
+        <div class="overlay-content-left">
+          <h1>{{this.selectedProject.id}}</h1>
+          <h2>{{this.selectedProject.title}}</h2>
+          <p>{{selectedProject.description}}</p>
+          <div class="overlay-technologies">
+            @for (tech of selectedProject.technologies; track tech) {
+              <span>{{tech}}</span>
+            }
+          </div>
+          
+          <a [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
+          <a [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
         </div>
-        <!-- Link to GitHub -->
-        <a [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
-        <!-- Link to live project -->
-        <a [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+        <div class="overlay-content-right">
+          <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
+          <button (click)="closeOverlay()">Close</button>
+        </div>
+        
       </div>
     </div>
   }
