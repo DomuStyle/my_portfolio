@@ -57,8 +57,16 @@
           <h4 class="color_turqoise">Whats is this Project about?</h4>
           <p class="color_white">{{selectedProject.description}}</p>
           <div class="overlay-technologies">
-            @for (tech of selectedProject.technologies; track tech) {
-              <span class="color_white">{{tech}}</span>
+            @for (tech of selectedProject.technologies; track $index) {
+              <div class="tech-item">
+                <img 
+                  [src]="selectedProject.techImgs ? selectedProject.techImgs[$index] : ''" 
+                  [alt]="tech + ' logo'" 
+                  class="overlay-tech-logo" 
+                  *ngIf="selectedProject.techImgs && selectedProject.techImgs[$index]"
+                >
+                <span class="color_white">{{tech}}</span>
+              </div>
             }
           </div>
             <div class="overlay-content-btns">
@@ -69,7 +77,7 @@
         <div class="overlay-content-right">
           <a class="overlay-close-btn" (click)="closeOverlay()"></a>
           <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
-          <div class="next-project-btn">
+          <div class="next-project-btn" (click)="nextProject()">
             <a class="color_turqoise">Next project</a>
             <div class="next-btn-arrow"></div>
           </div>

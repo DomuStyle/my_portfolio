@@ -33,7 +33,14 @@ export class ProjectsComponent {
     img: './assets/img/projects/join_project_l.png',
     technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     gitUrl: 'https://github.com/PhilscheLogik/Join/',
-    openProjectUrl: 'https://dominik-marnet.de/join'
+    openProjectUrl: 'https://dominik-marnet.de/join',
+    techImgs: [
+      './assets/img/overlay/technologies/overlay-angular.svg',
+      './assets/img/overlay/technologies/overlay-ts.svg',
+      './assets/img/overlay/technologies/overlay-html.svg',
+      './assets/img/overlay/technologies/overlay-css.svg',
+      './assets/img/overlay/technologies/overlay-firebase.svg',
+    ]
     },
     {
     id: 2,
@@ -41,10 +48,15 @@ export class ProjectsComponent {
     description: `
           Jump, run and throw game based on object-oriented approach. 
           Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
-    img: 'join_project_l.png',
+    img: './assets/img/projects/el_pollo_loco_project_l.png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/',
-    openProjectUrl: 'https://dominik-marnet.de/el-pollo-loco'
+    openProjectUrl: 'https://dominik-marnet.de/el-pollo-loco',
+    techImgs: [
+      './assets/img/overlay/technologies/overlay-js.svg',
+      './assets/img/overlay/technologies/overlay-html.svg',
+      './assets/img/overlay/technologies/overlay-css.svg',
+    ]
     },
     {
     id: 3,
@@ -53,10 +65,15 @@ export class ProjectsComponent {
           This App is a Slack Clone App. 
           It revolutionizes team communication and collaboration with its intuitive interface, 
           real-time messaging, and robust channel organization.`,
-    img: 'pokedex_project.png',
+    img: './assets/img/projects/da_bubble_project.png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/',
-    openProjectUrl: 'https://dominik-marnet.de/pokedex'
+    openProjectUrl: 'https://dominik-marnet.de/pokedex',
+    techImgs: [
+      './assets/img/overlay/technologies/overlay-js.svg',
+      './assets/img/overlay/technologies/overlay-html.svg',
+      './assets/img/overlay/technologies/overlay-css.svg',
+    ]
     }
 ];
 
@@ -80,7 +97,22 @@ closeOverlay() {
   this.selectedProject = null;
 }
 
-getdata(){
-  console.log(this.selectedProject.technologies[0]); 
+nextProject() {
+  if (!this.selectedProject) return;
+
+  // Find the index of the current selected project
+  const currentIndex = this.projects.findIndex(
+    (p) => p.id === this.selectedProject!.id
+  );
+
+  // Calculate the next index, looping back to 0 if at the end
+  const nextIndex = (currentIndex + 1) % this.projects.length;
+
+  // Set the next project as the selected project
+  this.selectedProject = this.projects[nextIndex];
 }
+
+// getdata(){
+//   console.log(this.selectedProject.technologies[0]); 
+// }
 }

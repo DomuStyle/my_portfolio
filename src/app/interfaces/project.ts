@@ -5,5 +5,6 @@ export interface Project {
     img: string, 
     technologies: string[],
     gitUrl: string,
-    openProjectUrl: string
+    openProjectUrl: string,
+    techImgs?: string[];
 }
