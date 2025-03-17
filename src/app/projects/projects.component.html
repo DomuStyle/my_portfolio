@@ -55,21 +55,24 @@
         <!-- Button to close the overlay -->
         
         <div class="overlay-content-left">
-          <h1>{{this.selectedProject.id}}</h1>
-          <h2>{{this.selectedProject.title}}</h2>
-          <p>{{selectedProject.description}}</p>
+          <h1 class="color_turqoise">0{{this.selectedProject.id}}</h1>
+          <h3 class="color_white">{{this.selectedProject.title}}</h3>
+          <h4 class="color_turqoise">Whats is this Project about?</h4>
+          <p class="color_white">{{selectedProject.description}}</p>
           <div class="overlay-technologies">
             @for (tech of selectedProject.technologies; track tech) {
-              <span>{{tech}}</span>
+              <span class="color_white">{{tech}}</span>
             }
           </div>
-          
-          <a [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
-          <a [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+            <div class="overlay-content-btns">
+              <a class="color_white" [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
+              <a class="color_white" [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+            </div>
         </div>
         <div class="overlay-content-right">
-          <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
           <button (click)="closeOverlay()">Close</button>
+          <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
+          <button></button>
         </div>
         
       </div>
