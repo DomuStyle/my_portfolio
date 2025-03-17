@@ -30,9 +30,9 @@ export class ProjectsComponent {
           Task manager inspired by the Kanban System. 
           Create and organize tasks using drag and drop functions, 
           assign users and categories.`,
-    img: '/join_project_l.png',
+    img: './assets/img/projects/join_project_l.png',
     technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-    gitUrl: 'https://github.com/',
+    gitUrl: 'https://github.com/PhilscheLogik/Join/',
     openProjectUrl: 'https://dominik-marnet.de/join'
     },
     {

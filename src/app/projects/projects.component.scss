@@ -102,7 +102,7 @@ section {
 }
 
 .overlay-content-left {
-    @include dFlex($jc: center, $ai: flex-start);
+    @include dFlex($jc: center, $ai: flex-start, $g: 24px);
     flex-direction: column;
     height: 100%;
     width: 45%;
@@ -125,21 +125,82 @@ section {
 }
 
 .overlay-technologies {
-    @include dFlex($jc: center, $ai: flex-start);
+    @include dFlex($jc: center, $ai: flex-start, $g: 24px);
     @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    margin-top: 32px;
 
     >span {
         margin-right: 16px;
     }
 }
 
+.overlay-github-btn {
+    @include dFlex($jc: center, $ai: center);
+    height: 64px;
+    width: 180px;
+    border: 2px solid #ffffff;
+    border-radius: 32px;
+    border-color: #ffffff;
+    transition: border-color 1.75s;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    text-decoration: none;
+
+        &:hover {
+            border-color: #3DCFB6;
+        }
+}
+
+.overlay-livelink-btn {
+    @include dFlex($jc: center, $ai: center);
+    height: 64px;
+    width: 180px;
+    border: 2px solid #ffffff;
+    border-radius: 32px;
+    border-color: #ffffff;
+    transition: border-color 1.75s;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    text-decoration: none;
+
+        &:hover {
+            border-color: #3DCFB6;
+        }
+}
+
 .overlay-content-right {
-    @include dFlex($jc: center, $ai: flex-end);
+    @include dFlex($jc: center, $ai: flex-end, $g: 24px);
     flex-direction: column;
     height: 100%;
     width: 55%;
 }
 
+.overlay-close-btn {
+    height: 48px;
+    width: 48px;
+    background-image: url('./../../assets/img/overlay/overlay-close-btn.svg');
+        
+        &:hover {
+            background-image: url('./../../assets/img/overlay/overlay-close-btn-hover.svg');
+        }
+}
+
 .overlay-content-btns {
+    @include dFlex($jc: flex-start, $ai: center, $g: 40px);
     width: 100%;
+    margin-top: 32px;
+}
+
+.next-project-btn {
+    @include dFlex($jc: center, $ai: center);
+
+    >a {
+        @include font($ff: 'Karla', $fs: 24px, $fw: 400); 
+    }
+}
+
+.next-btn-arrow {
+    height: 40px;
+    width: 40px;
+    background-image: url('./../../assets/svg/nav/arrow-right.svg');
 }

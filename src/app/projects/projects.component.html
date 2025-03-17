@@ -50,10 +50,7 @@
   <!-- Overlay that appears when a project is selected -->
   @if (selectedProject) {
     <div class="overlay">
-      <!-- Content box inside the overlay -->
       <div class="overlay-content">
-        <!-- Button to close the overlay -->
-        
         <div class="overlay-content-left">
           <h1 class="color_turqoise">0{{this.selectedProject.id}}</h1>
           <h3 class="color_white">{{this.selectedProject.title}}</h3>
@@ -65,16 +62,18 @@
             }
           </div>
             <div class="overlay-content-btns">
-              <a class="color_white" [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
-              <a class="color_white" [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+              <a class="color_white overlay-github-btn" [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
+              <a class="color_white overlay-livelink-btn" [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
             </div>
         </div>
         <div class="overlay-content-right">
-          <button (click)="closeOverlay()">Close</button>
+          <a class="overlay-close-btn" (click)="closeOverlay()"></a>
           <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
-          <button></button>
+          <div class="next-project-btn">
+            <a class="color_turqoise">Next project</a>
+            <div class="next-btn-arrow"></div>
+          </div>
         </div>
-        
       </div>
     </div>
   }
