@@ -70,8 +70,14 @@
             }
           </div>
             <div class="overlay-content-btns">
-              <a class="color_white overlay-github-btn" [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
-              <a class="color_white overlay-livelink-btn" [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+              <div class="overlay-btn">
+                <a class="color_white" [href]="selectedProject.gitUrl" target="_blank">GitHub</a>
+                <img class="btn-arrow" src="./../../assets/img/overlay/overlay-btn-arrow-ru.svg" alt="">
+              </div>
+              <div class="overlay-btn">
+                <a class="color_white" [href]="selectedProject.openProjectUrl" target="_blank">Live Project</a>
+                <img class="btn-arrow" src="./../../assets/img/overlay/overlay-btn-arrow-ru.svg" alt="">
+              </div>
             </div>
         </div>
         <div class="overlay-content-right">

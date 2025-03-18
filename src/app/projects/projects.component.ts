@@ -60,7 +60,7 @@ export class ProjectsComponent {
     },
     {
     id: 3,
-    title: 'Pokedex / DaBubble',
+    title: 'Pokedex / DA-Bubble',
     description: `
           This App is a Slack Clone App. 
           It revolutionizes team communication and collaboration with its intuitive interface, 
