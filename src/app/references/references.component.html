@@ -1,21 +1,45 @@
+<!-- <section>
+    <div class="references-outer">
+        <div class="references-header">
+            <h5 class="color_turqoise">What my Colleagues say about me</h5>
+        </div>
+            <div class="reference-card">
+                <div class="references-top">
+                    <p class="color_white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Mollitia aliquid voluptatum natus cumque ad repudiandae ipsum <br>
+                        exercitationem optio sit voluptates ipsa aliquam, <br>
+                        commodi nesciunt eligendi minima iste tempore sint aperiam?
+                    </p>
+                </div>
+                <div class="references-bottom">
+                    <div class="references-bottom-line"></div>
+                    <p class="references-author">A.Fischer - Frontend Developer</p>
+                </div>
+            </div>
+        
+    </div>
+</section> -->
+
 <section>
     <div class="references-outer">
         <div class="references-header">
             <h5 class="color_turqoise">What my Colleagues say about me</h5>
         </div>
-        <div class="reference-card">
-            <div class="references-top">
-                <p class="color_white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Mollitia aliquid voluptatum natus cumque ad repudiandae ipsum <br>
-                    exercitationem optio sit voluptates ipsa aliquam, <br>
-                    commodi nesciunt eligendi minima iste tempore sint aperiam?
-                </p>
+        <div class="references-container">
+            <div class="references-wrapper" #scrollContainer>
+                <div class="reference-card" *ngFor="let ref of reference" [ngClass]="{'active': isActive(ref.id)}">
+                    <div class="references-top">
+                        <p class="color_white">{{ ref.text }}</p>
+                    </div>
+                    <div class="references-bottom">
+                        <div class="references-bottom-line"></div>
+                        <p class="references-author">{{ ref.author }} - {{ ref.position }}</p>
+                    </div>
+                </div>
             </div>
-            <div class="references-bottom">
-                <div class="references-bottom-line"></div>
-                <p class="references-author">A.Fischer - Frontend Developer</p>
-            </div>
+            <button class="scroll-btn left" (click)="scrollLeft()">&lt;</button>
+            <button class="scroll-btn right" (click)="scrollRight()">&gt;</button>
         </div>
     </div>
 </section>
