@@ -1,0 +1,48 @@
+@import "./../../styles/mixins.scss";
+
+section {
+    @include dFlex($jc: center, $ai: center);
+    height: 50vh;
+    width: 100%;
+    background-color: #1c1c1c;
+}
+
+.reference-outer {
+    height: 100%;
+    width: 100%;
+}
+
+.reference-card {
+    height: 300px;
+    width: 500px;
+    padding: 32px 40px;
+    background-color: rgba($color: #08463B, $alpha: 0.5);
+    border-radius: 24px;
+    border: 2px solid #3DCFB6;
+}
+
+.references-top {
+    height: 70%;
+
+    >p {
+        @include font($ff: 'Karla', $fs: 18px, $fw: 400);
+    }
+}
+
+.references-bottom {
+    @include dFlex($jc: center, $ai: center);
+    height: 30%;
+}
+
+.references-bottom-line {
+    height: 2px;
+    // width: auto;
+    flex: 1;
+    background-color: white;
+}
+
+.references-author {
+    @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    margin-left: 16px;
+    color: white;
+}
