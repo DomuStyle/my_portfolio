@@ -44,14 +44,6 @@ section {
     }
 }
 
-// .about_me_left {
-//     &:hover .about_me_stripes {
-//         transform: translate(594px, 30px);
-//     } 
-// }
-
-
-
 .about_me_frame {
     @include dFlex($jc: flex-start, $ai: flex-start);
     flex-direction: column;
@@ -61,46 +53,45 @@ section {
     background-color: rgba($color: #08463B, $alpha: 0.5);
     border-radius: 24px;
     border: 2px solid #3DCFB6;
+
     >p {
         color: white;
         font-family: 'Karla';
         padding-bottom: 32px;
     }
+
     >.aboutme_location {
         @include dFlex($jc: center, $ai: flex-start);
         gap: 8px;
         padding-top: 16px;
+
         p {
+            @include font($ff: 'Karla', $fw: 400);
             color: rgba($color: #FFFFFF, $alpha: 0.8);
-            font-family: 'Karla';
             &:hover {
                 color: white;
             }
         }
     }
     >.aboutme_smart {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        @include dFlex($jc: center, $ai: flex-start);
         gap: 13px;
         padding-top: 16px;
         p {
+            @include font($ff: 'Karla', $fw: 400);
             color: rgba($color: #FFFFFF, $alpha: 0.8);
-            font-family: 'Karla';
             &:hover {
                 color: white;
             }
         }
     }
     >.aboutme_checkmark {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        @include dFlex($jc: center, $ai: flex-start);
         gap: 13px;
         padding-top: 16px;
         p {
+            @include font($ff: 'Karla', $fw: 400);
             color: rgba($color: #FFFFFF, $alpha: 0.8);
-            font-family: 'Karla';
             &:hover {
                 color: white;
             }
