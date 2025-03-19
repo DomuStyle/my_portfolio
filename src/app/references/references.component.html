@@ -24,11 +24,12 @@
 <section>
     <div class="references-outer">
         <div class="references-header">
-            <h5 class="color_turqoise">What my Colleagues say about me</h5>
+            <h5 class="color_turquoise">What my Colleagues say about me</h5>
         </div>
         <div class="references-container">
-            <div class="references-wrapper" #scrollContainer>
-                <div class="reference-card" *ngFor="let ref of reference" [ngClass]="{'active': isActive(ref.id)}">
+            <div class="references-wrapper" [style.transform]="'translateX(' + slideOffset + 'px)'">
+                <div class="reference-card" *ngFor="let ref of reference; let i = index" 
+                     [ngClass]="{'active': isActive(i)}">
                     <div class="references-top">
                         <p class="color_white">{{ ref.text }}</p>
                     </div>
@@ -38,8 +39,8 @@
                     </div>
                 </div>
             </div>
-            <button class="scroll-btn left" (click)="scrollLeft()">&lt;</button>
-            <button class="scroll-btn right" (click)="scrollRight()">&gt;</button>
+            <button class="scroll-btn left" (click)="scrollLeft()"><</button>
+            <button class="scroll-btn right" (click)="scrollRight()">></button>
         </div>
     </div>
 </section>

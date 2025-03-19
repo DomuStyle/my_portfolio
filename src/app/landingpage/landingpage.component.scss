@@ -1,11 +1,10 @@
+@import "./../../styles/mixins.scss";
 
 section {
+    @include dFlex($jc: center, $ai: center);
     background-image: linear-gradient(45deg, #1c1c1c 50%, #08463B);
     height: 100vh;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     // max-width: 1440px;
     overflow-x: hidden;
 
@@ -67,10 +66,8 @@ section {
 }
 
 .landingpage_content {
-    display: flex;
-    align-items: center;
+    @include dFlex($jc: space-evenly, $ai: center);
     flex-direction: column;
-    justify-content: space-evenly;
     // overflow: hidden;
     max-width: 1440px;
     width: 100%;
@@ -79,24 +76,18 @@ section {
 }
 
 .landingpage_content_center {
+    @include dFlex($jc: flex-start, $ai: center);
     position: absolute;
     top: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 64px;
 
     >.landingpage_center_btns {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        @include dFlex($jc: space-evenly, $ai: center);
         gap: 64px;
 
         >.center_btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            @include dFlex($jc: space-evenly, $ai: center);
             height: 64px;
             width: 180px;
             border: 2px solid #ffffff;
@@ -148,10 +139,8 @@ section {
 }
 
 .content_left {
-    display: flex;
-    align-items: center;
+    @include dFlex($jc: flex-end, $ai: center);
     flex-direction: column;
-    justify-content: flex-end;
     gap: 32px;
     height: 50%;
     width: 20%;
@@ -190,10 +179,8 @@ section {
 }
 
 .content_right {
-    display: flex;
-    align-items: center;
+    @include dFlex($jc: flex-end, $ai: center);
     flex-direction: column;
-    justify-content: flex-end;
     gap: 32px;
     height: 65%;
     width: 20%;
