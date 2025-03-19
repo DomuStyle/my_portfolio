@@ -1,3 +1,5 @@
+@import "./../../styles/mixins.scss";
+
 section {
     // padding-top: 196px;
     // padding-bottom: 196px;
@@ -7,15 +9,11 @@ section {
     height: 100vh;
     
     >.about_me_content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include dFlex($jc: space-between, $ai: flex-start);
         height: 100%;
         padding: 0 calc(max(80px,(100% - 1440px) / 2));
         >.about_me_left {
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
+            @include dFlex($jc: flex-start, $ai: flex-start);
             padding-bottom: 160px;
             position: relative;
             >.about_me_img {
@@ -55,9 +53,7 @@ section {
 
 
 .about_me_frame {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    @include dFlex($jc: flex-start, $ai: flex-start);
     flex-direction: column;
     padding: 24px;
     height: 50%;
@@ -71,9 +67,7 @@ section {
         padding-bottom: 32px;
     }
     >.aboutme_location {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        @include dFlex($jc: center, $ai: flex-start);
         gap: 8px;
         padding-top: 16px;
         p {
