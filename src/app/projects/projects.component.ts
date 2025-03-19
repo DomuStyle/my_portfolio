@@ -1,7 +1,6 @@
 import { Component, ViewChild, viewChild, inject } from '@angular/core';
 import {Overlay, OverlayModule} from '@angular/cdk/overlay';
 // import { CdkPortal, PortalModule } from '@angular/cdk/portal';
-import { ProjectdetailsComponent } from '../projectdetails/projectdetails.component';
 import { CommonModule } from '@angular/common';
 import { Project } from './../interfaces/project';
 
@@ -10,7 +9,7 @@ import { Project } from './../interfaces/project';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [OverlayModule, ProjectdetailsComponent, CommonModule],
+  imports: [OverlayModule, CommonModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

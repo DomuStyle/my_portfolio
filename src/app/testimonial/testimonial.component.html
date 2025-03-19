@@ -1,0 +1,29 @@
+<section>
+    <div class="testimonials-inner">
+        <h2 class="testimonials-title">What my colleagues say about me</h2>
+
+        <div class="testimonials-slider">
+            <div class="quote-icon">&ldquo;</div>
+            @for (testimonial of testimonials(); track testimonial; let i = $index) {
+            <div class="testimonial-card" [class.active]="i === currentIndex()" [class.left]="i === getPrevIndex()"
+                [class.right]="i === getNextIndex()">
+                <p class="testimonial-text">{{ testimonial.text }}</p>
+                <div class="testimonial-author-container">
+                    <span class="author-line"></span>
+                    <p class="testimonial-author">{{ testimonial.author }} - {{ testimonial.position }}</p>
+                </div>
+            </div>
+            }
+        </div>
+
+        <div class="testimonials-navigator">
+            <button (click)="prevTestimonial()" class="nav-button left">&lt;</button>
+            <div class="nav-dots">
+                @for (dot of [0, 1, 2]; track dot) {
+                <div class="nav-dot" [class.active]="dot === currentIndex()"></div>
+                }
+            </div>
+            <button (click)="nextTestimonial()" class="nav-button right">&gt;</button>
+        </div>
+    </div>
+</section>
