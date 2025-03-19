@@ -1,7 +1,7 @@
+@import "./../../styles/mixins.scss";
+
 .contact_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include dFlex($jc: space-between, $ai: center);
     gap: 60px;
     height: 100vh;
     background-color: #1c1c1c;
@@ -12,35 +12,28 @@
         padding-top: 24px;
         padding-right: 24px;
         max-width: 40%;
+
     >p {
-        font-family: 'Karla';
-        font-size: 18px;
+        @include font($ff: 'Karla', $fs: 18px, $fw: 400);
         padding-bottom: 32px;
     }
+
     >h5 {
         padding-bottom: 32px;
     }
 
     >.positioning_box {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        @include dFlex($jc: flex-start, $ai: center);
+        @include font($ff: 'Karla', $fs: 18px, $fw: 400);
         gap: 8px;
-        font-family: 'Karla';
-        font-size: 18px;
         padding-bottom: 32px;
-    }
+    }  
 
-    
     }
 }
 
-
 .contact_right {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dFlex($jc: center, $ai: center);
     max-width: 45%;
 
 form {
@@ -55,8 +48,8 @@ form {
         }
         
         >input[type=text], [type=email], select, textarea {
+            @include font($ff: 'Karla', $fs: 24px, $fw: 400);
             width: 390px;
-            font-size: 24px;
             margin-bottom: 40px;
             border: none; /* Remove border */
             outline: none; /* Remove focus outline */
@@ -65,16 +58,12 @@ form {
             // &:hover {
                      
             // } 
-        }
-            
+        }     
     }
-
 }
     
 .policy_checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @include dFlex($jc: flex-start, $ai: center);
     padding-top: 32px;
     // padding-left: 32px;
     >input {
@@ -91,57 +80,55 @@ form {
 }
 
 .contact_right_bottom {
+    @include dFlex($jc: center, $ai: center);
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
     >.submit_btn {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        @include dFlex($jc: space-evenly, $ai: center);
         height: 64px;
         width: 180px;
         border: 2px solid #ffffff;
         border-radius: 32px;
         border-color: #ffffff;
         transition: border-color 1.75s;
-        overflow-y: hidden;
+        overflow: hidden;
+        margin-top: 40px;
         
         &:hover {
             cursor: pointer;
         }
 
-        margin-top: 40px;
+        
         >input[type=submit] {
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
             box-sizing: border-box;
             border: none; /* Remove border */
             outline: none; /* Remove focus outline */
             color: white;
             cursor: pointer;
         }
+
         >input::placeholder {
             color: #ffffff;
-        }
-
-        
+        }  
     }
 }
-        
-      
+             
 }
 
 input {
+    @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
     border: none; /* Remove border */
     outline: none; /* Remove focus outline */
     background-color: #1c1c1c;
+    align-content: center;
     width: 390px;
-    font-size: 24px;
-    margin-bottom: 32px;
-    margin-left: 32px;
+    scrollbar-width: none;
+    // margin-bottom: 32px;
+    // margin-left: 32px;
+}
+
+input::-webkit-scrollbar {
+    display: none;
 }
 
 #email {
@@ -154,12 +141,9 @@ input {
 
 .contact_container {
     width: 100%;
+
     &:hover .contact_seperator {
         background-color: #3DCFB6;
-    }
-
-    &:hover input {
-    
     }
 }
 
