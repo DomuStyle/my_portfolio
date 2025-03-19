@@ -17,13 +17,13 @@
         </div>
 
         <div class="testimonials-navigator">
-            <button (click)="prevTestimonial()" class="nav-button left">&lt;</button>
+            <button (click)="prevTestimonial()" class="nav-button-left left">&lt;</button>
             <div class="nav-dots">
                 @for (dot of [0, 1, 2]; track dot) {
                 <div class="nav-dot" [class.active]="dot === currentIndex()"></div>
                 }
             </div>
-            <button (click)="nextTestimonial()" class="nav-button right">&gt;</button>
+            <button (click)="nextTestimonial()" class="nav-button-right right">&gt;</button>
         </div>
     </div>
 </section>

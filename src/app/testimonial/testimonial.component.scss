@@ -28,7 +28,7 @@ section {
 .quote-icon {
     @include font($fs: 250px, $fw: 400);
     position: absolute;
-    top: -24px;
+    top: -40px;
     left: calc(50% - 320px);
     color: white;
     line-height: 1;
@@ -113,11 +113,11 @@ section {
   
 .testimonials-navigator {
     @include dFlex($jc: center, $ai: center);
-    margin-top: -50px;
+    margin-top: 32px;
     transform: scale(0.8);
 }
   
-.nav-button {
+.nav-button-left {
     background: none;
     border: none;
     font-size: 24px;
@@ -128,6 +128,22 @@ section {
   
     &:hover {
       color: #3dcfb6;
+      transform: translateX(-10px) scale(1.5);
+    }
+}
+
+.nav-button-right {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0 20px;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #3dcfb6;
+      transform: translateX(10px) scale(1.5);
     }
 }
 

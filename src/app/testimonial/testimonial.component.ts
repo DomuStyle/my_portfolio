@@ -21,12 +21,12 @@ export class TestimonialComponent {
     {
       id: 1,
       author: 'Cem Erdogmus',
-      text: `Dominik integrated seamlessly into the group work, 
-             independently developed numerous solutions, 
-             and played a key role in transforming the initial 
-             folder structure chaos into a clear and understandable system. 
-             Working with him was highly enjoyable, 
-             and I am confident that he excels in a team environment.`,
+      text: `Dominik fügte sich nahtlos in die Gruppenarbeit ein, 
+             entwickelte selbstständig zahlreiche Lösungen und spielte 
+             eine Schlüsselrolle dabei, das anfängliche Chaos der Ordnerstruktur 
+             in ein klares und verständliches System zu verwandeln. 
+             Die Zusammenarbeit mit ihm war äußerst angenehm, und ich bin überzeugt, 
+             dass er in einem Teamumfeld hervorragend abschneidet.`,
       position: 'Frontend Developer',
     },
     {
