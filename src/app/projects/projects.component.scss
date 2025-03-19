@@ -10,9 +10,8 @@ section {
         padding: 0 calc(max(80px,(100% - 1440px) / 2));
 
     >p {
+        @include font($ff: 'Karla', $fs: 18px, $fw: 400);
         color: white;
-        font-size: 18px;
-        font-family: 'Karla';
         padding-bottom: 32px;
     }
 
@@ -26,22 +25,17 @@ section {
 }
 
 .project_tools {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include dFlex($jc: space-evenly, $ai: flex-start);
     flex-direction: row;
     
 
     >p {
-        font-family: 'Karla';
-        font-size: 18px;
+        @include font($ff: 'Karla', $fs: 18px, $fw: 400);
     }
 }
 
 .project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include dFlex($jc: space-between, $ai: flex-start);
     width: 60%;
     padding-top: 32px;
     padding-bottom: 32px;
