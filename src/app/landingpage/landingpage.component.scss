@@ -211,7 +211,7 @@ section {
 }
 
 @media (max-width: 920px) {
-
+    
     h1 {
         @include font($ff: 'Fira_Code', $fs: 52px, $fw: 700);
     }
@@ -222,15 +222,43 @@ section {
 
     .landingpage_content_center {
         @include dFlex($jc: flex-start, $ai: center, $g: 40px);
-        top: 45%;
+        top: 40%;
     }
 
     .landingpage_center_btns {
         @include dFlex($jc: space-evenly, $ai: center, $g: 24px);
     }
 
+    .center_btn {
+        border-color: #3DCFB6;
+
+        a{
+            color: #3DCFB6;
+        }
+    }
+
     .landingpage_email_link {
         display: none;
+    }
+}
+
+@media (max-width: 512px) {
+
+    h1 {
+        @include font($ff: 'Fira_Code', $fs: 40px, $fw: 700);
+    }
+}
+
+@media (max-height: 1020px) {
+    .landingpage_content_center {
+        top: 30%;
+    }
+}
+
+@media (max-height: 960px) {
+
+    .landingpage_content_center {
+        top: 20%;
     }
 }
 
