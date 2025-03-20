@@ -17,10 +17,6 @@ nav {
     width: 100%;
 }
 
-img {
-    padding-left: 16px;
-}
-
 .nav_about_me {
     // height: 80px;
     background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
@@ -107,4 +103,51 @@ img {
         //         opacity: 0.1;
         // }
     }
+}
+
+.burger-menu {
+    display: none;
+    height: 48px;
+    width: 48px;
+    background-image: url('./../../../assets/svg/nav/btn/bruger_btn.svg');
+
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/btn/bruger_btn_hover.svg');
+    }
+}
+
+.mobile_logo {
+    height: 96px;
+    display: none;
+}
+
+@media (max-width: 920px) {
+    img {
+        display: none;
+    }  
+    
+    .burger-menu {
+        display: block;
+    }
+
+    .nav_about_me {
+        display: none;
+    }
+
+    .nav_skills {
+        display: none;
+    }
+
+    .nav_projects {
+        display: none;
+    }
+
+    .mobile_logo {
+        display: block;
+    }
+
+    .lang_btn {
+        display: none;
+    }
+    
 }
