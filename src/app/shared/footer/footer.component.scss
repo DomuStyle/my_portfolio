@@ -2,51 +2,57 @@
 
 footer {
     @include font($ff: 'Karla');
-    background-color: #1c1c1c;
+    background-color: #1c1c1c;    
+}
 
-    >.footer_content {
-        @include dFlex($jc: space-between, $ai: flex-end);
-        padding: 0 calc(max(80px,(100% - 1440px) / 2));
-        max-width: 1440px;
-
-        >.footer_left {
-            @include dFlex($jc: flex-start, $ai: flex-start);
-            flex-direction: column;
-            padding-bottom: 64px;
-            width: 256px;
-            color: white;
-            >.logo_link {
-                >img {
-                    height: 80px;
-                    width: 180px;
-                    padding-bottom: 8px;
-                }
-            }
-    
-            >p {
-                padding-left: 8px;
-            }
-        }
-    
-        >.footer_center {
-            padding-bottom: 64px;
-            >p {
-                @include font($ff: 'Karla', $fs: 16px, $fw: 400);
-            }
-        }
-    
-        >.footer_right {
-            @include dFlex($jc: center, $ai: flex-start);
-            flex-direction: column;
-            padding-bottom: 64px;
-            height: 96px;
-            >a {
-                @include font($ff: 'Karla', $fs: 16px, $fw: 400);
-                color: white;
-                text-decoration: none;
-                padding-bottom: 8px;
-            }
-        }
+.logo_link {
+                
+    >img {
+        height: 80px;
+        width: 180px;
+        padding-bottom: 8px;
     }
-      
+}
+
+.footer_content {
+    @include dFlex($jc: space-between, $ai: flex-end);
+    padding: 0 calc(max(80px,(100% - 1440px) / 2));
+    max-width: 1440px;
+
+    
+
+    
+}
+
+.footer_left {
+    @include dFlex($jc: flex-start, $ai: flex-start);
+    flex-direction: column;
+    padding-bottom: 64px;
+    width: 256px;
+    color: white;
+>p {
+        padding-left: 8px;
+    }
+}
+
+.footer_center {
+    padding-bottom: 64px;
+
+    >p {
+        @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    }
+}
+
+.footer_right {
+    @include dFlex($jc: center, $ai: flex-start);
+    flex-direction: column;
+    padding-bottom: 64px;
+    height: 96px;
+
+    >a {
+        @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+        color: white;
+        text-decoration: none;
+        padding-bottom: 8px;
+    }
 }
