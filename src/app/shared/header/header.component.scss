@@ -1,7 +1,7 @@
+@import "./../../../styles/mixins.scss";
+
 nav {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    @include dFlex($jc: space-between, $ai: flex-start);
     background-image: linear-gradient(180deg, black, transparent);
     position: absolute;
     width: 100%;
@@ -11,10 +11,8 @@ nav {
 }
 
 .header_content {
+    @include dFlex($jc: space-between, $ai: flex-start);
     padding: 0 calc(max(80px,(100% - 1440px) / 2));
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     max-width: 1440px;
     width: 100%;
 }
@@ -67,7 +65,7 @@ img {
 }
 
 .nav_left {
-    // padding-left: 64px;
+    // @include dFlex($jc: center, $ai: center);
     padding-top: 32px;
     display: flex;
     justify-content: center;
@@ -99,10 +97,14 @@ img {
             width: 256px;
         }
         &:hover { 
-                // filter: drop-shadow(1px 1px 0 $lightGreen)
-                // drop-shadow(-1px -1px 0 $lightGreen);
-                // filter: drop-shadow(1px 1px 0 $lightGreen) 
-                // drop-shadow(-1px -1px 0 $lightGreen);
+                filter: drop-shadow(1px 1px 0 white)
+                drop-shadow(-1px -1px 0 white);
+                // filter: drop-shadow(1px 1px 0 white) 
+                // drop-shadow(-1px -1px 0 white);
         }
+
+        // &:hover img{ 
+        //         opacity: 0.1;
+        // }
     }
 }
