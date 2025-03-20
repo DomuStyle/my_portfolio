@@ -122,6 +122,11 @@ nav {
 }
 
 @media (max-width: 920px) {
+
+    .header_content {
+        padding: 0 calc(max(40px,(100% - 1440px) / 2));
+    }
+
     img {
         display: none;
     }  

@@ -7,25 +7,24 @@ section {
     margin: 0;
     // max-width: 1440px;
     overflow-x: hidden;
+}
 
-    >.infinite_scroller {
-        position: absolute;
-        bottom: 40px;
-        left: 0;
-        width: 100%;
-        height: 64px;
-        background-color: rgba(255, 255, 255, 0.25);
-        transform: rotate(-3deg);
-        z-index: 1;
-        backdrop-filter: blur(3px);
-        overflow-x: hidden;
-        white-space: nowrap;
-        box-sizing: border-box;
-        text-align: center;
-        flex-shrink: 0;
-        scrollbar-width: none;
-    }
-    
+.infinite_scroller {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: rotate(-3deg);
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+    flex-shrink: 0;
+    scrollbar-width: none;
 }
 
 .infinite_scroller_inner {
@@ -36,6 +35,7 @@ section {
     white-space: nowrap;
     width: max-content;
     scrollbar-width: none;
+
     >p {
         @include font($ff: 'Karla', $fs: 32px, $fw: 400);
         color: #3DCFB6;
@@ -44,16 +44,6 @@ section {
         display: inline-block; 
     }
 }
-
-// old animation!!
-// @keyframes marquee {
-//     0% {
-//         transform: translateX(100%);
-//     }
-//     100% {
-//         transform: translateX(-100%);
-//     }
-// }
 
 @keyframes marquee {
     0% {
@@ -65,7 +55,7 @@ section {
 }
 
 .landingpage_content {
-    @include dFlex($jc: space-evenly, $ai: center);
+    @include dFlex($jc: space-evenly, $ai: center, $g: 64px);
     flex-direction: column;
     // overflow: hidden;
     max-width: 1440px;
@@ -79,61 +69,52 @@ section {
     position: absolute;
     top: 20%;
     flex-direction: column;
-    gap: 64px;
+}
 
-    >.landingpage_center_btns {
-        @include dFlex($jc: space-evenly, $ai: center);
-        gap: 64px;
-
-        >.center_btn {
-            @include dFlex($jc: space-evenly, $ai: center);
-            height: 64px;
-            width: 180px;
-            border: 2px solid #ffffff;
-            border-radius: 32px;
-            border-color: #ffffff;
-            transition: border-color 1.75s;
-            overflow-y: hidden;
-            scrollbar-width: none;
-                &:hover {
-                    border-color: #3DCFB6;
-                }
-
-                &:hover a {
-                    color: #3DCFB6;
-                }
-
-            >a {
-                @include font($ff: 'Fira_Code', $fw: 400);
-                height: 64px;
-                width: 180px;
-                color: #ffffff;
-                text-decoration: none;
-                text-align: center;
-                align-content: center;
-                
-                transition: transform 0s;
-                transform: translateY(0%);
-                
-            }
-        }  
-    }
+.landingpage_center_btns {
+    @include dFlex($jc: space-evenly, $ai: center, $g: 64px);  
 }
 
 .center_btn {
-    &:hover a{
-        animation: rollUp 0.75s forwards;
-        // transition: color 1.75s;
+    @include dFlex($jc: space-evenly, $ai: center);
+    height: 64px;
+    width: 180px;
+    border: 2px solid #ffffff;
+    border-radius: 32px;
+    border-color: #ffffff;
+    transition: border-color 1.75s;
+    overflow-y: hidden;
+    scrollbar-width: none;
+        &:hover {
+            border-color: #3DCFB6;
+        }
+
+        &:hover a {
+            color: #3DCFB6;
+            animation: rollUp 0.75s forwards;
+        }
+
+    >a {
+        @include font($ff: 'Fira_Code', $fw: 400);
+        height: 64px;
+        width: 180px;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        align-content: center;
+        
+        transition: transform 0s;
+        transform: translateY(0%);
+        
     }
-      
 }
 
 @keyframes rollUp {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
 }
 
@@ -226,6 +207,30 @@ section {
     &:hover {
         cursor: pointer;
         color: #3DCFB6;
+    }
+}
+
+@media (max-width: 920px) {
+
+    h1 {
+        @include font($ff: 'Fira_Code', $fs: 52px, $fw: 700);
+    }
+
+    h2 {
+        @include font($ff: 'Fira_Code', $fs: 32px, $fw: 400);
+    }
+
+    .landingpage_content_center {
+        @include dFlex($jc: flex-start, $ai: center, $g: 40px);
+        top: 45%;
+    }
+
+    .landingpage_center_btns {
+        @include dFlex($jc: space-evenly, $ai: center, $g: 24px);
+    }
+
+    .landingpage_email_link {
+        display: none;
     }
 }
 
