@@ -10,31 +10,20 @@
         </div>
         <div class="nav_right">
             <span alt="logo_image"><img src="./../../../assets/svg/nav/name_logo/name_logo_dm.png" alt=""></span>
-            <div class="burger-menu"></div>
+            <div class="burger-menu" (click)="toggleOverlay()" [class.open]="isOpen"></div>
         </div>
     </div>
 </nav>
 
-
-<!-- <nav>
-    <div class="header_content">
-        <div class="nav_left">
-            <span alt="german_english_switch_button"></span>
-            <div class="nav-link">
-                <a class="nav_about_me" href="#about_me"></a>
-                <div class="green_dot"></div>
-            </div>
-            <div class="nav-link">
-                <a class="nav_skills" href="#skills"></a>
-                <div class="green_dot"></div>
-            </div>
-            <div class="nav-link">
-                <a class="nav_projects" href="#projects"></a>
-                <div class="green_dot"></div>
-            </div>
+@if (isOpen) {
+    <div (click)="closeOverlay()" class="toggleOff-container">
+      <div id="overlay" [class.open]="isOpen" class="header-overlay">
+        <div class="inner_burger">
+            <a class="burger_about_me" href="#about_me"></a>
+            <a class="burger_skills" href="#skills"></a>
+            <a class="burger_projects" href="#projects"></a>
+            <span class="burger_lang_btn" alt="german_english_switch_button"></span>
         </div>
-        <div class="nav_right">
-            <span alt="logo_image"><img src="./../../../assets/svg/nav/name_logo/name_logo_dm.png" alt=""></span>
-        </div>
+      </div>
     </div>
-</nav> -->
+    }

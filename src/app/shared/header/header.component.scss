@@ -114,11 +114,95 @@ nav {
     &:hover {
         background-image: url('./../../../assets/svg/nav/btn/bruger_btn_hover.svg');
     }
+
+    &:active {
+        background-image: url('./../../../assets/svg/nav/btn/bruger_btn_hover.svg');
+    }
 }
 
 .mobile_logo {
     height: 96px;
     display: none;
+}
+
+.inner_burger {
+    @include dFlex($jc: center, $ai: center, $g: 24px);
+    flex-direction: column;
+    height: 100%;
+}
+
+.burger_about_me {
+    // height: 80px;
+    background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 96px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/about_me_hover.svg');
+    }
+    &:active {
+        background-image: url('./../../../assets/svg/nav/section_btn/about_me_selected.svg');
+    }
+}
+
+.burger_skills {
+    background-image: url('./../../../assets/svg/nav/section_btn/skills.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 96px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/skills_hover.svg');
+    }
+    &:active {
+        background-image: url('./../../../assets/svg/nav/section_btn/skills_selected.svg');
+    }
+}
+
+.burger_projects {
+    background-image: url('./../../../assets/svg/nav/section_btn/projects.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 96px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/section_btn/projects_hover.svg');
+    }
+    &:active {
+        background-image: url('./../../../assets/svg/nav/section_btn/projects_selected.svg');
+    }
+}
+
+.burger_lang_btn {
+    background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on1.svg');
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 96px;
+    &:hover {
+        background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on_hover.svg');
+    }
+    &:active {
+        background-image: url('./../../../assets/svg/nav/section_btn/projects_selected.svg');
+    }
+}
+
+.toggleOff-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.25);
+    top: 0;
+    right: 0;
+    z-index: 15;
+  }
+
+.header-overlay {
+    height: 252px;
+    width: 238px;
+    background-image: linear-gradient(45deg, #1c1c1c 50%, #08463B);
+    border-radius: 24px;
+    border: 2px solid #3DCFB6;
+    position: absolute;
+    top: 80px;
+    right: 40px;
 }
 
 @media (max-width: 920px) {

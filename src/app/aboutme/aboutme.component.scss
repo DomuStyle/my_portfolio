@@ -4,52 +4,55 @@ section {
     // padding-top: 196px;
     // padding-bottom: 196px;
     background-color: #1c1c1c;
-    
-    
     height: 100vh;
-    
-    >.about_me_content {
-        @include dFlex($jc: space-between, $ai: flex-start);
-        height: 100%;
-        padding: 0 calc(max(80px,(100% - 1440px) / 2));
-        >.about_me_left {
-            @include dFlex($jc: flex-start, $ai: flex-start);
-            padding-bottom: 160px;
-            position: relative;
-            >.about_me_img {
-                filter: grayscale(100%);
-                &:hover {
-                    filter: grayscale(0%);
-                    cursor: pointer;
-                }
-            }
+}
 
-            >.about_me_stripes {
-                position: absolute;
-                top: 0;
-                left: 0;
-                transform: translate(0px, 0px);
-                transition: transform 0.25s linear;
-            }
+.about_me_content {
+    @include dFlex($jc: center, $ai: flex-start);
+    height: 100%;
+    padding: 0 calc(max(80px,(100% - 1440px) / 2));
+}
 
-            &:hover .about_me_stripes {
-                transform: translate(-30px, 30px);
-            }
-        }
+.about_me_left {
+    @include dFlex($jc: flex-start, $ai: flex-start);
+    padding-top: 160px;
+    position: relative;
+    height: 100%;
 
-        >.about_me_right {
-            padding-top: 160px;
-            margin-left: 128px;
-        }
+    &:hover .about_me_stripes {
+        transform: translate(-30px, 30px);
     }
+}
+
+.about_me_img {
+    filter: grayscale(100%);
+    
+    &:hover {
+        filter: grayscale(0%);
+        cursor: pointer;
+    }
+}
+
+.about_me_stripes {
+    position: absolute;
+    top: 160;
+    left: 0;
+    transform: translate(0px, 0px);
+    transition: transform 0.25s linear;
+}
+
+.about_me_right {
+    padding-top: 160px;
+    margin-left: 128px;
+    height: 100%;
 }
 
 .about_me_frame {
     @include dFlex($jc: flex-start, $ai: flex-start);
     flex-direction: column;
     padding: 24px;
-    height: 50%;
-    width: 65%;
+    height: 568px;
+    width: 568px;
     background-color: rgba($color: #08463B, $alpha: 0.5);
     border-radius: 24px;
     border: 2px solid #3DCFB6;
@@ -99,6 +102,8 @@ section {
     }
 }
 
-@media (max-width: 600px) {
-    
+@media (max-width: 1370px) {
+    .about_me_right {
+        margin-left: 80px;
+    }
 }

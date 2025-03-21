@@ -231,7 +231,8 @@ section {
 
     .center_btn {
         border-color: #3DCFB6;
-
+        height: 56px;
+        width: 170px;
         a{
             color: #3DCFB6;
         }
@@ -246,6 +247,15 @@ section {
 
     h1 {
         @include font($ff: 'Fira_Code', $fs: 40px, $fw: 700);
+    }
+
+    .landingpage_center_btns {
+        @include dFlex($jc: space-evenly, $ai: center, $g: 12px);
+    }
+
+    .center_btn {
+        height: 48px;
+        width: 160px;
     }
 }
 
