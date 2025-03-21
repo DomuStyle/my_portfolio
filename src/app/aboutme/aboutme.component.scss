@@ -8,7 +8,7 @@ section {
 }
 
 .about_me_content {
-    @include dFlex($jc: center, $ai: flex-start);
+    @include dFlex($jc: center, $ai: flex-start, $g: 60px);
     height: 100%;
     padding: 0 calc(max(80px,(100% - 1440px) / 2));
 }
@@ -43,7 +43,6 @@ section {
 
 .about_me_right {
     padding-top: 160px;
-    margin-left: 128px;
     height: 100%;
 }
 
@@ -53,6 +52,7 @@ section {
     padding: 24px;
     height: 568px;
     width: 568px;
+    max-width: 568px;
     background-color: rgba($color: #08463B, $alpha: 0.5);
     border-radius: 24px;
     border: 2px solid #3DCFB6;
@@ -103,7 +103,26 @@ section {
 }
 
 @media (max-width: 1370px) {
+    .about_me_content {
+        padding: 0 calc(max(40px,(100% - 1440px) / 2));
+        gap: 40px;
+    }
+
     .about_me_right {
-        margin-left: 80px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .about_me_content {
+        @include dFlex($jc: center, $ai: center);
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about_me_right {
+        padding-top: 0;
+        height: auto;
+        width: auto;
     }
 }
