@@ -70,6 +70,16 @@ export class TestimonialComponent {
              Freude an der Arbeit. Projekt: Join`,
       position: 'Frontend Developer',
     },
+    {
+      id: 6,
+      author: 'Ismail Baris',
+      text: `Mit Dominik zusammenzuarbeiten war immer eine Bereicherung, 
+             da er nicht nur fachlich versiert ist, sondern auch eine sehr 
+             lösungsorientierte Denkweise mitbringt. Er geht auf verschiedene Ansätze ein, 
+             hinterfragt bestehende Strukturen und trägt so dazu bei, 
+             dass das Team gemeinsam die besten Lösungen findet. Projekt: Kochwelt`,
+      position: 'Frontend Developer',
+    },
   ]);
 
   currentIndex = signal(0);
