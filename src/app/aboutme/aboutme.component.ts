@@ -9,11 +9,8 @@ import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translat
   styleUrl: './aboutme.component.scss'
 })
 export class AboutmeComponent {
-constructor(private translate: TranslateService) {
-
-}
+constructor(private translate: TranslateService) {}
 switchLang(language: string) {
   this.translate.use(language);
 }
-
 }

@@ -36,10 +36,20 @@
     font-family: 'Fira_Code';
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
-    gap: 16px;
+    width: 100%;
+    gap: 11px;
     padding-top: 32px;
     padding-bottom: 24px;
+}
+
+.skills_title1 {
+    width: auto;
+}
+
+.skills_title2 {
+    width: auto;
 }
 
 .skillset_right {

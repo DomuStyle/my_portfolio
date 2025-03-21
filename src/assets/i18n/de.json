@@ -15,6 +15,16 @@
         "location-text": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Kiel als auch remote effektiv arbeiten.",
         "mindset-text": "Ich bin aufgeschlossen und suche stets nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
         "profession-text": "In meinem Beruf geht es bei der Programmierung nicht nur darum, Code zu schreiben; es ist eine kreative Form des Problemlösens. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+        },
+
+    "skillSet": {
+        "title": "Technologien",
+        "frame-title": "Skill Set",
+        "text1": "Meine Reise umfasste die Arbeit an vielfältigen Projekten, wobei ich eine Reihe von Frontend-Technologien und -Konzepten einsetzte. Ich bin offen dafür, neue Technologien und Methoden anzunehmen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft der Webentwicklung vorne zu bleiben.",
+        "frame-title2-first": "Du benötigst",
+        "frame-title2-second": "einen anderen Skill?",
+        "text2": "Kontaktieren sie mich gerne. Ich freue mich darauf mein Wissen stetig zu erweitern",
+        "button-text": "Lass uns reden"
         } 
     
   }

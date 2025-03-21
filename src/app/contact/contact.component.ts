@@ -1,16 +1,22 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component , inject} from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateDirective, TranslatePipe, CommonModule ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
+  constructor(private translate: TranslateService) {}
+  switchLang(language: string) {
+    this.translate.use(language);
+  }
     http = inject(HttpClient)
     
     contactData = {
