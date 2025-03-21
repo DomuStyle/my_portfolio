@@ -49,6 +49,27 @@ export class TestimonialComponent {
              mit dem das Arbeiten einfach Spaß macht.`,
       position: 'Frontend Developer',
     },
+    {
+      id: 4,
+      author: 'Philipp Franke',
+      text: `Dominik ist ein äußerst zuverlässiger Teamplayer. 
+             Er scheut keine Herausforderung und ist stets bereit, 
+             Verantwortung zu übernehmen. Seine Fähigkeit, 
+             auch unter Zeitdruck klare Lösungen zu finden, ist beeindruckend. Projekt: Kochwelt`,
+      position: 'Frontend Developer',
+    },
+    {
+      id: 5,
+      author: 'Philipp Franke',
+      text: `Dominik ist ein belastbarer und engagierter Teamkollege, 
+             der auch in schwierigen Zeiten fokussiert blieb. 
+             Trotz persönlicher Herausforderungen arbeitete er konzentriert am 
+             Projekterfolg und steigerte im Vergleich zum letzten Gruppenprojekt 
+             deutlich seine Effizienz. Er nahm Feedback offen an, 
+             bewahrte bei Rückschlägen seine positive Einstellung und zeigte stets 
+             Freude an der Arbeit. Projekt: Join`,
+      position: 'Frontend Developer',
+    },
   ]);
 
   currentIndex = signal(0);

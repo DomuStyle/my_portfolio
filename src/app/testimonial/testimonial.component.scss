@@ -15,7 +15,7 @@ section {
 .testimonials-title {
     @include font($ff: 'Fira_Code', $fs: 32px, $fw: 700);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
     color: #3dcfb6;
 }
   
@@ -28,7 +28,7 @@ section {
 .quote-icon {
     @include font($fs: 250px, $fw: 400);
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: calc(50% - 320px);
     color: white;
     line-height: 1;
