@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-aboutme',
@@ -9,5 +9,11 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
   styleUrl: './aboutme.component.scss'
 })
 export class AboutmeComponent {
+constructor(private translate: TranslateService) {
+
+}
+switchLang(language: string) {
+  this.translate.use(language);
+}
 
 }

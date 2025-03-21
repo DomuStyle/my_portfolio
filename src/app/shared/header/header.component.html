@@ -2,7 +2,9 @@
     <div class="header_content">
         <div class="nav_left">
             <img class="mobile_logo" src="./../../../assets/svg/nav/name_logo/logo_only.png" alt="dominik marnet portfolio logo">
-            <span class="lang_btn" alt="german_english_switch_button"></span>
+            <!-- <span class="lang_btn" (click)="switchLang('de')" alt="german_english_switch_button"></span> -->
+            <span class="lang_btn" [ngClass]="getLangButtonClass()" (click)="toggleLanguage()" alt="language_switch_button"></span>
+            <!-- <span class="lang_btn" (click)="switchLang('de')" alt="german_english_switch_button"></span> -->
             <a class="nav_about_me" href="#about_me"></a>
             <a class="nav_skills" href="#skills"></a>
             <a class="nav_projects" href="#projects"></a>
@@ -22,7 +24,8 @@
             <a class="burger_about_me" href="#about_me"></a>
             <a class="burger_skills" href="#skills"></a>
             <a class="burger_projects" href="#projects"></a>
-            <span class="burger_lang_btn" alt="german_english_switch_button"></span>
+            <!-- <span class="burger_lang_btn" alt="german_english_switch_button"></span> -->
+            <span class="burger_lang_btn" [ngClass]="getBurgerLangButtonClass()" (click)="toggleLanguage()" alt="language_switch_button"></span>
         </div>
       </div>
     </div>

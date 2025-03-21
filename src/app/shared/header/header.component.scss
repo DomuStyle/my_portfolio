@@ -65,17 +65,17 @@ nav {
     padding-top: 32px;
     display: flex;
     justify-content: center;
-    >span {
-        width: 96px;
-        padding-left: 8px;
-        background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on1.svg');
-        background-repeat: no-repeat;
-        background-color: transparent; 
-        &:hover {
-            background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
-            cursor: pointer;
-        }
-    }
+    // >span {
+    //     width: 96px;
+    //     padding-left: 8px;
+    //     background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on1.svg');
+    //     background-repeat: no-repeat;
+    //     background-color: transparent; 
+    //     &:hover {
+    //         background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
+    //         cursor: pointer;
+    //     }
+    // }
     >a {
         padding-left: 8px;
     }
@@ -171,18 +171,48 @@ nav {
     }
 }
 
+.lang_btn {
+    width: 96px;
+    padding-left: 8px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    
+    &.lang-btn-de-on {
+      background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on1.svg');
+      &:hover {
+        background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
+      }
+    }
+    
+    &.lang-btn-en-on {
+      background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on1.svg');
+      &:hover {
+        background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on_hover.svg');
+      }
+    }
+  }
+
 .burger_lang_btn {
-    background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on1.svg');
     background-repeat: no-repeat;
     height: 34px;
     width: 96px;
-    &:hover {
+    cursor: pointer;
+    
+    &.burger-lang-btn-de-on {
+      background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on1.svg');
+      &:hover {
+        background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
+      }
+    }
+    
+    &.burger-lang-btn-en-on {
+      background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on1.svg');
+      &:hover {
         background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_eng_on_hover.svg');
+      }
     }
-    &:active {
-        background-image: url('./../../../assets/svg/nav/section_btn/projects_selected.svg');
-    }
-}
+  }
 
 .toggleOff-container {
     height: 100%;
