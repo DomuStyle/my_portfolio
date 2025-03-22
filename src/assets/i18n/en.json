@@ -31,5 +31,14 @@
         "title": "Portfolio",
         "title2": "Featured Projects",
         "text": "Explore a selection of my work here - interact with projects to see my skills in action."
+        },
+
+    "testimonials": {
+        "text1": "Dominik integrated seamlessly into the group work, independently developed numerous solutions, and played a key role in transforming the initial folder structure chaos into a clear and understandable system. Working with him was highly enjoyable, and I am confident that he excels in a team environment.",
+        "text2": "Dominik is an excellent colleague who works with remarkable efficiency and speed. His attention to detail and his composed demeanor make him an invaluable member of the team. In addition to his technical expertise, his pleasant personality contributes to a harmonious working environment.",
+        "text3": "Working with Dominik has been a truly pleasant experience! Not only is he extremely dedicated and eager to learn, but he also brings an open and communicative approach that enriches every collaboration. His friendly nature and motivation to constantly grow make him a valuable team player with whom working is genuinely enjoyable.",
+        "text4": "Dominik is an exceptionally reliable team player. He does not shy away from challenges and is always ready to take on responsibility. His ability to find clear solutions even under time pressure is truly impressive.",
+        "text5": "Dominik is a resilient and dedicated team member who remained focused even during challenging times. Despite personal difficulties, he worked diligently toward project success. Compared to our last group project, he significantly improved his speed and efficiency. He welcomed feedback as an opportunity to grow and maintained a positive attitude, even when facing setbacks.",
+        "text6": "Working with Dominik has always been a valuable experience, as he is not only professionally skilled but also brings a highly solution-oriented mindset. He engages with various approaches, challenges existing structures, and contributes to the team in finding the best solutions together."
         } 
   }
