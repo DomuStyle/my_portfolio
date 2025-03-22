@@ -40,5 +40,22 @@
         "text4": "Dominik is an exceptionally reliable team player. He does not shy away from challenges and is always ready to take on responsibility. His ability to find clear solutions even under time pressure is truly impressive.",
         "text5": "Dominik is a resilient and dedicated team member who remained focused even during challenging times. Despite personal difficulties, he worked diligently toward project success. Compared to our last group project, he significantly improved his speed and efficiency. He welcomed feedback as an opportunity to grow and maintained a positive attitude, even when facing setbacks.",
         "text6": "Working with Dominik has always been a valuable experience, as he is not only professionally skilled but also brings a highly solution-oriented mindset. He engages with various approaches, challenges existing structures, and contributes to the team in finding the best solutions together."
-        } 
+        },
+        
+    "contact": {
+        "title": "Contact me",
+        "title2-1": "Let's work",
+        "title2-2": "together",
+        "title3": "Got a problem to solve?",
+        "text": "Contact me through this form, i am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "text2-1": "Need a Frontend developer?",
+        "text2-2": "Let's talk!?",
+        "form-name": "What's your name?",
+        "form-email": "What's your email?",
+        "form-msg": "How can i help you??",
+        "policy-text1": "I've read the",
+        "policy-text2": "privacy policy",
+        "policy-text3": "and agree to the processing of my data as outlined",
+        "submit-btn": "Say Hello ;)"
+        }
   }
