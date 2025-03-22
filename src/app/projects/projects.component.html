@@ -1,8 +1,10 @@
 <section id="projects" class="portfolio_section">
     <div class="projects_content">
-        <h4>Portfolio</h4>
-        <h3>Featured Projects</h3>
-        <p>Explore a selection of my work here - interact with <br> projects to see my skills in action.</p>
+        <h4>{{ 'portfolio.title' | translate }}</h4>
+        <h3>{{ 'portfolio.title2' | translate }}</h3>
+        <div class="projects_text">
+          <p>{{ 'portfolio.text' | translate }}</p>
+        </div>
         <div class="large_seperator"></div>   
         <a class="project" (click)="openOverlay(projects[0])">
             <h5 class="color_white">{{projects[0].title}}</h5>

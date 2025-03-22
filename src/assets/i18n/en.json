@@ -25,5 +25,11 @@
         "frame-title2-second": "another skill?",
         "text2": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
         "button-text": "Let's Talk"
-        }
+        },
+
+    "portfolio": {
+        "title": "Portfolio",
+        "title2": "Featured Projects",
+        "text": "Explore a selection of my work here - interact with projects to see my skills in action."
+        } 
   }

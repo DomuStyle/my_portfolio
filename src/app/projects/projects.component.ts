@@ -3,13 +3,14 @@ import {Overlay, OverlayModule} from '@angular/cdk/overlay';
 // import { CdkPortal, PortalModule } from '@angular/cdk/portal';
 import { CommonModule } from '@angular/common';
 import { Project } from './../interfaces/project';
+import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
 
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [OverlayModule, CommonModule],
+  imports: [OverlayModule, CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -17,8 +18,9 @@ export class ProjectsComponent {
 
   isOverlayOpen = false;
 
-  constructor() {
-
+  constructor(private translate: TranslateService) {}
+  switchLang(language: string) {
+    this.translate.use(language);
   }
 
   projects: Project[] = [

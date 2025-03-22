@@ -10,9 +10,7 @@ section {
         padding: 0 calc(max(80px,(100% - 1440px) / 2));
 
     >p {
-        @include font($ff: 'Karla', $fs: 18px, $fw: 400);
-        color: white;
-        padding-bottom: 32px;
+        
     }
 
     >.portfolio_seperator {
@@ -22,6 +20,13 @@ section {
     }
     }
     
+}
+
+.projects_text {
+    @include font($ff: 'Karla', $fs: 18px, $fw: 400);
+        color: white;
+        padding-bottom: 32px;
+        width: 60%;
 }
 
 .project_tools {
