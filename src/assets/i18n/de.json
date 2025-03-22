@@ -40,5 +40,22 @@
         "text4": "Dominik ist ein äußerst zuverlässiger Teamplayer. Er scheut keine Herausforderung und ist stets bereit, Verantwortung zu übernehmen. Seine Fähigkeit, auch unter Zeitdruck klare Lösungen zu finden, ist beeindruckend.",
         "text5": "Dominik ist ein engagierter und belastbarer Teamkollege, der auch in schwierigen Zeiten fokussiert und ruhig blieb. Er zeigte eine deutliche Verbesserung in Arbeitsgeschwindigkeit und Effizienz und nutzte Feedback stets als Chance zur Weiterentwicklung. Selbst bei Rückschlägen bewahrte er seine positive Einstellung und Freude an der Arbeit.",
         "text6": "Mit Dominik zusammenzuarbeiten war immer eine Bereicherung, da er nicht nur fachlich versiert ist, sondern auch eine sehr lösungsorientierte Denkweise mitbringt. Er geht auf verschiedene Ansätze ein, hinterfragt bestehende Strukturen und trägt so dazu bei, dass das Team gemeinsam die besten Lösungen findet."
-        } 
+        },
+        
+        "contact": {
+        "title": "Schreib mir",
+        "title2-1": "Lass uns",
+        "title2-2": "zusammenzuarbeiten",
+        "title3": "Es gibt ein problem zu lösen?",
+        "text": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "text2-1": "Du brauchst einen Frontend Developer?",
+        "text2-2": "Lass uns reden!?",
+        "form-name": "Wie ist dein Name?",
+        "form-email": "Wie ist deine email?",
+        "form-msg": "Wie jann ich dir helfen??",
+        "policy-text1": "Ich habe die",
+        "policy-text2": "Datenschutzerklärung",
+        "policy-text3": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bestimmungen zu.",
+        "submit-btn": "Sag Hallo ;)"
+        }
   }
