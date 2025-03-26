@@ -1,13 +1,17 @@
 {   
-    
     "landingpage": {
       "projects-link-btn": "Check my work",
-      "contact-me-btn": "Contact me"
+      "contact-me-btn": "Contact me",
+      "banderole1": "Available for remote work",
+      "banderole2": "Open to work",
+      "banderole3": "Available for remote work",
+      "banderole4": "Open to work",
+      "banderole5": "Available for remote work",
+      "banderole6": "Open to work",
+      "banderole7": "Available for remote work",
+      "banderole8": "Open to work"
     },
 
-
-
-    
     "about-me": {
         "title": "Who I am",
         "frame-title": "About me",

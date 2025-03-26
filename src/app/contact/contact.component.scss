@@ -55,6 +55,7 @@ form {
             outline: none; /* Remove focus outline */
             background-color: #1c1c1c;
             margin-left: 32px;
+            color: #ffffff;
             // &:hover {
                      
             // } 
@@ -77,6 +78,14 @@ form {
     >input::placeholder {
         color: #ffffff;
     }
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ffffff; /* Default color */
+}
+  
+input.ng-invalid.ng-touched::placeholder, textarea.ng-invalid.ng-touched::placeholder {
+    color: #ff5555; /* Red for invalid state */
 }
 
 .contact_right_bottom {
@@ -105,6 +114,7 @@ form {
             outline: none; /* Remove focus outline */
             color: white;
             cursor: pointer;
+            background-color: transparent;
         }
 
         >input::placeholder {
@@ -123,6 +133,7 @@ input {
     align-content: center;
     width: 390px;
     scrollbar-width: none;
+    color: #ffffff;
     // margin-bottom: 32px;
     // margin-left: 32px;
 }

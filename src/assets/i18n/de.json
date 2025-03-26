@@ -1,13 +1,17 @@
 {   
-    
     "landingpage": {
       "projects-link-btn": "Meine Projekte",
-      "contact-me-btn": "Schreib mir"
+      "contact-me-btn": "Schreib mir",
+      "banderole1": "Bereit für Remote Arbeit",
+      "banderole2": "Bereit zum Loslegen",
+      "banderole3": "Bereit für Remote Arbeit",
+      "banderole4": "Bereit zum Loslegen",
+      "banderole5": "Bereit für Remote Arbeit",
+      "banderole6": "Bereit zum Loslegen",
+      "banderole7": "Bereit für Remote Arbeit",
+      "banderole8": "Bereit zum Loslegen"
     },
 
-
-
-    
     "about-me": {
         "title": "Wer ich bin",
         "frame-title": "Über mich",
@@ -33,7 +37,7 @@
         "text": "Erkunden Sie hier eine Auswahl meiner Arbeiten – interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
         },
         
-        "testimonials": {
+    "testimonials": {
         "text1": "Dominik integrierte sich nahtlos in die Gruppenarbeit, entwickelte eigenständig zahlreiche Lösungen und spielte eine entscheidende Rolle dabei, das anfängliche Chaos in der Ordnerstruktur in ein klares und verständliches System zu verwandeln. Die Zusammenarbeit mit ihm war äußerst angenehm, und ich bin überzeugt, dass er in einer Teamumgebung hervorragend abschneidet.",
         "text2": "Dominik ist ein toller Kollege, der mit bemerkenswerter Effizienz und Geschwindigkeit arbeitet. Seine Liebe zum Detail und seine ausgeglichene Art macht ihn zu einem unschätzbar wertvollen Teammitglied. Neben seinen technischen Fähigkeiten trägt seine angenehme Persönlichkeit zu einer harmonischen Arbeitsatmosphäre bei.",
         "text3": "Mit Dominik zu arbeiten, war eine sehr angenehme Erfahrung! Er ist nicht nur extrem engagiert und wissbegierig, sondern bringt auch eine offene und kommunikative Art mit, die jede Zusammenarbeit bereichert. Sein freundliches Wesen und seine Motivation, sich ständig weiterzuentwickeln, machen ihn zu einem wertvollen Teamplayer, mit dem das Arbeiten einfach Spaß macht.",
@@ -42,7 +46,7 @@
         "text6": "Mit Dominik zusammenzuarbeiten war immer eine Bereicherung, da er nicht nur fachlich versiert ist, sondern auch eine sehr lösungsorientierte Denkweise mitbringt. Er geht auf verschiedene Ansätze ein, hinterfragt bestehende Strukturen und trägt so dazu bei, dass das Team gemeinsam die besten Lösungen findet."
         },
         
-        "contact": {
+    "contact": {
         "title": "Schreib mir",
         "title2-1": "Lass uns",
         "title2-2": "zusammenzuarbeiten",

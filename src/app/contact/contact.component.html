@@ -1,4 +1,4 @@
-<section id="contact" class="contact_section">
+<!-- <section id="contact" class="contact_section">
     <div class="contact_content">
         <div class="contact_left">
             <h4>{{ 'contact.title' | translate }}</h4>
@@ -16,17 +16,37 @@
                 <div class="contact_container">
                     <div class="upper_contact_seperator"></div>
                     <h4 class="color_turqoise">{{ 'contact.form-name' | translate }}</h4>
-                    <input minlength="3" [(ngModel)]="contactData.name" id="name" name="name" placeholder="Your name goes here" required>
+                    <input 
+                        minlength="3" 
+                        [(ngModel)]="contactData.name" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your name goes here" 
+                        required
+                    />
                 </div>
                 <div class="contact_container">
                     <div class="contact_seperator"></div>
                     <h4 class="color_turqoise">{{ 'contact.form-email' | translate }}</h4>
-                    <input [(ngModel)]="contactData.email" id="email" name="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <input 
+                        [(ngModel)]="contactData.email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="youremail@email.com" 
+                        required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    />
                 </div>
                 <div class="contact_container">
                     <div class="contact_seperator"></div>
                     <h4 class="color_turqoise">{{ 'contact.form-msg' | translate }}</h4>
-                    <textarea #message = "ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Hello Dominik, i am interested in ..." required></textarea>
+                    <textarea 
+                        #message = "ngModel" 
+                        minlength="4" 
+                        [(ngModel)]="contactData.message" 
+                        id="message" name="message" 
+                        placeholder="Hello Dominik, i am interested in ..." required
+                    >
+                    </textarea>
                     @if (!message.valid && message.touched && !message.disabled) {
                         <span>Please enter a message!</span>
                     }
@@ -39,6 +59,78 @@
                 <div class="contact_right_bottom">
                     <div class="submit_btn">
                         <input type="submit" value="{{ 'contact.submit-btn' | translate }}">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section> -->
+
+<section id="contact" class="contact_section">
+    <div class="contact_content">
+        <div class="contact_left">
+            <h4>{{ 'contact.title' | translate }}</h4>
+            <h3>{{ 'contact.title2-1' | translate }}<br>{{ 'contact.title2-2' | translate }}</h3>
+            <h5 class="color_turqoise">{{ 'contact.title3' | translate }}</h5>
+            <p class="color_white">
+                {{ 'contact.text' | translate }}  
+            </p>
+            <div class="positioning_box">
+                <p class="color_white">{{ 'contact.text2-1' | translate }}</p><p class="color_turqoise">{{ 'contact.text2-2' | translate }}</p>
+            </div>
+        </div>
+        <div class="contact_right">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="contact_container">
+                    <div class="upper_contact_seperator"></div>
+                    <h4 class="color_turqoise">{{ 'contact.form-name' | translate }}</h4>
+                    <input 
+                        minlength="3" 
+                        [(ngModel)]="contactData.name" 
+                        id="name" 
+                        name="name" 
+                        [placeholder]="isNameValid ? 'Your name goes here' : 'Name must be at least 3 characters'" 
+                        required
+                        #nameField="ngModel"
+                        (ngModelChange)="validateName()"
+                    />
+                </div>
+                <div class="contact_container">
+                    <div class="contact_seperator"></div>
+                    <h4 class="color_turqoise">{{ 'contact.form-email' | translate }}</h4>
+                    <input 
+                        [(ngModel)]="contactData.email" 
+                        id="email" 
+                        name="email" 
+                        [placeholder]="isEmailValid ? 'youremail@email.com' : 'Enter a valid email address'" 
+                        required 
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        #emailField="ngModel"
+                        (ngModelChange)="validateEmail()"
+                    />
+                </div>
+                <div class="contact_container">
+                    <div class="contact_seperator"></div>
+                    <h4 class="color_turqoise">{{ 'contact.form-msg' | translate }}</h4>
+                    <textarea 
+                        minlength="4" 
+                        [(ngModel)]="contactData.message" 
+                        id="message" 
+                        name="message" 
+                        [placeholder]="isMsgValid ? 'Hello Dominik, I am interested in ...' : 'Message must be at least 4 characters'" 
+                        required
+                        #messageField="ngModel"
+                        (ngModelChange)="validateMessage()"
+                    ></textarea>
+                </div>
+                <div class="contact_seperator"></div>
+                <div class="policy_checkbox">
+                    <input type="checkbox" [(ngModel)]="isPolicyChecked" name="policy" required>
+                    <p class="color_white">{{ 'contact.policy-text1' | translate }} <a class="color_turqoise">{{ 'contact.policy-text2' | translate }}</a> {{ 'contact.policy-text3' | translate }}</p>
+                </div>
+                <div class="contact_right_bottom">
+                    <div class="submit_btn">
+                        <input type="submit" value="{{ 'contact.submit-btn' | translate }}" [disabled]="!contactForm.valid || !isPolicyChecked">
                     </div>
                 </div>
             </form>
