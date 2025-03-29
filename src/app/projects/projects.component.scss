@@ -94,6 +94,21 @@ section {
     border-radius: 24px;
     border: 2px solid #3DCFB6;
     padding: 64px 40px;
+    z-index: 4;
+}
+
+.large-image {
+    border-radius: 20px;
+}
+
+.overlay-tech-logo {
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+}
+
+.tech-item {
+    @include dFlex($jc: center, $ai: center);
 }
 
 .overlay-content-left {

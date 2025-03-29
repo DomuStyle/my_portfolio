@@ -49,9 +49,9 @@ export class ProjectsComponent {
     description: `
           Jump, run and throw game based on object-oriented approach. 
           Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
-    img: './assets/img/projects/el_pollo_loco_project_l.png',
+    img: './assets/img/projects/pollo-loco-snapshot (1).png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
-    gitUrl: 'https://github.com/',
+    gitUrl: 'https://github.com/DomuStyle/El-Pollo-Loco',
     openProjectUrl: 'https://dominik-marnet.de/el-pollo-loco',
     techImgs: [
       './assets/img/overlay/technologies/overlay-js.svg',
@@ -61,7 +61,7 @@ export class ProjectsComponent {
     },
     {
     id: 3,
-    title: 'Pokedex / DA-Bubble',
+    title: 'Pokedex',
     description: `
           This App is a Slack Clone App. 
           It revolutionizes team communication and collaboration with its intuitive interface, 

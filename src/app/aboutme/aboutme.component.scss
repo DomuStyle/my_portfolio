@@ -8,7 +8,7 @@ section {
 }
 
 .about_me_content {
-    @include dFlex($jc: center, $ai: flex-start, $g: 60px);
+    @include dFlex($jc: center, $ai: flex-start, $g: 124px);
     height: 100%;
     padding: 0 calc(max(80px,(100% - 1440px) / 2));
 }
@@ -25,6 +25,7 @@ section {
 }
 
 .about_me_img {
+    border-radius:  30px;
     filter: grayscale(100%);
     
     &:hover {

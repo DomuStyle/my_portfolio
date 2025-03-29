@@ -1,7 +1,7 @@
 @import "./../../styles/mixins.scss";
 
 .skillset_content {
-    @include dFlex($jc: space-between, $ai: center);
+    @include dFlex($jc: space-between, $ai: center, $g: 124px);
     background-image: radial-gradient(farthest-corner at -10% 55%, #08463B, #1c1c1c 35%);
     height: 100vh;
     overflow-x: hidden;
@@ -60,7 +60,7 @@
     flex-wrap: wrap;
     color: white;
     padding-top: 32px;
-    padding-left: 64px;
+    // padding-left: 64px;
     >.skill_icon {
         width: 20%;
         >img {
