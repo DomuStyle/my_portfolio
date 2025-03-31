@@ -38,6 +38,7 @@ section {
     position: absolute;
     top: 160;
     left: 0;
+    border-radius: 30px;
     transform: translate(0px, 0px);
     transition: transform 0.25s linear;
 }
@@ -115,6 +116,10 @@ section {
 }
 
 @media (max-width: 1275px) {
+    
+    section {
+        height: auto;
+    }
 
     h3 {
        font-size: 40px; 
@@ -125,6 +130,10 @@ section {
         @include dFlex($jc: center, $ai: center);
         flex-direction: column;
         gap: 40px;
+    }
+
+    .about_me_left {
+        padding-top: 96px;
     }
 
     .about_me_img {
@@ -144,18 +153,48 @@ section {
     }
 
     .about_me_frame {
-        height: 456px;
+        height: auto;
         width: 456px;
-        padding: 12px;
 
         >p {
-            padding-bottom: 0px;
-            font-size: 14px;
+            padding-bottom: 16px;
         }
 
         >div {
             padding-top: 4px;
-            font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 640px) {
+
+    .about_me_content {
+        padding-top: 32px;
+    }
+
+    h3 {
+
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+    
+    .about_me_left {
+        padding-top: 64px;
+    }
+
+    .about_me_img {
+        height: 358px;
+        width: 358px;
+    }
+
+    .about_me_stripes {
+        height: 358px;
+        width: 358px;
+    }
+
+    .about_me_frame {
+        width: 322px;
     }
 }
