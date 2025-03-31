@@ -69,6 +69,8 @@
         "policy-text1": "I've read the",
         "policy-text2": "privacy policy",
         "policy-text3": "and agree to the processing of my data as outlined",
-        "submit-btn": "Say Hello ;)"
+        "submit-btn": "Say Hello ;)",
+        "success-msg": "Message sent successfully!",
+        "error-msg": "Failed to send message. Please try again later."
         }
   }

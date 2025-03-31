@@ -56,13 +56,21 @@ form {
             background-color: #1c1c1c;
             margin-left: 32px;
             color: #ffffff;
-            // &:hover {
-                     
-            // } 
+
+            
         }     
     }
 }
-    
+   
+#name,
+#email {
+    @include font($ff: 'Karla', $fs: 24px, $fw: 400);
+    margin-left: 32px;
+    margin-bottom: 40px;
+    background-color: #1c1c1c;
+    border: none;
+}
+
 .policy_checkbox {
     @include dFlex($jc: flex-start, $ai: center);
     padding-top: 32px;
@@ -86,6 +94,12 @@ input::placeholder, textarea::placeholder {
   
 input.ng-invalid.ng-touched::placeholder, textarea.ng-invalid.ng-touched::placeholder {
     color: #ff5555; /* Red for invalid state */
+}
+
+/* Added: Maintain background color on focus */
+input:focus {
+    background-color: #1c1c1c;
+    outline: none; /* Ensure no outline appears */
 }
 
 .contact_right_bottom {

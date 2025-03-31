@@ -64,7 +64,7 @@ section {
         padding-bottom: 32px;
     }
 
-    >.aboutme_location {
+    >.about_me_location {
         @include dFlex($jc: center, $ai: flex-start);
         gap: 8px;
         padding-top: 16px;
@@ -115,15 +115,47 @@ section {
 }
 
 @media (max-width: 1275px) {
+
+    h3 {
+       font-size: 40px; 
+       padding-bottom: 0px;
+    }
+
     .about_me_content {
         @include dFlex($jc: center, $ai: center);
         flex-direction: column;
         gap: 40px;
     }
 
+    .about_me_img {
+        height: 480px;
+        width: 480px;
+    }
+
+    .about_me_stripes {
+        height: 480px;
+        width: 480px;
+    }
+
     .about_me_right {
         padding-top: 0;
         height: auto;
         width: auto;
+    }
+
+    .about_me_frame {
+        height: 456px;
+        width: 456px;
+        padding: 12px;
+
+        >p {
+            padding-bottom: 0px;
+            font-size: 14px;
+        }
+
+        >div {
+            padding-top: 4px;
+            font-size: 14px;
+        }
     }
 }
