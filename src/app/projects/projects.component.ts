@@ -27,10 +27,7 @@ export class ProjectsComponent {
     {
     id: 1,
     title: 'Join',
-    description: `
-          Task manager inspired by the Kanban System. 
-          Create and organize tasks using drag and drop functions, 
-          assign users and categories.`,
+    description: 'portfolio-Overlay.textJoin',
     img: './assets/img/projects/join_project_l.png',
     technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     gitUrl: 'https://github.com/PhilscheLogik/Join/',
@@ -46,9 +43,7 @@ export class ProjectsComponent {
     {
     id: 2,
     title: 'El Pollo loco',
-    description: `
-          Jump, run and throw game based on object-oriented approach. 
-          Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
+    description: 'portfolio-Overlay.textElPolloLoco',
     img: './assets/img/projects/pollo-loco-snapshot (1).png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/DomuStyle/El-Pollo-Loco',
@@ -61,11 +56,8 @@ export class ProjectsComponent {
     },
     {
     id: 3,
-    title: 'Pokedex',
-    description: `
-          This App is a Slack Clone App. 
-          It revolutionizes team communication and collaboration with its intuitive interface, 
-          real-time messaging, and robust channel organization.`,
+    title: 'DABubble',
+    description: 'portfolio-Overlay.textDABubble',
     img: './assets/img/projects/da_bubble_project.png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/',

@@ -36,6 +36,13 @@
         "title2": "Meine Projekte",
         "text": "Erkunden Sie hier eine Auswahl meiner Arbeiten – interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
         },
+
+    "portfolio-Overlay": {
+        "button": "Nächstes Projekt",
+        "textJoin": "Taskmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
+        "textElPolloLoco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+        "textDABubble": "Diese App ist eine Slack-Clone-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch ihre intuitive Benutzeroberfläche, Echtzeit-Messaging und eine robuste Kanalorganisation."
+        },
         
     "testimonials": {
         "text1": "Dominik integrierte sich nahtlos in die Gruppenarbeit, entwickelte eigenständig zahlreiche Lösungen und spielte eine entscheidende Rolle dabei, das anfängliche Chaos in der Ordnerstruktur in ein klares und verständliches System zu verwandeln. Die Zusammenarbeit mit ihm war äußerst angenehm, und ich bin überzeugt, dass er in einer Teamumgebung hervorragend abschneidet.",

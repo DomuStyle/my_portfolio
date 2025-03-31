@@ -37,6 +37,15 @@
         "text": "Explore a selection of my work here - interact with projects to see my skills in action."
         },
 
+    "portfolio-Overlay": {
+        "button": "Next project",
+        "textJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "textElPolloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "textDABubble": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+        },
+
+    
+
     "testimonials": {
         "text1": "Dominik integrated seamlessly into the group work, independently developed numerous solutions, and played a key role in transforming the initial folder structure chaos into a clear and understandable system. Working with him was highly enjoyable, and I am confident that he excels in a team environment.",
         "text2": "Dominik is an excellent colleague who works with remarkable efficiency and speed. His attention to detail and his composed demeanor make him an invaluable member of the team. In addition to his technical expertise, his pleasant personality contributes to a harmonious working environment.",

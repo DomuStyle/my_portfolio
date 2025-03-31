@@ -57,7 +57,7 @@
           <h1 class="color_turqoise">0{{this.selectedProject.id}}</h1>
           <h3 class="color_white">{{this.selectedProject.title}}</h3>
           <h4 class="color_turqoise">Whats is this Project about?</h4>
-          <p class="color_white">{{selectedProject.description}}</p>
+          <p class="color_white">{{selectedProject.description | translate}}</p>
           <div class="overlay-technologies">
             @for (tech of selectedProject.technologies; track $index) {
               <div class="tech-item">
