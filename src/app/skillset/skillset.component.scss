@@ -57,16 +57,18 @@
 .skillset_right {
     @include dFlex($jc: center, $ai: center);
 
-    >.skillset_collection {
-        @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
-        @include dFlex($jc: flex-start, $ai: flex-start);
-        width: 90%;
-        row-gap: 80px;
-        column-gap: 40px;
-        flex-wrap: wrap;
-        color: white;
-        padding-top: 32px;
-    }
+}
+
+.skillset_collection {
+    @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
+    @include dFlex($jc: flex-start, $ai: flex-start);
+    width: 90%;
+    min-width: 568px;
+    row-gap: 80px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 32px;
 }
 
 .skill_icon {
@@ -102,29 +104,6 @@
     }   
 } 
 
-// .skillset_contact_btn {
-//     @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
-//     height: 64px;
-//     width: 180px;
-//     color: #ffffff;
-//     text-decoration: none;
-//     text-align: center;
-//     align-content: center;
-//     margin-top: 32px;
-//     border: 2px solid #ffffff;
-//     border-radius: 32px;
-//     border-color: #ffffff;
-//     transition: border-color 1.75s;
-//     &:hover {
-//         border-color: #3DCFB6;
-//         cursor: pointer;
-//     }
-//     &:hover a {
-//         color: #3DCFB6;
-//         animation: rollUp 0.75s forwards;
-//     }
-// }
-
 .skillset_contact_btn {
     @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
     height: 64px;
@@ -138,27 +117,16 @@
     border-radius: 32px;
     border-color: #ffffff;
     transition: border-color 1.75s;
-    overflow: hidden; /* Added to contain the sliding text */
+    overflow: hidden;
     &:hover {
         border-color: #3DCFB6;
         cursor: pointer;
     }
-    &:hover .contact_link { /* Target the link directly */
+    &:hover .contact_link {
         color: #3DCFB6;
-        animation: slideLeft 0.75s forwards; /* Updated animation name */
+        animation: slideLeft 0.75s forwards;
     }
 }
-
-// .contact_link {
-//     @include font($ff: 'Fira_Code', $fw: 400);
-//         height: 64px;
-//         width: 180px;
-//         color: #ffffff;
-//         text-decoration: none;
-//         text-align: center;
-//         align-content: center;
-//         transform: translateY(0%);
-// }
 
 .contact_link {
     @include font($ff: 'Fira_Code', $fw: 400);
@@ -168,25 +136,15 @@
     text-decoration: none;
     text-align: center;
     align-content: center;
-    display: block; /* Ensure it behaves as a block for animation */
-    /* Removed transition: transform 0s; */
+    display: block;
 }
 
-// @keyframes rollUp {
-//     from {
-//         transform: translateX(0);
-//     }
-//     to {
-//         transform: translateX(100%);
-//     }
-// }
-
-@keyframes slideLeft { /* Renamed for clarity */
+@keyframes slideLeft {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%); /* Slide left instead of right */
+        transform: translateX(-100%);
     }
 }
 
@@ -204,6 +162,15 @@
     display: block;
 }
 
+@media (max-width: 1590px) {
+    .skillset_right {
+        justify-content: flex-end;
+    }
+
+    .skillset_collection {
+        row-gap: 32px;
+    }
+}
 
 @media (max-width: 1370px) {
 
@@ -214,7 +181,7 @@
 
     .technologies_frame {
         height: auto;
-        width: auto;
+        width: 520px;
     }
 
     .skillset_collection {
@@ -241,12 +208,61 @@
     .skillset_right {
         width: auto;
         align-items: center;
+        min-width: 456px;
+        margin-top: 56px;
     }
 
     .skillset_collection {
-        justify-content: center;
-        align-items: center;
-        column-gap: 20px;
+        @include dFlex($jc: center, $ai: center);
+        column-gap: 4px;
+        row-gap: 24px;
         width: 456px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .technologies_frame {
+        height: auto;
+        width: 322px;
+    }
+
+    .skillset_right {
+        min-width: 358px;
+    }
+
+    .skillset_collection {
+
+    }
+}
+
+@media (max-width: 480px) {
+    .skillset_collection {
+        height: auto;
+    }
+
+    .skill_icon {
+        width: 25%;
+
+        >img {
+            height: 48px;
+            width: 48px;
+        }
+
+        >p {
+            font-size: 16px;
+        }
     }
 }
