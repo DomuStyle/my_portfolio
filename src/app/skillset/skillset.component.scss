@@ -102,6 +102,29 @@
     }   
 } 
 
+// .skillset_contact_btn {
+//     @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
+//     height: 64px;
+//     width: 180px;
+//     color: #ffffff;
+//     text-decoration: none;
+//     text-align: center;
+//     align-content: center;
+//     margin-top: 32px;
+//     border: 2px solid #ffffff;
+//     border-radius: 32px;
+//     border-color: #ffffff;
+//     transition: border-color 1.75s;
+//     &:hover {
+//         border-color: #3DCFB6;
+//         cursor: pointer;
+//     }
+//     &:hover a {
+//         color: #3DCFB6;
+//         animation: rollUp 0.75s forwards;
+//     }
+// }
+
 .skillset_contact_btn {
     @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
     height: 64px;
@@ -115,36 +138,55 @@
     border-radius: 32px;
     border-color: #ffffff;
     transition: border-color 1.75s;
+    overflow: hidden; /* Added to contain the sliding text */
     &:hover {
         border-color: #3DCFB6;
         cursor: pointer;
     }
-    &:hover a {
+    &:hover .contact_link { /* Target the link directly */
         color: #3DCFB6;
-        animation: rollUp 0.75s forwards;
+        animation: slideLeft 0.75s forwards; /* Updated animation name */
     }
 }
 
+// .contact_link {
+//     @include font($ff: 'Fira_Code', $fw: 400);
+//         height: 64px;
+//         width: 180px;
+//         color: #ffffff;
+//         text-decoration: none;
+//         text-align: center;
+//         align-content: center;
+//         transform: translateY(0%);
+// }
 
 .contact_link {
     @include font($ff: 'Fira_Code', $fw: 400);
-        height: 64px;
-        width: 180px;
-        color: #ffffff;
-        text-decoration: none;
-        text-align: center;
-        align-content: center;
-        
-        transition: transform 0s;
-        transform: translateY(0%);
+    height: 64px;
+    width: 180px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    display: block; /* Ensure it behaves as a block for animation */
+    /* Removed transition: transform 0s; */
 }
 
-@keyframes rollUp {
+// @keyframes rollUp {
+//     from {
+//         transform: translateX(0);
+//     }
+//     to {
+//         transform: translateX(100%);
+//     }
+// }
+
+@keyframes slideLeft { /* Renamed for clarity */
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(100%);
+        transform: translateX(-100%); /* Slide left instead of right */
     }
 }
 
