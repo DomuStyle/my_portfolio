@@ -129,7 +129,7 @@ section {
     .about_me_content {
         @include dFlex($jc: center, $ai: center);
         flex-direction: column;
-        gap: 40px;
+        gap: 64px;
     }
 
     .about_me_left {

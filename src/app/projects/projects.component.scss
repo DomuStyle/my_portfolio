@@ -9,15 +9,11 @@ section {
         height: 100vh;
         padding: 0 calc(max(80px,(100% - 1440px) / 2));
 
-    >p {
-        
-    }
-
-    >.portfolio_seperator {
-        height: 2px;
-        width: 60%;
-        background-color: #3DCFB6;
-    }
+        >.portfolio_seperator {
+            height: 2px;
+            width: 60%;
+            background-color: #3DCFB6;
+        }
     }
     
 }
@@ -50,25 +46,26 @@ section {
         background-color: rgba($color: #08463B, $alpha: 0.5);
         cursor: pointer;
     }
+}
 
-    >.project_popup {
-        position: absolute;
-        top: -40px;
-        right: -400px;
-        display: none;
-        >.project_img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 1;
-        }
-    
-        >.project_background {
-            position: absolute;
-            top: 24px;
-            right: -24px;
-        }
-    }
+.project_popup {
+    position: absolute;
+    top: -40px;
+    right: -400px;
+    display: none;
+}
+
+.project_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.project_background {
+    position: absolute;
+    top: 24px;
+    right: -24px;
 }
 
 .project:hover .project_popup {
@@ -211,4 +208,20 @@ section {
     height: 40px;
     width: 40px;
     background-image: url('./../../assets/svg/nav/arrow-right.svg');
+}
+
+
+@media (max-width: 1080px) {
+
+    .project_img {
+        position: absolute;
+        top: 0px;
+        right: 40px;
+    }
+
+    .project_background {
+        position: absolute;
+        top: 24px;
+        right: 12px;
+    }
 }
