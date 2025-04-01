@@ -14,6 +14,13 @@
     }
 }
 
+.skillset_left {
+    @include dFlex($jc: flex-start, $ai: flex-start);
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+}
+
 .technologies_frame {
     @include dFlex($jc: flex-start, $ai: flex-start);
     flex-direction: column;
@@ -48,52 +55,52 @@
 }
 
 .skillset_right {
-    @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
-    @include dFlex($jc: flex-start, $ai: flex-start);
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    row-gap: 80px;
-    column-gap: 40px;
-    flex-wrap: wrap;
-    color: white;
-    padding-top: 32px;
-    // padding-left: 64px;
-    >.skill_icon {
-        width: 20%;
-        >img {
-            height: 60px;
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-        >p {
-            font-size: 18px;
-        }   
+    @include dFlex($jc: center, $ai: center);
+
+    >.skillset_collection {
+        @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
+        @include dFlex($jc: flex-start, $ai: flex-start);
+        width: 90%;
+        row-gap: 80px;
+        column-gap: 40px;
+        flex-wrap: wrap;
+        color: white;
+        padding-top: 32px;
     }
-    >.skill_growth_icon {
-        position: relative;
-        >p {
-            font-size: 18px;
-        }
-        >.skill_growth_popup {
-            position: absolute;
-            bottom: 90px;
-            left: -20px;
-            z-index: 0;
-        }
-        >img {
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-        
-    }
-    
-    
 }
+
+.skill_icon {
+    @include dFlex($jc: flex-start, $ai: center, $g: 6px);
+    flex-direction: column;
+    width: 20%;
+    >img {
+        height: 60px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    >p {
+        font-size: 18px;
+    }   
+}
+
+.skill_growth_icon {
+    position: relative;
+    >p {
+        font-size: 18px;
+    }
+    >.skill_growth_popup {
+        position: absolute;
+        bottom: 90px;
+        left: -20px;
+        z-index: 0;
+    }
+    >img {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }   
+} 
 
 .skillset_contact_btn {
     @include font($ff: 'Fira_Code', $fs: 18px, $fw: 400);
@@ -112,33 +119,32 @@
         border-color: #3DCFB6;
         cursor: pointer;
     }
+    &:hover a {
+        color: #3DCFB6;
+        animation: rollUp 0.75s forwards;
+    }
 }
 
-.skillset_contact_btn {
-    >.contact_link {
+
+.contact_link {
+    @include font($ff: 'Fira_Code', $fw: 400);
         height: 64px;
         width: 180px;
         color: #ffffff;
         text-decoration: none;
-        font-family: "Fira_Code";
         text-align: center;
         align-content: center;
+        
         transition: transform 0s;
         transform: translateY(0%);
-    }
-    &:hover .contact_link{
-        color: #3DCFB6;
-        animation: rollUp 0.75s infinite;
-        // transition: color 1.75s;
-    }
 }
 
 @keyframes rollUp {
     from {
-        transform: translateY(100%);
+        transform: translateX(0);
     }
     to {
-        transform: translateY(0);
+        transform: translateX(100%);
     }
 }
 
@@ -154,4 +160,51 @@
 
 .skill_growth_icon:hover  .skill_growth_popup {
     display: block;
+}
+
+
+@media (max-width: 1370px) {
+
+    .skillset_content {
+        padding: 0 calc(max(40px,(100% - 1440px) / 2));
+        gap: 40px;
+    }
+
+    .technologies_frame {
+        height: auto;
+        width: auto;
+    }
+
+    .skillset_collection {
+        width: auto;
+    }
+}
+
+@media (max-width: 1275px) {
+
+    .skillset_content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .skillset_left {
+        width: auto;
+    }
+
+    .technologies_frame {
+        height: auto;
+        width: 456px;
+    }
+
+    .skillset_right {
+        width: auto;
+        align-items: center;
+    }
+
+    .skillset_collection {
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        width: 456px;
+    }
 }
