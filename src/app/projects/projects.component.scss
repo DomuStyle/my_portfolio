@@ -1,21 +1,21 @@
 @import "./../../styles/mixins.scss";
 
 section {
-
-    >.projects_content {
-        @include dFlex($jc: center, $ai: flex-start);
-        flex-direction: column;
-        background-color: #1c1c1c;
-        height: 100vh;
-        padding: 0 calc(max(80px,(100% - 1440px) / 2));
-
-        >.portfolio_seperator {
-            height: 2px;
-            width: 60%;
-            background-color: #3DCFB6;
-        }
-    }
     
+}
+
+.projects_content {
+    @include dFlex($jc: center, $ai: flex-start);
+    flex-direction: column;
+    background-color: #1c1c1c;
+    height: 100vh;
+    padding: 0 calc(max(80px,(100% - 1440px) / 2));
+}
+
+.portfolio_seperator {
+    height: 2px;
+    width: 60%;
+    background-color: #3DCFB6;
 }
 
 .projects_text {
@@ -210,6 +210,11 @@ section {
     background-image: url('./../../assets/svg/nav/arrow-right.svg');
 }
 
+@media (max-width: 1275px) {
+    .projects_content {
+        padding: 0 calc(max(40px,(100% - 1440px) / 2));
+    }
+}
 
 @media (max-width: 1080px) {
 
@@ -223,5 +228,50 @@ section {
         position: absolute;
         top: 24px;
         right: 12px;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .project {
+        @include dFlex($jc: space-between, $ai: flex-start);
+        flex-direction: column;
+    }
+
+    .project_img {
+        position: absolute;
+        top: 0px;
+        right: 64px;
+    }
+
+    .project_background {
+        position: absolute;
+        top: 24px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .project {
+        @include dFlex($jc: space-between, $ai: flex-start, $g: 16px);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .large_seperator {
+        width: 100%;
+    }
+
+    .portfolio_seperator {
+        width: 100%;
+    }
+
+    .project_img {
+        display: none;
+    }
+
+    .project_background {
+        display: none;
     }
 }
