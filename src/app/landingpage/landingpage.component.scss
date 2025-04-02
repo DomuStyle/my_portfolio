@@ -280,6 +280,21 @@ section {
     }
 }
 
+@media (max-width: 450px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .landingpage_content_center {
+        text-align: center;
+    }
+
+    .landingpage_center_btns {
+        @include dFlex($jc: space-evenly, $ai: center, $g: 32px);  
+        flex-direction: column;
+    }
+}
+
 @keyframes flow-left-to-right {
     0% {
         transform: translateX(-100%);
