@@ -75,37 +75,63 @@ export class ProjectsComponent {
    * Null when no project is selected.
    */
 selectedProject: any = null;
-/**
- * Sets the selectedProject to the clicked project, opening the overlay.
- * @param project - The project object clicked by the user.
- */
-openOverlay(project: any) {
+
+
+// /**
+//  * Resets selectedProject to null, closing the overlay.
+//  */
+// closeOverlay() {
+//   this.selectedProject = null;
+// }
+
+ /**
+   * Opens the overlay by setting the selected project and prevents body scrolling.
+   * @param project - The project object clicked by the user.
+   */
+ openOverlay(project: Project) {
   this.selectedProject = project;
+  // Prevent background scrolling by setting body overflow to hidden
+  document.body.style.overflow = 'hidden';
 }
 
 /**
- * Resets selectedProject to null, closing the overlay.
- */
+   * Closes the overlay by resetting selectedProject and restores body scrolling.
+   */
 closeOverlay() {
   this.selectedProject = null;
+  // Restore scrolling by removing the overflow style
+  document.body.style.overflow = '';
 }
 
+/**
+   * Navigates to the next project in the projects array, looping back to the start if at the end.
+   */
 nextProject() {
   if (!this.selectedProject) return;
 
-  // Find the index of the current selected project
   const currentIndex = this.projects.findIndex(
     (p) => p.id === this.selectedProject!.id
   );
-
-  // Calculate the next index, looping back to 0 if at the end
   const nextIndex = (currentIndex + 1) % this.projects.length;
-
-  // Set the next project as the selected project
   this.selectedProject = this.projects[nextIndex];
 }
 
-// getdata(){
-//   console.log(this.selectedProject.technologies[0]); 
+// nextProject() {
+//   if (!this.selectedProject) return;
+
+//   // Find the index of the current selected project
+//   const currentIndex = this.projects.findIndex(
+//     (p) => p.id === this.selectedProject!.id
+//   );
+
+//   // Calculate the next index, looping back to 0 if at the end
+//   const nextIndex = (currentIndex + 1) % this.projects.length;
+
+//   // Set the next project as the selected project
+//   this.selectedProject = this.projects[nextIndex];
 // }
+
+// // getdata(){
+// //   console.log(this.selectedProject.technologies[0]); 
+// // }
 }

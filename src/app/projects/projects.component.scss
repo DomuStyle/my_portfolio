@@ -1,7 +1,15 @@
 @import "./../../styles/mixins.scss";
 
-section {
-    
+h1 {
+    @include font($ff: 'Karla', $fs: 128px, $fw: 700);
+}
+
+h3 {
+    @include font($ff: 'Fira_Code', $fs: 64px, $fw: 700);
+}
+
+h4 {
+    @include font($ff: 'Fira_Code', $fs: 24px, $fw: 700);
 }
 
 .projects_content {
@@ -79,19 +87,29 @@ section {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    // overflow: hidden; /* Prevent overflow from affecting the body */
 }
 .overlay-content {
     @include dFlex($jc: space-between, $ai: flex-start);
     position: fixed;
     top: 10%;
-    left: 12%;
+    left: 10%;
     width: 75%;
-    height: auto;
+    max-height: 80vh; /* Limit height to fit within viewport */
+    // height: auto;
     background-image: linear-gradient(45deg, #1c1c1c 50%, #08463B);
     border-radius: 24px;
     border: 2px solid #3DCFB6;
     padding: 64px 40px;
     z-index: 4;
+    // overflow-y: auto; /* Enable vertical scrolling within overlay */
+}
+
+/* Ensure content doesn't overflow unnecessarily */
+.overlay-content-left,
+.overlay-content-right {
+  flex-shrink: 0; /* Prevent shrinking beyond content size */
 }
 
 .large-image {
@@ -113,18 +131,6 @@ section {
     flex-direction: column;
     height: 100%;
     width: 45%;
-
-    >h1 {
-        @include font($ff: 'Karla', $fs: 128px, $fw: 700);
-    }
-
-    >h3 {
-        @include font($ff: 'Fira_Code', $fs: 64px, $fw: 700);
-    }
-
-    >h4 {
-        @include font($ff: 'Fira_Code', $fs: 24px, $fw: 700);
-    }
 
     >p {
         @include font($ff: 'Karla', $fs: 18px, $fw: 400);
@@ -204,15 +210,92 @@ section {
     }
 }
 
+.next-project-mobile-btn {
+    display: none;
+    margin-right: 16px;
+    width: 100%;
+
+    >a {
+        @include font($ff: 'Karla', $fs: 18px, $fw: 400); 
+    }
+}
+
 .next-btn-arrow {
     height: 40px;
     width: 40px;
     background-image: url('./../../assets/svg/nav/arrow-right.svg');
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 1285px) {
+
+    h1 {
+        @include font($ff: 'Karla', $fs: 72px, $fw: 700);
+    }
+
+    h3 {
+        @include font($ff: 'Fira_Code', $fs: 56px, $fw: 700);
+        padding-bottom: 4px;
+    }
+
     .projects_content {
         padding: 0 calc(max(40px,(100% - 1440px) / 2));
+    }
+
+    .overlay-content {
+        @include dFlex($jc: space-between, $ai: center);
+        flex-direction: column-reverse;
+        width: 75%;
+        top: 5%;
+        left: 12%;
+        padding: 16px 8px;
+        max-height: 85vh; /* Maintain height limit */
+        overflow-y: auto; /* Keep scrollable */
+
+        /* Webkit (Chrome, Safari, Edge) scrollbar styles */
+         &::-webkit-scrollbar {
+            width: 6px; /* Makes the scrollbar thin */
+            height: 128px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent; /* Keeps the track invisible */
+            margin-top: 16px; /* Shortens the track from the top */
+            margin-bottom: 16px; /* Shortens the track from the bottom */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #3DCFB6; /* Matches the border color */
+            border-radius: 3px; /* Rounds the edges slightly for a sleek look */
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: lighten(#3DCFB6, 10%); /* Slightly lighter on hover for feedback */
+        }
+
+        /* Firefox scrollbar styles */
+        scrollbar-width: thin; /* Makes the scrollbar thin in Firefox */
+        scrollbar-color: #3DCFB6 transparent; /* Thumb color matches border, track is transparent */
+    }
+
+    .large-image {
+        height: 280px;
+        margin-bottom: 16px;
+    }
+
+    .next-project-btn {
+        display: none;
+    }
+
+    .next-project-mobile-btn {
+        @include dFlex($jc: flex-end, $ai: center);
+    }
+
+    .overlay-content-left {
+        @include dFlex($jc: center, $ai: flex-start, $g: 12px);
+    }
+
+    .overlay-content-right {
+        @include dFlex($jc: center, $ai: flex-end, $g: 12px);
     }
 }
 
