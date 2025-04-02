@@ -124,7 +124,7 @@
     }
     &:hover .contact_link {
         color: #3DCFB6;
-        animation: slideLeft 0.75s forwards;
+        animation: slideRight 0.75s forwards;
     }
 }
 
@@ -139,12 +139,18 @@
     display: block;
 }
 
-@keyframes slideLeft {
-    from {
+@keyframes slideRight {
+    0% {
         transform: translateX(0);
     }
-    to {
+    50% {
+        transform: translateX(100%);
+    }
+    51% {
         transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
