@@ -140,6 +140,7 @@ h4 {
 .overlay-technologies {
     @include dFlex($jc: center, $ai: flex-start, $g: 24px);
     @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    width: 60%;
     margin-top: 32px;
 
     >span {
@@ -234,6 +235,7 @@ h4 {
 
     h1 {
         @include font($ff: 'Karla', $fs: 72px, $fw: 700);
+        height: 72px;
     }
 
     h3 {
@@ -304,13 +306,20 @@ h4 {
         width: 55%;
     }
 
+    .overlay-technologies {
+        @include dFlex($jc: center, $ai: flex-start, $g: 12px);
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+
     .overlay-tech-logo {
         height: 20px;
         width: 20px;
         margin-right: 8px;
     }
     .overlay-content-right {
-        @include dFlex($jc: center, $ai: flex-end, $g: 12px);
+        @include dFlex($jc: center, $ai: center, $g: 12px);
+        width: 100%;
     }
 }
 
