@@ -94,6 +94,15 @@ section {
             animation: slideRight 0.75s forwards;
         }
 
+        /* Stagger the animation for the second button */
+        &:nth-child(1) > a {
+            animation-delay: 0s; /* Left button starts immediately */
+        }
+
+        &:nth-child(2) > a {
+            animation-delay: 1s; /* Right button starts halfway through */
+        }
+
     >a {
         @include font($ff: 'Fira_Code', $fw: 400);
         height: 64px;
@@ -105,18 +114,9 @@ section {
         
         transition: transform 0s;
         transform: translateY(0%);
-        
+        animation: flow-left-to-right 2.5s infinite linear;
     }
 }
-
-// @keyframes rollUp {
-//     from {
-//         transform: translateX(0);
-//     }
-//     to {
-//         transform: translateX(100%);
-//     }
-// }
 
 @keyframes slideRight {
     0% {
@@ -260,6 +260,12 @@ section {
 
 @media (max-width: 512px) {
 
+    .center_btn {
+        &:hover a {
+            animation: none;
+        }
+    }
+
     h1 {
         @include font($ff: 'Fira_Code', $fs: 40px, $fw: 700);
     }
@@ -271,6 +277,25 @@ section {
     .center_btn {
         height: 48px;
         width: 160px;
+    }
+}
+
+@keyframes flow-left-to-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0; /* Hidden when fully left */
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1; /* Fully visible at start of button */
+    }
+    90% {
+        transform: translateX(100%);
+        opacity: 1; /* Still visible as it exits right */
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0; /* Hidden when fully right */
     }
 }
 
