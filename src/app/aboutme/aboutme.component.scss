@@ -198,3 +198,19 @@ section {
         width: 322px;
     }
 }
+
+@media (max-width: 440px) {
+    .about_me_img {
+        height: 280px;
+        width: 280px;
+    }
+
+    .about_me_stripes {
+        height: 280px;
+        width: 280px;
+    }
+
+    .about_me_frame {
+        width: 260px;
+    }
+}
