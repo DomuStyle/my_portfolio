@@ -249,9 +249,6 @@
         min-width: 358px;
     }
 
-    .skillset_collection {
-
-    }
 }
 
 @media (max-width: 480px) {
@@ -270,6 +267,31 @@
 
         >p {
             font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+
+    .technologies_frame {
+        width: 240px;
+    }
+
+    .skillset_collection {
+        width: 240px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 65px;
+        padding: 0;
+    }
+
+    .skill_icon {
+        width: 64px;
+        height: 64px;
+
+        >img {
+            height: 64px;
+            height: 64px;
         }
     }
 }
