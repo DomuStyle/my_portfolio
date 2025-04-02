@@ -87,7 +87,9 @@
             </div>
         </div>
         <div class="overlay-content-right">
-          <a class="overlay-close-btn" (click)="closeOverlay()"></a>
+          <div class="overlay_right_btn">
+            <a class="overlay-close-btn" (click)="closeOverlay()"></a>
+          </div>
           <img [src]="selectedProject.img" alt="{{selectedProject.title}}" class="large-image">
           <div class="next-project-btn" (click)="nextProject()">
             <a class="color_turqoise">Next project</a>
