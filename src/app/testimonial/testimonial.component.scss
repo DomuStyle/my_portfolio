@@ -163,3 +163,52 @@ section {
       background-color: #3dcfb6;
     }
 }
+
+@media (max-width: 900px) {
+    
+    .testimonial-card {
+        height: 324px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    
+    .testimonial-card {
+        height: 360px;
+    }
+
+    .quote-icon {
+        top: -80px;
+        left: calc(50% - 290px);
+    }
+}
+
+@media (max-width: 640px) {
+
+    .testimonials-title {
+        font-size: 24px;
+        margin-bottom: 100px;
+    }
+    
+    .testimonial-card {
+        height: 480px;
+    }
+
+    .quote-icon {
+        top: -110px;
+        left: calc(50% - 260px);
+    }
+
+    .testimonials-navigator {
+        margin-top: 80px;
+    }
+
+    .author-line {
+        display: none;
+    }
+
+    .testimonial-author-container {
+        flex-wrap: wrap;
+    }
+}

@@ -448,3 +448,23 @@ h4 {
         display: none;
     }
 }
+
+@media (max-width: 900px) {
+
+    .projects_content {
+        padding-top: 64px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    .project_tools {
+        @include dFlex($jc: flex-start, $ai: flex-start);
+        flex-wrap: wrap;
+    }
+
+    .projects_text {
+        width: 100%;
+    }
+}
