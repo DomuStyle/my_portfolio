@@ -237,8 +237,17 @@ section {
 
     .testimonial-card {
         height: auto;
+    
+        &:left {
+            display: none;
+        }
+
+        &:right {
+            display: none;
+        }
     }
 
+    
     .testimonials-title {
         margin-bottom: 160px;
     }
