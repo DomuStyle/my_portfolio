@@ -56,3 +56,21 @@ footer {
         padding-bottom: 8px;
     }
 }
+
+@media (max-width: 480px) {
+
+    .footer_content {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer_left {
+        align-items: center;
+    }
+
+    .footer_center {
+        align-items: center;
+        padding-bottom: 24px;
+    }
+}
