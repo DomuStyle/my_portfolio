@@ -11,6 +11,7 @@ section {
     @include dFlex($jc: center, $ai: flex-start, $g: 124px);
     height: 100%;
     padding: 0 calc(max(80px,(100% - 1440px) / 2));
+    padding-bottom: 64px;
 }
 
 .about_me_left {
@@ -132,6 +133,10 @@ section {
         gap: 64px;
     }
 
+    .overlay_right_btn{
+        width: 100%;
+    }
+
     .about_me_left {
         padding-top: 96px;
     }
@@ -148,6 +153,7 @@ section {
 
     .about_me_right {
         padding-top: 0;
+        margin-bottom: 64px;
         height: auto;
         width: auto;
     }

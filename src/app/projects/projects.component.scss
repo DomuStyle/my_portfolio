@@ -355,7 +355,7 @@ h4 {
     }
 
     .large-image {
-        height: 280px;
+        height: 312px;
         margin-bottom: 16px;
     }
 
@@ -369,13 +369,19 @@ h4 {
 
     .overlay-content-left {
         @include dFlex($jc: center, $ai: flex-start, $g: 8px);
-        width: 55%;
+        width: 460px;
+    }
+
+    .overlay_right_btn{
+        @include dFlex($jc: flex-end, $ai: center);
+        width: 460px;
     }
 
     .overlay-technologies {
-        @include dFlex($jc: center, $ai: flex-start, $g: 12px);
+        @include dFlex($jc: flex-start, $ai: center, $g: 12px);
         flex-wrap: wrap;
         margin-top: 8px;
+        width: 100%;
     }
 
     .overlay-tech-logo {
@@ -449,14 +455,20 @@ h4 {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
-    .projects_content {
-        padding-top: 64px;
+    .overlay_right_btn{
+        @include dFlex($jc: flex-end, $ai: center);
+        width: 360px;
     }
 
-    h3 {
-        font-size: 48px;
+    .large-image {
+        width: 360px;
+    }
+
+    .overlay-content-left {
+        @include dFlex($jc: center, $ai: flex-start, $g: 8px);
+        width: 360px;
     }
 
     .project_tools {
@@ -466,5 +478,27 @@ h4 {
 
     .projects_text {
         width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .overlay_right_btn{
+        @include dFlex($jc: flex-end, $ai: center);
+        width: 256px;
+    }
+
+    .large-image {
+        width: 256px;
+        height: 180px;
+    }
+
+    .overlay-content-left {
+        @include dFlex($jc: center, $ai: flex-start, $g: 8px);
+        width: 256px;
+    }
+
+    .overlay-content-btns {
+        flex-direction: column;
     }
 }

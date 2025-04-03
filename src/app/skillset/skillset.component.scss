@@ -200,6 +200,7 @@
     .skillset_content {
         flex-direction: column;
         height: auto;
+        padding-bottom: 64px;
     }
 
     .skillset_left {
@@ -274,11 +275,11 @@
 @media (max-width: 440px) {
 
     .technologies_frame {
-        width: 240px;
+        width: 230px;
     }
 
     .skillset_collection {
-        width: 240px;
+        width: 230px;
         flex-wrap: nowrap;
         flex-direction: column;
         gap: 65px;
