@@ -69,6 +69,7 @@
         "policy-text3": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bestimmungen zu.",
         "submit-btn": "Sag Hallo ;)",
         "success-msg": "Nachricht erfolgreich versendet!",
-        "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuche es später erneut."
+        "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuche es später erneut.",
+        "error-message": "Please fill out all fields correctly and accept the privacy policy"
         }
   }

@@ -82,58 +82,66 @@
         <div class="contact_right">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="contact_container">
-                    <div class="upper_contact_seperator"></div>
-                    <h4 class="color_turqoise">{{ 'contact.form-name' | translate }}</h4>
-                    <input 
-                        minlength="3" 
-                        [(ngModel)]="contactData.name" 
-                        id="name" 
-                        name="name" 
-                        [placeholder]="isNameValid ? 'Your name goes here' : 'Name must be at least 3 characters'" 
-                        required
-                        #nameField="ngModel"
-                        (ngModelChange)="validateName()"
-                    />
+                  <div class="upper_contact_seperator"></div>
+                  <h4 class="color_turqoise">{{ 'contact.form-name' | translate }}</h4>
+                  <input
+                    minlength="3"
+                    [(ngModel)]="contactData.name"
+                    id="name"
+                    name="name"
+                    [placeholder]="getNamePlaceholder(nameField)"
+                    required
+                    #nameField="ngModel"
+                    (ngModelChange)="validateName()"
+                  />
                 </div>
                 <div class="contact_container">
-                    <div class="contact_seperator"></div>
-                    <h4 class="color_turqoise">{{ 'contact.form-email' | translate }}</h4>
-                    <input 
-                        [(ngModel)]="contactData.email" 
-                        id="email" 
-                        name="email" 
-                        [placeholder]="isEmailValid ? 'youremail@email.com' : 'Enter a valid email address'" 
-                        required 
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                        #emailField="ngModel"
-                        (ngModelChange)="validateEmail()"
-                    />
+                  <div class="contact_seperator"></div>
+                  <h4 class="color_turqoise">{{ 'contact.form-email' | translate }}</h4>
+                  <input
+                    [(ngModel)]="contactData.email"
+                    id="email"
+                    name="email"
+                    [placeholder]="getEmailPlaceholder(emailField)"
+                    required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    #emailField="ngModel"
+                    (ngModelChange)="validateEmail()"
+                  />
                 </div>
                 <div class="contact_container">
-                    <div class="contact_seperator"></div>
-                    <h4 class="color_turqoise">{{ 'contact.form-msg' | translate }}</h4>
-                    <textarea 
-                        minlength="4" 
-                        [(ngModel)]="contactData.message" 
-                        id="message" 
-                        name="message" 
-                        [placeholder]="isMsgValid ? 'Hello Dominik, I am interested in ...' : 'Message must be at least 4 characters'" 
-                        required
-                        #messageField="ngModel"
-                        (ngModelChange)="validateMessage()"
-                    ></textarea>
+                  <div class="contact_seperator"></div>
+                  <h4 class="color_turqoise">{{ 'contact.form-msg' | translate }}</h4>
+                  <textarea
+                    minlength="4"
+                    [(ngModel)]="contactData.message"
+                    id="message"
+                    name="message"
+                    [placeholder]="getMessagePlaceholder(messageField)"
+                    required
+                    #messageField="ngModel"
+                    (ngModelChange)="validateMessage()"
+                  ></textarea>
                 </div>
                 <div class="contact_seperator"></div>
                 <div class="policy_checkbox">
-                    <input type="checkbox" [(ngModel)]="isPolicyChecked" name="policy" required>
-                    <p class="color_white">{{ 'contact.policy-text1' | translate }} <a class="color_turqoise" routerLink="/impressum">{{ 'contact.policy-text2' | translate }}</a> {{ 'contact.policy-text3' | translate }}</p>
+                  <input type="checkbox" [(ngModel)]="isPolicyChecked" name="policy" required>
+                  <p class="color_white">
+                    {{ 'contact.policy-text1' | translate }}
+                    <a class="color_turqoise" routerLink="/impressum">{{ 'contact.policy-text2' | translate }}</a>
+                    {{ 'contact.policy-text3' | translate }}
+                  </p>
                 </div>
                 <div class="contact_right_bottom">
-                    <div class="submit_btn">
-                        <input type="submit" value="{{ 'contact.submit-btn' | translate }}" [disabled]="!contactForm.valid || !isPolicyChecked">
-                    </div>
+                  <div class="submit_btn">
+                    <input
+                      type="submit"
+                      value="{{ 'contact.submit-btn' | translate }}"
+                      [disabled]="!contactForm.valid || !isPolicyChecked"
+                    >
+                  </div>
                 </div>
-            </form>
+              </form>
         </div>
     </div>
 </section>

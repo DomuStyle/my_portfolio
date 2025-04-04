@@ -71,6 +71,7 @@
         "policy-text3": "and agree to the processing of my data as outlined",
         "submit-btn": "Say Hello ;)",
         "success-msg": "Message sent successfully!",
-        "error-msg": "Failed to send message. Please try again later."
+        "error-msg": "Failed to send message. Please try again later.",
+        "error-message": "Please fill out all fields correctly and accept the privacy policy"
         }
   }
