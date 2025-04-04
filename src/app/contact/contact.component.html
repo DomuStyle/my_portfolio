@@ -132,6 +132,11 @@
                     {{ 'contact.policy-text3' | translate }}
                   </p>
                 </div>
+                <div class="policy_error_container">
+                    <p class="error_message" *ngIf="showPolicyError(contactForm)">
+                      {{ 'contact.policy-error' | translate }}
+                    </p>
+                </div>
                 <div class="contact_right_bottom">
                   <div class="submit_btn">
                     <input

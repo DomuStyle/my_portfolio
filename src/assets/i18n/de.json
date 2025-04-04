@@ -70,6 +70,6 @@
         "submit-btn": "Sag Hallo ;)",
         "success-msg": "Nachricht erfolgreich versendet!",
         "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuche es später erneut.",
-        "error-message": "Please fill out all fields correctly and accept the privacy policy"
+        "policy-error": "Bitte akzeptiere zuerst die Privacy Policy"
         }
   }
