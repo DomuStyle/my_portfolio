@@ -60,14 +60,18 @@
                   <input type="checkbox" [(ngModel)]="isPolicyChecked" name="policy" required>
                   <p class="color_white">
                     {{ 'contact.policy-text1' | translate }}
-                    <a class="color_turqoise" routerLink="/impressum">{{ 'contact.policy-text2' | translate }}</a>
+                    <a class="color_turqoise" routerLink="/privacypolicy">{{ 'contact.policy-text2' | translate }}</a>
                     {{ 'contact.policy-text3' | translate }}
                   </p>
                 </div>
                 <div>
-                    <p class="error_message" *ngIf="showPolicyError(contactForm)">
-                      {{ 'contact.policy-error' | translate }}
-                    </p>
+                  <p
+                    class="error_message"
+                    [ngClass]="{'success_message': isMailSent}"
+                    *ngIf="showPolicyError(contactForm) || isMailSent"
+                  >
+                    {{ isMailSent ? ('contact.success-msg' | translate) : ('contact.policy-error' | translate) }}
+                  </p>
                 </div>
                 <div class="contact_right_bottom">
                   <div class="submit_btn">

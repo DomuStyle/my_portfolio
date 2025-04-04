@@ -71,5 +71,12 @@
         "success-msg": "Nachricht erfolgreich versendet!",
         "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuche es später erneut.",
         "policy-error": "Bitte akzeptiere zuerst die Privacy Policy"
+        },
+
+    "privacy-policy": {
+        "title": "Legal Notice & Privacy Policy",
+        "contact-info": "Contact Information",
+        "data-protection": "Data Protection",
+        "text": "This website collects personal information only through the contact form. The information you provide (name, email) is used solely for responding to your inquiries."
         }
   }

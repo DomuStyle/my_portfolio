@@ -12,7 +12,7 @@ import {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, TranslatePipe, TranslateDirective, OverlayModule],
+  imports: [RouterOutlet, RouterOutlet, HeaderComponent, FooterComponent, TranslatePipe, TranslateDirective, OverlayModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

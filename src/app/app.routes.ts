@@ -6,5 +6,5 @@ import { PrivacypolicyComponent } from './shared/privacypolicy/privacypolicy.com
 
 export const routes: Routes = [
     {path: '', component: LandingpageComponent},
-    {path: 'privacypolicy', component: PrivacypolicyComponent},
+    {path: 'privacypolicy', component: PrivacypolicyComponent}
 ];

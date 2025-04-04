@@ -31,7 +31,7 @@ export class ProjectsComponent {
     img: './assets/img/projects/join_project_l.png',
     technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
     gitUrl: 'https://github.com/PhilscheLogik/Join/',
-    openProjectUrl: 'https://dominik-marnet.de/join',
+    openProjectUrl: 'https://www.join.dominik-marnet.de',
     techImgs: [
       './assets/img/overlay/technologies/overlay-angular.svg',
       './assets/img/overlay/technologies/overlay-ts.svg',
@@ -47,7 +47,7 @@ export class ProjectsComponent {
     img: './assets/img/projects/pollo-loco-snapshot (1).png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/DomuStyle/El-Pollo-Loco',
-    openProjectUrl: 'https://dominik-marnet.de/el-pollo-loco',
+    openProjectUrl: 'https://www.el-pollo-loco.dominik-marnet.de',
     techImgs: [
       './assets/img/overlay/technologies/overlay-js.svg',
       './assets/img/overlay/technologies/overlay-html.svg',
@@ -61,7 +61,7 @@ export class ProjectsComponent {
     img: './assets/img/projects/da_bubble_project.png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/',
-    openProjectUrl: 'https://dominik-marnet.de/pokedex',
+    openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
     techImgs: [
       './assets/img/overlay/technologies/overlay-js.svg',
       './assets/img/overlay/technologies/overlay-html.svg',

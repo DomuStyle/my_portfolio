@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { RouterLink, RouterModule } from '@angular/router';
 import { TranslatePipe, TranslateDirective, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslateDirective, TranslatePipe, CommonModule],
+  imports: [FormsModule, TranslateDirective, TranslatePipe, CommonModule, RouterLink, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -25,10 +26,11 @@ export class ContactComponent {
   };
 
   isPolicyChecked: boolean = false;
-  mailTest = false;
+  mailTest = true;
+  isMailSent: boolean = false;
 
   post = {
-    endPoint: 'https://dominik-marnet.de/sendMail.php',
+    endPoint: 'https://www.dominik-marnet.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -107,13 +109,36 @@ export class ContactComponent {
     return allFieldsValid && !this.isPolicyChecked;
   }
   
+  // /**
+  //  * Handles form submission, sending data via HTTP if valid and not in test mode.
+  //  */
+  // onSubmit(ngForm: NgForm) {
+  //   if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && !this.mailTest) {
+  //     this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
+  //       next: (response) => {
+  //         ngForm.resetForm();
+  //         this.resetForm();
+  //       },
+  //       error: (error) => {
+  //         console.error(error);
+  //       },
+  //       complete: () => console.info('send post complete'),
+  //     });
+  //   } else if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && this.mailTest) {
+  //     ngForm.resetForm();
+  //     this.resetForm();
+  //   }
+  // }
+
   /**
    * Handles form submission, sending data via HTTP if valid and not in test mode.
+   * Sets isMailSent to true on successful submission.
    */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
         next: (response) => {
+          this.isMailSent = true; // Set success flag on successful response
           ngForm.resetForm();
           this.resetForm();
         },
@@ -123,16 +148,26 @@ export class ContactComponent {
         complete: () => console.info('send post complete'),
       });
     } else if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && this.mailTest) {
+      this.isMailSent = true; // Set success flag in test mode
       ngForm.resetForm();
       this.resetForm();
     }
   }
 
+  // /**
+  //  * Resets the form and validation states.
+  //  */
+  // private resetForm() {
+  //   this.contactData = { name: '', email: '', message: '' };
+  //   this.isPolicyChecked = false;
+  // }
+
   /**
-   * Resets the form and validation states.
+   * Resets the form and validation states, preserving isMailSent until a new interaction.
    */
   private resetForm() {
     this.contactData = { name: '', email: '', message: '' };
     this.isPolicyChecked = false;
+    // isMailSent is not reset here to keep the success message visible until new input
   }
 }
