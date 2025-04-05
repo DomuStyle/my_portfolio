@@ -56,11 +56,11 @@ export class ProjectsComponent {
     },
     {
     id: 3,
-    title: 'DABubble',
-    description: 'portfolio-Overlay.textDABubble',
+    title: 'Pokedex',
+    description: 'portfolio-Overlay.textPokedex',
     img: './assets/img/projects/da_bubble_project.png',
     technologies: ['JavaScript', 'HTML', 'CSS'],
-    gitUrl: 'https://github.com/',
+    gitUrl: 'https://github.com/pokedex',
     openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
     techImgs: [
       './assets/img/overlay/technologies/overlay-js.svg',
