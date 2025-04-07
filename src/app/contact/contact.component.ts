@@ -26,7 +26,7 @@ export class ContactComponent {
   };
 
   isPolicyChecked: boolean = false;
-  mailTest = true;
+  mailTest = false;
   isMailSent: boolean = false;
 
   post = {
@@ -44,21 +44,21 @@ export class ContactComponent {
    * Validates the name field and updates the validation state.
    */
   validateName() {
-    this.contactData.name = this.contactData.name.trim(); // Optional: trim whitespace
+    this.contactData.name = this.contactData.name; 
   }
 
   /**
    * Validates the email field using a regex pattern and updates the validation state.
    */
   validateEmail() {
-    this.contactData.email = this.contactData.email.trim(); // Optional: trim whitespace
+    this.contactData.email = this.contactData.email; 
   }
 
   /**
    * Validates the message field and updates the validation state.
    */
   validateMessage() {
-    this.contactData.message = this.contactData.message.trim(); // Optional: trim whitespace
+    this.contactData.message = this.contactData.message;
   }
 
   /**
@@ -108,27 +108,6 @@ export class ContactComponent {
       form.controls['message']?.valid;
     return allFieldsValid && !this.isPolicyChecked;
   }
-  
-  // /**
-  //  * Handles form submission, sending data via HTTP if valid and not in test mode.
-  //  */
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && !this.mailTest) {
-  //     this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
-  //       next: (response) => {
-  //         ngForm.resetForm();
-  //         this.resetForm();
-  //       },
-  //       error: (error) => {
-  //         console.error(error);
-  //       },
-  //       complete: () => console.info('send post complete'),
-  //     });
-  //   } else if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && this.mailTest) {
-  //     ngForm.resetForm();
-  //     this.resetForm();
-  //   }
-  // }
 
   /**
    * Handles form submission, sending data via HTTP if valid and not in test mode.
@@ -153,14 +132,6 @@ export class ContactComponent {
       this.resetForm();
     }
   }
-
-  // /**
-  //  * Resets the form and validation states.
-  //  */
-  // private resetForm() {
-  //   this.contactData = { name: '', email: '', message: '' };
-  //   this.isPolicyChecked = false;
-  // }
 
   /**
    * Resets the form and validation states, preserving isMailSent until a new interaction.

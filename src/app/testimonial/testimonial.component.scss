@@ -194,6 +194,18 @@ section {
     .testimonial-card {
         height: 420px;
         width: 75%;
+
+        &:left {
+            display: none;
+        }
+
+        &:right {
+            display: none;
+        }
+    }
+
+    .testimonial-card left {
+        display: none;
     }
 
     .quote-icon {

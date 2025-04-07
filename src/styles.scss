@@ -20,6 +20,10 @@ $font-karla: 'Karla';
     display: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     scroll-behavior: smooth;

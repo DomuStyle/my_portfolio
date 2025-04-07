@@ -89,6 +89,7 @@ input[type=text], [type=email], select, textarea {
 
 input::placeholder, textarea::placeholder {
     color: #ffffff; /* Default color */
+    word-wrap: break-word;
 }
   
 input.ng-invalid.ng-touched::placeholder, textarea.ng-invalid.ng-touched::placeholder {
@@ -227,6 +228,10 @@ input::-webkit-scrollbar {
 }
 
 @media (max-width: 530px) {
+
+    h3 {
+        font-size: 48px;
+    }
     
     .contact_content {
         padding-bottom: 64px;
@@ -246,5 +251,50 @@ input::-webkit-scrollbar {
 
     textarea {
         width: 320px;
+    }
+}
+
+@media (max-width: 530px) {
+
+    #message {
+        width: 90%;
+    }
+
+    .upper_contact_seperator,
+    .contact_seperator {
+        width: 90%;
+    }
+
+    .contact_right {
+        max-width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #message,
+    #name,
+    #email {
+        width: 90%;
+        @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    }
+
+    #name::placeholder {
+        @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    }
+
+    #email::placeholder {
+        @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+
+    }
+
+    input[type=text], [type=email], select, textarea {
+        @include font($ff: 'Karla', $fs: 16px, $fw: 400);
+    }
+
+    .upper_contact_seperator,
+    .contact_seperator {
+        width: 90%;
     }
 }
