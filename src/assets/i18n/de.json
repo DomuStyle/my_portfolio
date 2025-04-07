@@ -71,7 +71,9 @@
         "submit-btn": "Sag Hallo ;)",
         "success-msg": "Nachricht erfolgreich versendet!",
         "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuche es später erneut.",
-        "policy-error": "Bitte akzeptiere zuerst die Privacy Policy"
+        "policy-error": "Bitte akzeptiere zuerst die Privacy Policy",
+        "email-required": "Bitte gib deine email Adresse ein",
+        "email-invalid": "Gib eine gültige email Adresse ein!"
         },
 
     "privacy-policy": {

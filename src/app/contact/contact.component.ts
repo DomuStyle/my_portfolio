@@ -55,6 +55,36 @@ export class ContactComponent {
   }
 
   /**
+ * Determines if the email validation message should be displayed.
+ * Shows the message if the email field is touched and invalid.
+ * @param emailField - The NgModel instance of the email input field, or undefined.
+ * @returns boolean - True if the message should be shown, false otherwise.
+ */
+showEmailValidationMessage(emailField: NgModel | undefined): boolean {
+  // Guard against undefined or null emailField
+  if (!emailField) {
+    return false; // Hide message if emailField isn’t available
+  }
+
+  // Safely check touched and invalid properties
+  return emailField.touched === true && emailField.invalid === true && !this.isMailSent;
+}
+
+  /**
+   * Returns the appropriate validation message for the email field based on its state.
+   * @param emailField - The NgModel instance of the email input field.
+   * @returns string - The message to display under the email field.
+   */
+  getEmailValidationMessage(emailField: NgModel): string {
+    if (emailField.errors?.['required']) {
+      return this.translate.instant('contact.email-required') || 'Please enter your email';
+    } else if (emailField.errors?.['pattern']) {
+      return this.translate.instant('contact.email-invalid') || 'Enter a valid email address';
+    }
+    return ''; // Default case (shouldn't occur due to *ngIf)
+  }
+
+  /**
    * Validates the message field and updates the validation state.
    */
   validateMessage() {

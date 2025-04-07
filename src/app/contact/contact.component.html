@@ -40,6 +40,15 @@
                     #emailField="ngModel"
                     (ngModelChange)="validateEmail()"
                   />
+                  <div>
+                    <p
+                        class="error_message"
+                        [ngClass]="{'success_message': isMailSent}"
+                        *ngIf="showEmailValidationMessage(emailField)"
+                      >
+                        {{ getEmailValidationMessage(emailField) }}
+                    </p>  
+                  </div>
                 </div>
                 <div class="contact_container">
                   <div class="contact_seperator"></div>
