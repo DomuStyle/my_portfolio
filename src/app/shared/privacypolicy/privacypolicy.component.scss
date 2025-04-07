@@ -51,3 +51,59 @@ p {
 b {
     margin-bottom: 24px;
 }
+
+@media (max-width: 880px) {
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .privacypolicy_frame {
+        width: 70%;
+    }
+}
+
+@media (max-width: 730px) {
+
+    h3 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .privacypolicy_frame {
+        width: 70%;
+    }
+}
+
+@media (max-width: 655px) {
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 545px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
