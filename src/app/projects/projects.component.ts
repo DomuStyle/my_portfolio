@@ -58,7 +58,7 @@ export class ProjectsComponent {
     id: 3,
     title: 'Pokedex',
     description: 'portfolio-Overlay.textPokedex',
-    img: './assets/img/projects/da_bubble_project.png',
+    img: './assets/img/projects/pokedex_project_l.jpg',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitUrl: 'https://github.com/pokedex',
     openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
