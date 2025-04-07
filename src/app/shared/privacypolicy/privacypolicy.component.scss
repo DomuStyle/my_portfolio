@@ -94,6 +94,10 @@ b {
 }
 
 @media (max-width: 545px) {
+    
+    h1 {
+        font-size: 48px;
+    }
 
     h2 {
         font-size: 24px;
@@ -105,5 +109,24 @@ b {
 
     p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 370px) {
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
     }
 }
