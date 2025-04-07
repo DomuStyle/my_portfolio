@@ -95,13 +95,13 @@ section {
         }
 
         /* Stagger the animation for the second button */
-        &:nth-child(1) > a {
-            animation-delay: 0s; /* Left button starts immediately */
-        }
+        // &:nth-child(1) > a {
+        //     animation-delay: 0s; /* Left button starts immediately */
+        // }
 
-        &:nth-child(2) > a {
-            animation-delay: 1s; /* Right button starts halfway through */
-        }
+        // &:nth-child(2) > a {
+        //     animation-delay: 1s; /* Right button starts halfway through */
+        // }
 
     >a {
         @include font($ff: 'Fira_Code', $fw: 400);
@@ -112,9 +112,12 @@ section {
         text-align: center;
         align-content: center;
         
-        transition: transform 0s;
-        transform: translateY(0%);
-        animation: flow-left-to-right 2.5s infinite linear;
+        &:hover {
+            transition: transform 0s;
+            transform: translateY(0%);
+            animation: flow-left-to-right 2.5s ease-in linear;
+
+        }
     }
 }
 

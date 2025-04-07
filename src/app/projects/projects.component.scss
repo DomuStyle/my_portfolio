@@ -138,10 +138,11 @@ h4 {
 }
 
 .overlay-technologies {
-    @include dFlex($jc: center, $ai: flex-start, $g: 24px);
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 24px);
     @include font($ff: 'Karla', $fs: 16px, $fw: 400);
-    width: 60%;
+    width: 100%;
     margin-top: 32px;
+    flex-wrap: wrap;
 
     >span {
         margin-right: 16px;
@@ -174,37 +175,6 @@ h4 {
     width: 100%;
     margin-top: 32px;
 }
-
-// .overlay-btn {
-//     @include dFlex($jc: center, $ai: center);
-//     height: 64px;
-//     width: 180px;
-//     border: 2px solid #ffffff;
-//     border-radius: 32px;
-//     border-color: #ffffff;
-//     transition: border-color 1.75s;
-//     scrollbar-width: none;
-    
-
-//     &:hover {
-//                     border-color: #3DCFB6;
-//                 }
-
-//     &:hover .btn-arrow{
-//                     -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-// 	                        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-//                 }
-
-//     >a {
-//         text-decoration: none;
-//         margin-right: 8px;
-//     }
-
-//     >img {
-//         height: 20px;
-//         width: 20px;
-//     }
-// }
 
 .overlay-btn {
     @include dFlex($jc: center, $ai: center);
@@ -504,5 +474,29 @@ h4 {
 
     .overlay-content-btns {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 390px) {
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .overlay-content-left {
+        width: 200px;
+    }
+
+    .overlay_right_btn {
+        width: 212px;
+    }
+
+    .large-image {
+        width: 200px;
+        height: 145px;
     }
 }
