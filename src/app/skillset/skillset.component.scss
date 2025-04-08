@@ -86,7 +86,11 @@
 }
 
 .skill_growth_icon {
+    @include dFlex($jc: center, $ai: center);
+    flex-direction: column;
+    width: 20%;
     position: relative;
+
     >p {
         font-size: 18px;
     }

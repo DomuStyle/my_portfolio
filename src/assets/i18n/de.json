@@ -18,17 +18,17 @@
         "about-me-text1": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Kiel. Motiviert durch die grenzenlosen Möglichkeiten in der IT, freue ich mich darauf, visuell ansprechende, immersive und intuitive Websites und Anwendungen zu gestalten.",
         "location-text": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Kiel als auch remote effektiv arbeiten.",
         "mindset-text": "Ich bin aufgeschlossen und suche stets nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
-        "profession-text": "In meinem Beruf geht es bei der Programmierung nicht nur darum, Code zu schreiben; es ist eine kreative Form des Problemlösens. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+        "profession-text": "In meinem Beruf geht es bei der Programmierung nicht nur darum, Code zu schreiben; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
         },
 
     "skillSet": {
         "title": "Technologien",
         "frame-title": "Skill Set",
         "text1": "Meine Reise umfasste die Arbeit an vielfältigen Projekten, wobei ich eine Reihe von Frontend-Technologien und -Konzepten einsetzte. Ich bin offen dafür, neue Technologien und Methoden anzunehmen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft der Webentwicklung vorne zu bleiben.",
-        "frame-title2-first": "Du benötigst",
+        "frame-title2-first": "Sie benötigen",
         "frame-title2-second": "einen anderen Skill?",
-        "text2": "Kontaktieren sie mich gerne. Ich freue mich darauf mein Wissen stetig zu erweitern",
-        "button-text": "Lass uns reden"
+        "text2": "Kontaktieren Sie mich gerne. Ich freue mich darauf mein Wissen stetig zu erweitern",
+        "button-text": "Lassen Sie uns reden"
         }, 
 
     "portfolio": {
@@ -39,10 +39,10 @@
 
     "portfolio-Overlay": {
         "button": "Nächstes Projekt",
-        "textJoin": "Taskmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
+        "textJoin": "Taskmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "textElPolloLoco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
         "textDABubble": "Diese App ist eine Slack-Clone-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch ihre intuitive Benutzeroberfläche, Echtzeit-Messaging und eine robuste Kanalorganisation.",
-        "textPokedex": "Diese App bietet eine elegnate Benutzerfreundliche und effiziente Schnittstelle zur PokeAPI. Swipen mit leichtigkeit durch die gesamte Bandbreite von mehr als 1000 Pokemon und finden sie Ihr Lieblingspokemon! "
+        "textPokedex": "Diese App bietet eine elegnate benutzerfreundliche und effiziente Schnittstelle zur PokeAPI. Swipen Sie mit leichtigkeit durch die gesamte Bandbreite von mehr als 1000 Pokemon und finden sie Ihr Lieblingspokemon!"
         },
         
     "testimonials": {
@@ -55,25 +55,32 @@
         },
         
     "contact": {
-        "title": "Schreib mir",
-        "title2-1": "Lass uns",
+        "title": "Schreiben Sie mir",
+        "title2-1": "Lassen Sie uns",
         "title2-2": "zusammenzuarbeiten",
         "title3": "Es gibt ein problem zu lösen?",
-        "text": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "text": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
         "text2-1": "Du brauchst einen Frontend Developer?",
-        "text2-2": "Lass uns reden!?",
-        "form-name": "Wie ist dein Name?",
-        "form-email": "Wie ist deine email?",
-        "form-msg": "Wie jann ich dir helfen??",
+        "text2-2": "Lassen Sie uns reden!?",
+        "form-name": "Wie ist Ihr Name?",
+        "form-email": "Wie ist Ihre email?",
+        "form-msg": "Wie kann ich Ihnen helfen??",
         "policy-text1": "Ich habe die",
         "policy-text2": "Datenschutzerklärung",
         "policy-text3": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bestimmungen zu.",
         "submit-btn": "Sag Hallo ;)",
         "success-msg": "Nachricht erfolgreich versendet!",
-        "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuche es später erneut.",
-        "policy-error": "Bitte akzeptiere zuerst die Privacy Policy",
-        "email-required": "Bitte gib deine email Adresse ein",
-        "email-invalid": "Gib eine gültige email Adresse ein!"
+        "error-msg": "Nachricht konnte nicht versendet werden! Bitte versuchen Sie es später erneut.",
+        "policy-error": "Bitte akzeptieren Sie zuerst die Privacy Policy",
+        "email-required": "Bitte geben sie Ihre email Adresse ein",
+        "email-invalid": "Gib eine gültige email Adresse ein!",
+        "name-required": "Geben Sie bitte einen Namen ein",
+        "name-minlength": "mindestens 3 Zeichen eingeben",
+        "name-placeholder": "Geben Sie hier Ihren Namen ein",
+        "email-placeholder": "Geben sie hier Ihre email ein",
+        "message-required": "Geben sie bitte eine Nachricht ein",
+        "message-minlength": "Die Nachricht muss mindestens 4 Zeichen enthalten",
+        "message-placeholder": "Hello Dominik, ich interessiere mich für ..."
         },
 
     "privacy-policy": {

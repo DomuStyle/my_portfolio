@@ -15,19 +15,19 @@
     "about-me": {
         "title": "Who I am",
         "frame-title": "About me",
-        "about-me-text1": "hi, im a german speaking Frontend Developer based in Kiel. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating, immersive and intuitive websites and aplications.",
-        "location-text": "Flexible in therms of working enviorements, I can work effectivley both on-site in Kiel as well as remotely.",
-        "mindset-text": "I am open.minded and alwys looking for personal challenges to constantly improve my knowledge and skills.",
-        "profession-text": "In my profession, programming isn't just about writibg code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user friendly solutions. This way , I help you achieve your goals and bring your visions to life."
+        "about-me-text1": "Hi, I'm a German-speaking frontend developer from Kiel. Motivated by the limitless possibilities in IT, I look forward to creating visually appealing, immersive and intuitive websites and applications.",
+        "location-text": "Flexible in terms of working environments, I can work effectively both on site in Kiel and remotely.",
+        "mindset-text": "I am open-minded and always looking for personal challenges to continuously improve my knowledge and skills.",
+        "profession-text": "In my job, programming isn't just about writing code; it's a creative form of problem solving. I pride myself on distilling complex technical challenges into simple, user-friendly solutions. In this way, I help you achieve your goals and bring your visions to life."
         }, 
     
     "skillSet": {
         "title": "Technologies",
         "frame-title": "Skill Set",
-        "text1": "A short introduction of your skills. Highlight your experience of  using different front-end technologies and emphasise your openness to learning and adapting to new technologies. Show how important it is for you to keep up with the rapid changes in web development.",
+        "text1": "My journey has involved working on diverse projects, utilizing a range of front-end technologies and concepts. I am open to embracing new technologies and methodologies to continuously improve my skills and stay ahead in the ever-evolving landscape of web development.",
         "frame-title2-first": "You need",
         "frame-title2-second": "another skill?",
-        "text2": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+        "text2": "Please feel free to contact me. I look forward to constantly expanding my knowledge",
         "button-text": "Let's Talk"
         },
 
@@ -39,21 +39,21 @@
 
     "portfolio-Overlay": {
         "button": "Next project",
-        "textJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "textElPolloLoco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "textDABubble": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-        "textPokedex": "This app both offer a right elegant, user-friendly, and full efficient gateway unto the PokeAPI. With great ease mayst thou swipe through the whole breadth of more than a thousand Pokémon, and therein seek thy most beloved creature!"
+        "textJoin": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories.",
+        "textElPolloLoco": "Jumping, running and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
+        "textDABubble": "This app is a Slack clone app. It revolutionizes team communication and collaboration through its intuitive user interface, real-time messaging and robust channel organization.",
+        "textPokedex": "This app provides an elegant, user-friendly and efficient interface to the PokeAPI. Swipe through the entire range of more than 1000 Pokemon with ease and find your favorite Pokemon!"
         },
 
     
 
     "testimonials": {
-        "text1": "Dominik integrated seamlessly into the group work, independently developed numerous solutions, and played a key role in transforming the initial folder structure chaos into a clear and understandable system. Working with him was highly enjoyable, and I am confident that he excels in a team environment.",
-        "text2": "Dominik is an excellent colleague who works with remarkable efficiency and speed. His attention to detail and his composed demeanor make him an invaluable member of the team. In addition to his technical expertise, his pleasant personality contributes to a harmonious working environment.",
-        "text3": "Working with Dominik has been a truly pleasant experience! Not only is he extremely dedicated and eager to learn, but he also brings an open and communicative approach that enriches every collaboration. His friendly nature and motivation to constantly grow make him a valuable team player with whom working is genuinely enjoyable.",
-        "text4": "Dominik is an exceptionally reliable team player. He does not shy away from challenges and is always ready to take on responsibility. His ability to find clear solutions even under time pressure is truly impressive.",
-        "text5": "Dominik is a resilient and dedicated team member who remained focused even during challenging times. Despite personal difficulties, he worked diligently toward project success. Compared to our last group project, he significantly improved his speed and efficiency. He welcomed feedback as an opportunity to grow and maintained a positive attitude, even when facing setbacks.",
-        "text6": "Working with Dominik has always been a valuable experience, as he is not only professionally skilled but also brings a highly solution-oriented mindset. He engages with various approaches, challenges existing structures, and contributes to the team in finding the best solutions together."
+        "text1": "Dominik integrated seamlessly into the group work, developed numerous solutions independently and played a crucial role in transforming the initial chaos in the folder structure into a clear and comprehensible system. He was extremely pleasant to work with and I am convinced that he excels in a team environment.",
+        "text2": "Dominik is a great colleague who works with remarkable efficiency and speed. His attention to detail and even-tempered nature makes him an invaluable team member. In addition to his technical skills, his pleasant personality contributes to a harmonious working atmosphere.",
+        "text3": "Working with Dominik was a very pleasant experience! Not only is he extremely committed and eager to learn, he also has an open and communicative manner that enriches every collaboration. His friendly nature and his motivation to constantly develop himself further make him a valuable team player who is a pleasure to work with.",
+        "text4": "Dominik is an extremely reliable team player. He never shies away from a challenge and is always ready to take on responsibility. His ability to find clear solutions even under time pressure is impressive.",
+        "text5": "Dominik is a committed and resilient team colleague who remained focused and calm even in difficult times. He showed a clear improvement in work speed and efficiency and always used feedback as an opportunity for further development. Even in the face of setbacks, he maintained a positive attitude and enjoyed his work.",
+        "text6": "Working with Dominik has always been an enrichment, as he is not only technically adept, but also has a very solution-oriented way of thinking. He takes different approaches, questions existing structures and thus helps the team to find the best solutions together."
         },
         
     "contact": {
@@ -61,7 +61,7 @@
         "title2-1": "Let's work",
         "title2-2": "together",
         "title3": "Got a problem to solve?",
-        "text": "Contact me through this form, i am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "text": "Contact me using this form. I look forward to hearing from you, getting to know your ideas and contributing to your projects with my work.",
         "text2-1": "Need a Frontend developer?",
         "text2-2": "Let's talk!?",
         "form-name": "What's your name?",
@@ -75,7 +75,17 @@
         "error-msg": "Failed to send message. Please try again later.",
         "policy-error": "please accept privacy policy first!",
         "email-required": "Please enter your email",
-        "email-invalid": "Enter a valid email address"
+        "email-invalid": "Enter a valid email address",
+        "name-required": "Enter a your name",
+        "name-minlength": "enter 3 characters minimum",
+        "name-placeholder": "enter your name",
+        "email-placeholder": "enter your email",
+        "message-required": "enter a message",
+        "message-minlength": "message must be at least 4 characters long",
+        "message-placeholder": "Hello Dominik, in interested in ..."
+
+
+
         },
 
     "privacy-policy": {

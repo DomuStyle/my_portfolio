@@ -94,37 +94,79 @@ showEmailValidationMessage(emailField: NgModel | undefined): boolean {
   /**
    * Returns the appropriate placeholder for the name field based on its state.
    */
-  getNamePlaceholder(nameField: NgModel): string {
-    if (nameField.touched && nameField.invalid) {
-      return nameField.errors?.['required']
-        ? 'Please enter your name'
-        : 'Name must be at least 3 characters';
-    }
-    return 'Your name goes here';
-  }
+  // getNamePlaceholder(nameField: NgModel): string {
+  //   if (nameField.touched && nameField.invalid) {
+  //     return nameField.errors?.['required']
+  //       ? 'Please enter your name'
+  //       : 'Name must be at least 3 characters';
+  //   }
+  //   return 'Your name goes here';
+  // }
 
   /**
    * Returns the appropriate placeholder for the email field based on its state.
    */
-  getEmailPlaceholder(emailField: NgModel): string {
-    if (emailField.touched && emailField.invalid) {
-      return emailField.errors?.['required']
-        ? 'Please enter your email'
-        : 'Enter a valid email address';
-    }
-    return 'youremail@email.com';
-  }
+  // getEmailPlaceholder(emailField: NgModel): string {
+  //   if (emailField.touched && emailField.invalid) {
+  //     return emailField.errors?.['required']
+  //       ? 'Please enter your email'
+  //       : 'Enter a valid email address';
+  //   }
+  //   return 'youremail@email.com';
+  // }
 
   /**
    * Returns the appropriate placeholder for the message field based on its state.
    */
+  // getMessagePlaceholder(messageField: NgModel): string {
+  //   if (messageField.touched && messageField.invalid) {
+  //     return messageField.errors?.['required']
+  //       ? 'Please enter your message'
+  //       : 'Message must be at least 4 characters';
+  //   }
+  //   return 'Hello Dominik, I am interested in ...';
+  // }
+
+  /**
+   * Returns the appropriate placeholder for the name field based on its state.
+   * @param nameField - The NgModel instance of the name input field.
+   * @returns string - The translated placeholder text.
+   */
+  getNamePlaceholder(nameField: NgModel): string {
+    if (nameField.touched && nameField.invalid) {
+      return nameField.errors?.['required']
+        ? this.translate.instant('contact.name-required') // "Please enter your name"
+        : this.translate.instant('contact.name-minlength'); // "Name must be at least 3 characters"
+    }
+    return this.translate.instant('contact.name-placeholder'); // "Your name goes here"
+  }
+
+  /**
+   * Returns the appropriate placeholder for the email field based on its state.
+   * @param emailField - The NgModel instance of the email input field.
+   * @returns string - The translated placeholder text.
+   */
+  getEmailPlaceholder(emailField: NgModel): string {
+    if (emailField.touched && emailField.invalid) {
+      return emailField.errors?.['required']
+        ? this.translate.instant('contact.email-required') // "Please enter your email"
+        : this.translate.instant('contact.email-invalid'); // "Enter a valid email address"
+    }
+    return this.translate.instant('contact.email-placeholder'); // "youremail@email.com"
+  }
+
+  /**
+   * Returns the appropriate placeholder for the message field based on its state.
+   * @param messageField - The NgModel instance of the message input field.
+   * @returns string - The translated placeholder text.
+   */
   getMessagePlaceholder(messageField: NgModel): string {
     if (messageField.touched && messageField.invalid) {
       return messageField.errors?.['required']
-        ? 'Please enter your message'
-        : 'Message must be at least 4 characters';
+        ? this.translate.instant('contact.message-required') // "Please enter your message"
+        : this.translate.instant('contact.message-minlength'); // "Message must be at least 4 characters"
     }
-    return 'Hello Dominik, I am interested in ...';
+    return this.translate.instant('contact.message-placeholder'); // "Hello Dominik, I am interested in ..."
   }
 
   /**
