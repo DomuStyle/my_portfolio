@@ -274,6 +274,7 @@ input::-webkit-scrollbar {
 @media (max-width: 400px) {
     h3 {
         font-size: 40px;
+        word-wrap: break-word;
     }
 
     .positioning_box {
