@@ -213,6 +213,10 @@ input::-webkit-scrollbar {
 }
 
 @media (max-width: 870px) {
+
+    h3 {
+        word-wrap: break-word;
+    }
     
     .contact_content {
         padding: 0 calc(max(40px,(100% - 1440px) / 2));
@@ -231,6 +235,7 @@ input::-webkit-scrollbar {
 
     h3 {
         font-size: 48px;
+        word-wrap: break-word;
     }
     
     .contact_content {

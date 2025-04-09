@@ -42,7 +42,7 @@
         "textJoin": "Taskmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "textElPolloLoco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
         "textDABubble": "Diese App ist eine Slack-Clone-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch ihre intuitive Benutzeroberfläche, Echtzeit-Messaging und eine robuste Kanalorganisation.",
-        "textPokedex": "Diese App bietet eine elegnate benutzerfreundliche und effiziente Schnittstelle zur PokeAPI. Swipen Sie mit leichtigkeit durch die gesamte Bandbreite von mehr als 1000 Pokemon und finden sie Ihr Lieblingspokemon!"
+        "textPokedex": "Diese App bietet eine Elegnate benutzerfreundliche und effiziente Schnittstelle zur PokeAPI. Swipen Sie mit Leichtigkeit durch die gesamte Bandbreite von mehr als 1000 Pokemon und finden sie Ihr Lieblingspokemon!"
         },
         
     "testimonials": {
@@ -58,9 +58,9 @@
         "title": "Schreiben Sie mir",
         "title2-1": "Lassen Sie uns",
         "title2-2": "zusammenarbeiten",
-        "title3": "Es gibt ein problem zu lösen?",
+        "title3": "Es gibt ein Problem zu lösen?",
         "text": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
-        "text2-1": "Du brauchst einen Frontend Developer?",
+        "text2-1": "Sie brauchen einen Frontend Developer?",
         "text2-2": "Lassen Sie uns reden!?",
         "form-name": "Wie ist Ihr Name?",
         "form-email": "Wie ist Ihre email?",
