@@ -6,8 +6,6 @@ nav {
     position: absolute;
     width: 100%;
     top: 0;
-    // padding: 0 calc(max(200px,(100vw - 1440px) / 2));
-    // max-width: 1440px;
 }
 
 .header_content {
@@ -18,7 +16,6 @@ nav {
 }
 
 .nav_about_me {
-    // height: 80px;
     background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
     background-repeat: no-repeat;
     height: 34px;
@@ -61,21 +58,9 @@ nav {
 }
 
 .nav_left {
-    // @include dFlex($jc: center, $ai: center);
     padding-top: 32px;
     display: flex;
     justify-content: center;
-    // >span {
-    //     width: 96px;
-    //     padding-left: 8px;
-    //     background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on1.svg');
-    //     background-repeat: no-repeat;
-    //     background-color: transparent; 
-    //     &:hover {
-    //         background-image: url('./../../../assets/svg/nav/lang_btn/lang_btn_de_on_hover.svg');
-    //         cursor: pointer;
-    //     }
-    // }
     >a {
         padding-left: 8px;
     }
@@ -85,9 +70,7 @@ nav {
     padding-top: 32px;
     >span {
         width: 132px;
-        // background-image: url('./../../../assets/svg/nav/name_logo/name_logo_dm.png');
         background-repeat: no-repeat;
-        // background-color: transparent;
         >img {
             height: 96px;
             width: 256px;
@@ -95,13 +78,7 @@ nav {
         &:hover { 
                 filter: drop-shadow(1px 1px 0 white)
                 drop-shadow(-1px -1px 0 white);
-                // filter: drop-shadow(1px 1px 0 white) 
-                // drop-shadow(-1px -1px 0 white);
         }
-
-        // &:hover img{ 
-        //         opacity: 0.1;
-        // }
     }
 }
 
@@ -132,7 +109,6 @@ nav {
 }
 
 .burger_about_me {
-    // height: 80px;
     background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
     background-repeat: no-repeat;
     height: 34px;

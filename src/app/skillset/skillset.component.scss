@@ -63,7 +63,7 @@
     @include dFlex($jc: flex-start, $ai: flex-start);
     width: auto;
     min-width: 568px;
-    row-gap: 80px;
+    row-gap: 24px;
     column-gap: 40px;
     flex-wrap: wrap;
     color: white;
@@ -74,8 +74,9 @@
     @include dFlex($jc: flex-start, $ai: center, $g: 6px);
     flex-direction: column;
     width: 20%;
+    text-align: center;
     >img {
-        height: 60px;
+        height: 48px;
         &:hover {
             transform: scale(1.05);
         }
@@ -177,7 +178,7 @@
     }
 
     .skillset_collection {
-        row-gap: 32px;
+        row-gap: 24px;
     }
 }
 
@@ -262,7 +263,7 @@
 @media (max-width: 480px) {
     
     .skillset_collection {
-        height: 520px;
+        height: 1180px;
         max-width: 374px;
     }
 
@@ -289,7 +290,7 @@
     .skillset_collection {
         min-width: 0;
         max-width: 230px;
-        gap: 65px;
+        gap: 56px;
         padding: 0;
     }
 
