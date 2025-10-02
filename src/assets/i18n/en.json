@@ -15,7 +15,7 @@
     "about-me": {
         "title": "Who I am",
         "frame-title": "About me",
-        "about-me-text1": "Hi, I'm a German-speaking frontend developer from Kiel. Motivated by the limitless possibilities in IT, I look forward to creating visually appealing, immersive and intuitive websites and applications.",
+        "about-me-text1": "Hi, I'm a German-speaking Fullstack-Developer from Kiel. Motivated by the limitless possibilities in IT, I look forward to creating visually appealing, immersive and intuitive websites and applications.",
         "location-text": "Flexible in terms of working environments, I can work effectively both on site in Kiel and remotely.",
         "mindset-text": "I am open-minded and always looking for personal challenges to continuously improve my knowledge and skills.",
         "profession-text": "In my job, programming isn't just about writing code; it's a creative form of problem solving. I pride myself on distilling complex technical challenges into simple, user-friendly solutions. In this way, I help you achieve your goals and bring your visions to life."
@@ -62,7 +62,7 @@
         "title2-2": "together",
         "title3": "Got a problem to solve?",
         "text": "Contact me using this form. I look forward to hearing from you, getting to know your ideas and contributing to your projects with my work.",
-        "text2-1": "Need a Frontend developer?",
+        "text2-1": "Need a Fullstack developer?",
         "text2-2": "Let's talk!?",
         "form-name": "What's your name?",
         "form-email": "What's your email?",

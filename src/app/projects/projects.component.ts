@@ -116,22 +116,4 @@ nextProject() {
   this.selectedProject = this.projects[nextIndex];
 }
 
-// nextProject() {
-//   if (!this.selectedProject) return;
-
-//   // Find the index of the current selected project
-//   const currentIndex = this.projects.findIndex(
-//     (p) => p.id === this.selectedProject!.id
-//   );
-
-//   // Calculate the next index, looping back to 0 if at the end
-//   const nextIndex = (currentIndex + 1) % this.projects.length;
-
-//   // Set the next project as the selected project
-//   this.selectedProject = this.projects[nextIndex];
-// }
-
-// // getdata(){
-// //   console.log(this.selectedProject.technologies[0]); 
-// // }
 }
