@@ -41,8 +41,9 @@
         "button": "Next project",
         "textJoin": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories.",
         "textElPolloLoco": "Jumping, running and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
-        "textDABubble": "This app is a Slack clone app. It revolutionizes team communication and collaboration through its intuitive user interface, real-time messaging and robust channel organization.",
-        "textPokedex": "This app provides an elegant, user-friendly and efficient interface to the PokeAPI. Swipe through the entire range of more than 1000 Pokemon with ease and find your favorite Pokemon!"
+        "textDABubble": "This app is a Slack-clone-app. It revolutionizes team communication and collaboration through its intuitive user interface, real-time messaging and robust channel organization.",
+        "textPokedex": "This app provides an elegant, user-friendly and efficient interface to the PokeAPI. Swipe through the entire range of more than 1000 Pokemon with ease and find your favorite Pokemon!",
+        "textCoderr": "This app is a Fiverr-Clone-app. It connects freelancers and customers through intuitive profiles, detailed offers, secure orders and honest reviews."
         },
 
     
