@@ -15,46 +15,123 @@ nav {
     width: 100%;
 }
 
+// .nav_about_me {
+//     background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
+//     background-repeat: no-repeat;
+//     height: 34px;
+//     width: 82px;
+//     margin-left: 24px;
+//     &:hover {
+//         background-image: url('./../../../assets/svg/nav/section_btn/about_me_hover.svg');
+//     }
+//     &:active {
+//         background-image: url('./../../../assets/svg/nav/section_btn/about_me_selected.svg');
+//     }
+// }
+
+// .nav_skills {
+//     background-image: url('./../../../assets/svg/nav/section_btn/skills.svg');
+//     background-repeat: no-repeat;
+//     height: 34px;
+//     width: 82px;
+//     margin-left: 40px;
+//     &:hover {
+//         background-image: url('./../../../assets/svg/nav/section_btn/skills_hover.svg');
+//     }
+//     &:active {
+//         background-image: url('./../../../assets/svg/nav/section_btn/skills_selected.svg');
+//     }
+// }
+
+// .nav_projects {
+//     background-image: url('./../../../assets/svg/nav/section_btn/projects.svg');
+//     background-repeat: no-repeat;
+//     height: 34px;
+//     width: 82px;
+//     margin-left: 24px;
+//     &:hover {
+//         background-image: url('./../../../assets/svg/nav/section_btn/projects_hover.svg');
+//     }
+//     &:active {
+//         background-image: url('./../../../assets/svg/nav/section_btn/projects_selected.svg');
+//     }
+// }
+
 .nav_about_me {
-    background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
+    @include dFlex($jc: flex-start, $ai: center);
+    flex-direction: column;
+    @include font($ff: 'Fira_Code', $fw: 400);
+    font-size: 20px;
+    // background-image: url('./../../../assets/svg/nav/section_btn/about_me.svg');
     background-repeat: no-repeat;
+    color: white;
+    text-decoration: none;
     height: 34px;
-    width: 82px;
+    width: 165px;
     margin-left: 24px;
-    &:hover {
-        background-image: url('./../../../assets/svg/nav/section_btn/about_me_hover.svg');
+    &:hover .nav_dot{
+        display: block;
+        // background-image: url('./../../../assets/svg/nav/section_btn/about_me_hover.svg');
     }
-    &:active {
-        background-image: url('./../../../assets/svg/nav/section_btn/about_me_selected.svg');
+    &:active .nav_dot{
+        background-color: white;
+        // background-image: url('./../../../assets/svg/nav/section_btn/about_me_selected.svg');
     }
 }
 
 .nav_skills {
-    background-image: url('./../../../assets/svg/nav/section_btn/skills.svg');
+    @include dFlex($jc: flex-start, $ai: center);
+    flex-direction: column;
+    @include font($ff: 'Fira_Code', $fw: 400);
+    font-size: 20px;
+    // background-image: url('./../../../assets/svg/nav/section_btn/skills.svg');
     background-repeat: no-repeat;
+    color: white;
+    text-decoration: none;
     height: 34px;
-    width: 82px;
-    margin-left: 40px;
-    &:hover {
-        background-image: url('./../../../assets/svg/nav/section_btn/skills_hover.svg');
+    width: 70px;
+    // margin-left: 24px;
+    &:hover .nav_dot{
+        display: block;
+        // background-image: url('./../../../assets/svg/nav/section_btn/skills_hover.svg');
     }
-    &:active {
-        background-image: url('./../../../assets/svg/nav/section_btn/skills_selected.svg');
+    &:active .nav_dot{
+        background-color: white;
+        // background-image: url('./../../../assets/svg/nav/section_btn/skills_selected.svg');
     }
 }
 
 .nav_projects {
-    background-image: url('./../../../assets/svg/nav/section_btn/projects.svg');
+    @include dFlex($jc: flex-start, $ai: center);
+    flex-direction: column;
+    @include font($ff: 'Fira_Code', $fw: 400);
+    font-size: 20px;
+    // background-image: url('./../../../assets/svg/nav/section_btn/projects.svg');
     background-repeat: no-repeat;
+    color: white;
+    text-decoration: none;
     height: 34px;
     width: 82px;
-    margin-left: 24px;
-    &:hover {
-        background-image: url('./../../../assets/svg/nav/section_btn/projects_hover.svg');
+    margin-left: 32px;
+    &:hover .nav_dot{
+        display: block;
+        // background-image: url('./../../../assets/svg/nav/section_btn/projects_hover.svg');
     }
-    &:active {
-        background-image: url('./../../../assets/svg/nav/section_btn/projects_selected.svg');
+    &:active .nav_dot{
+        background-color: white;
+        // background-image: url('./../../../assets/svg/nav/section_btn/projects_selected.svg');
     }
+}
+
+.nav_dot {
+    display: none;
+    align-items: center;
+    // background-color: #3DCFB6;
+    background-color: #3DCFB6; 
+    height: 7px;
+    width: 7px;
+    border-radius: 3.5px;
+    // border-radius: 50%;
 }
 
 .nav_left {

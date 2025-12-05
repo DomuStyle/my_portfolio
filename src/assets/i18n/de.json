@@ -1,4 +1,10 @@
 {   
+    "header": {
+        "nav1": "Über mich",
+        "nav2": "Skills",
+        "nav3": "Projekte"
+    },
+
     "landingpage": {
       "projects-link-btn": "Meine Projekte",
       "contact-me-btn": "Schreib mir",

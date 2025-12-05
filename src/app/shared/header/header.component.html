@@ -5,9 +5,18 @@
             <!-- <span class="lang_btn" (click)="switchLang('de')" alt="german_english_switch_button"></span> -->
             <span class="lang_btn" [ngClass]="getLangButtonClass()" (click)="toggleLanguage()" alt="language_switch_button"></span>
             <!-- <span class="lang_btn" (click)="switchLang('de')" alt="german_english_switch_button"></span> -->
-            <a class="nav_about_me" href="#about_me"></a>
-            <a class="nav_skills" href="#skills"></a>
-            <a class="nav_projects" href="#projects"></a>
+            <a class="nav_about_me" href="#about_me">
+                <p>{{ 'header.nav1' | translate }}</p>
+                <div class="nav_dot"></div>
+            </a>
+            <a class="nav_skills" href="#skills">
+                <p>{{ 'header.nav2' | translate }}</p>
+                <div class="nav_dot"></div>
+            </a>
+            <a class="nav_projects" href="#projects">
+                <p>{{ 'header.nav3' | translate }}</p>
+                <div class="nav_dot"></div>
+            </a>
         
         </div>
         <div class="nav_right">

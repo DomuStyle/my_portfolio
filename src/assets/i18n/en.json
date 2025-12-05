@@ -1,4 +1,10 @@
 {   
+    "header": {
+        "nav1": "About me",
+        "nav2": "Skills",
+        "nav3": "Projects"
+    },
+
     "landingpage": {
       "projects-link-btn": "Check my work",
       "contact-me-btn": "Contact me",
