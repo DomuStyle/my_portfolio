@@ -25,6 +25,20 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
+    id: 1,
+    title: 'Coderr/',
+    description: 'portfolio-Overlay.textCoderr',
+    img: './assets/img/projects/coderr_small.png',
+    technologies: ['Python', 'Django', 'PostgreSQL'],
+    gitUrl: 'https://github.com/DomuStyle/Coderr_BE',
+    openProjectUrl: 'https://www.coderr.dominik-marnet.de',
+    techImgs: [
+      './assets/svg/projects/overlay/python.svg',
+      './assets/svg/projects/overlay/django.svg',
+      './assets/svg/projects/overlay/postgre_sql.svg',
+    ]
+    },
+    {
     id: 2,
     title: 'Join',
     description: 'portfolio-Overlay.textJoin',
@@ -53,35 +67,21 @@ export class ProjectsComponent {
       './assets/img/overlay/technologies/overlay-html.svg',
       './assets/img/overlay/technologies/overlay-css.svg',
     ]
-    },
-    {
-    id: 4,
-    title: 'Pokedex',
-    description: 'portfolio-Overlay.textPokedex',
-    img: './assets/img/projects/pokedex_project_l.jpg',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    gitUrl: 'https://github.com/pokedex',
-    openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
-    techImgs: [
-      './assets/img/overlay/technologies/overlay-js.svg',
-      './assets/img/overlay/technologies/overlay-html.svg',
-      './assets/img/overlay/technologies/overlay-css.svg',
-    ]
-    },
-    {
-    id: 1,
-    title: 'Coderr/',
-    description: 'portfolio-Overlay.textCoderr',
-    img: './assets/img/projects/coderr_small.png',
-    technologies: ['Python', 'Django', 'PostgreSQL'],
-    gitUrl: 'https://github.com/DomuStyle/Coderr_BE',
-    openProjectUrl: 'https://www.coderr.dominik-marnet.de',
-    techImgs: [
-      './assets/svg/projects/overlay/python.svg',
-      './assets/svg/projects/overlay/django.svg',
-      './assets/svg/projects/overlay/postgre_sql.svg',
-    ]
     }
+    // {
+    // id: 4,
+    // title: 'Pokedex',
+    // description: 'portfolio-Overlay.textPokedex',
+    // img: './assets/img/projects/pokedex_project_l.jpg',
+    // technologies: ['JavaScript', 'HTML', 'CSS'],
+    // gitUrl: 'https://github.com/pokedex',
+    // openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
+    // techImgs: [
+    //   './assets/img/overlay/technologies/overlay-js.svg',
+    //   './assets/img/overlay/technologies/overlay-html.svg',
+    //   './assets/img/overlay/technologies/overlay-css.svg',
+    // ]
+    // } 
 ];
 
 /**
