@@ -85,23 +85,15 @@ section {
     transition: border-color 1.75s;
     overflow-y: hidden;
     scrollbar-width: none;
+
         &:hover {
+            cursor: pointer;
             border-color: #3DCFB6;
         }
 
         &:hover a {
-            color: #3DCFB6;
             animation: slideRight 0.75s forwards;
         }
-
-        /* Stagger the animation for the second button */
-        // &:nth-child(1) > a {
-        //     animation-delay: 0s; /* Left button starts immediately */
-        // }
-
-        // &:nth-child(2) > a {
-        //     animation-delay: 1s; /* Right button starts halfway through */
-        // }
 
     >a {
         @include font($ff: 'Fira_Code', $fw: 400);

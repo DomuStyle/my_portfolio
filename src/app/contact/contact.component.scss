@@ -57,8 +57,6 @@ input[type=text], [type=email], select, textarea {
     background-color: #1c1c1c;
     margin-left: 32px;
     color: #ffffff;
-
-    
 }
 
 #name,
@@ -118,11 +116,12 @@ input:focus {
     transition: border-color 1.75s;
     overflow: hidden;
     margin-top: 40px;
-    
+    scrollbar-width: none;
+
     &:hover {
         cursor: pointer;
+        border-color: #3DCFB6;
     }
-
     
     >input[type=submit] {
         box-sizing: border-box;
@@ -135,7 +134,7 @@ input:focus {
 
     >input::placeholder {
         color: #ffffff;
-    }  
+    }    
 }
 
 input {
@@ -147,8 +146,6 @@ input {
     width: 440px;
     scrollbar-width: none;
     color: #ffffff;
-    // margin-bottom: 32px;
-    // margin-left: 32px;
 }
 
 input::-webkit-scrollbar {
