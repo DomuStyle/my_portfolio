@@ -84,11 +84,16 @@
                 </div>
                 <div class="contact_right_bottom">
                   <div class="submit_btn">
-                    <input
+                    <!-- <input
                       type="submit"
                       value="{{ 'contact.submit-btn' | translate }}"
                       [disabled]="!contactForm.valid || !isPolicyChecked"
-                    >
+                    > -->
+                    <button
+                      type="submit"
+                      [disabled]="!contactForm.valid || !isPolicyChecked"
+                    >{{ 'contact.submit-btn' | translate }}
+                    </button>
                   </div>
                 </div>
               </form>

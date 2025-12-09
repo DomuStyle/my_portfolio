@@ -122,19 +122,52 @@ input:focus {
         cursor: pointer;
         border-color: #3DCFB6;
     }
+
+    &:hover button {
+            color: #3DCFB6;
+            animation: slideRight 0.75s forwards;
+        }
     
-    >input[type=submit] {
+    >button[type=submit] {
         box-sizing: border-box;
         border: none; /* Remove border */
         outline: none; /* Remove focus outline */
         color: white;
         cursor: pointer;
         background-color: transparent;
+        font-size: 24px;
     }
 
-    >input::placeholder {
+    >button::placeholder {
         color: #ffffff;
     }    
+    // >input[type=submit] {
+    //     box-sizing: border-box;
+    //     border: none; /* Remove border */
+    //     outline: none; /* Remove focus outline */
+    //     color: white;
+    //     cursor: pointer;
+    //     background-color: transparent;
+    // }
+
+    // >input::placeholder {
+    //     color: #ffffff;
+    // }    
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    51% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 input {
