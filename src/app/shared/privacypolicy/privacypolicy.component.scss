@@ -20,8 +20,35 @@
     background-color: rgba($color: #08463B, $alpha: 0.5);
     border-radius: 24px;
     border: 2px solid #3DCFB6;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     text-align: center;
+
+    overflow-y: auto; /* Keep scrollable */
+
+        /* Webkit (Chrome, Safari, Edge) scrollbar styles */
+         &::-webkit-scrollbar {
+            width: 6px; /* Makes the scrollbar thin */
+            height: 128px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent; /* Keeps the track invisible */
+            margin-top: 16px; /* Shortens the track from the top */
+            margin-bottom: 16px; /* Shortens the track from the bottom */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #3DCFB6; /* Matches the border color */
+            border-radius: 3px; /* Rounds the edges slightly for a sleek look */
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: lighten(#3DCFB6, 10%); /* Slightly lighter on hover for feedback */
+        }
+
+        /* Firefox scrollbar styles */
+        scrollbar-width: thin; /* Makes the scrollbar thin in Firefox */
+        scrollbar-color: #3DCFB6 transparent; /* Thumb color matches border, track is transparent */
 }
 
 .privacypolicy_section {
