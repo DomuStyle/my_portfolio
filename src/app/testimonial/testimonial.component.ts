@@ -1,13 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Testimonial } from './../interfaces/testimonials';
 import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
 
-interface Testimonial {
-  id: number;
-  author: string;
-  text: string | { key: string; value?: string };
-  position: string;
-}
 
 @Component({
   selector: 'app-testimonial',
