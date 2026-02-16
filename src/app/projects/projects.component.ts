@@ -67,21 +67,21 @@ export class ProjectsComponent {
       './assets/img/overlay/technologies/overlay-html.svg',
       './assets/img/overlay/technologies/overlay-css.svg',
     ]
-    }
-    // {
-    // id: 4,
-    // title: 'Pokedex',
-    // description: 'portfolio-Overlay.textPokedex',
-    // img: './assets/img/projects/pokedex_project_l.jpg',
-    // technologies: ['JavaScript', 'HTML', 'CSS'],
-    // gitUrl: 'https://github.com/pokedex',
-    // openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
-    // techImgs: [
-    //   './assets/img/overlay/technologies/overlay-js.svg',
-    //   './assets/img/overlay/technologies/overlay-html.svg',
-    //   './assets/img/overlay/technologies/overlay-css.svg',
-    // ]
-    // } 
+    },
+    {
+    id: 4,
+    title: 'Pokedex',
+    description: 'portfolio-Overlay.textPokedex',
+    img: './assets/img/projects/pokedex_project_l.jpg',
+    technologies: ['JavaScript', 'HTML', 'CSS', 'Gemini-API'],
+    gitUrl: 'https://github.com/pokedex',
+    openProjectUrl: 'https://www.pokedex.dominik-marnet.de',
+    techImgs: [
+      './assets/img/overlay/technologies/overlay-js.svg',
+      './assets/img/overlay/technologies/overlay-html.svg',
+      './assets/img/overlay/technologies/overlay-css.svg',
+    ]
+    } 
 ];
 
 /**
